@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCOR 3750 - Operations & Supply Chain Analytics | Fall 2025</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #000000;
+            background: #f8f9fa;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            min-height: 100vh;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            background: #0076A5;
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 2;
+        }
+        
+        .course-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .course-subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin-bottom: 1rem;
+        }
+        
+        .course-info-bar {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        
+        .info-item {
+            background: rgba(255,255,255,0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            backdrop-filter: blur(10px);
+        }
+        
+        .nav-menu {
+            background: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .nav-list {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .nav-item a {
+            color: #888B8D;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .nav-item a:hover {
+            background: #C8C9C7;
+            color: #0076A5;
+            transform: translateY(-2px);
+        }
+        
+        .content {
+            padding: 2rem;
+        }
+        
+        .section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 100px;
+        }
+        
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #0076A5;
+            position: relative;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #0076A5;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #C8C9C7;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        
+        .card ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .card ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .card:hover {
+            border-color: #0076A5;
+            box-shadow: 0 4px 12px rgba(171, 12, 47, 0.1);
+        }
+        
+        .instructor-card {
+            background: #0076A5;
+            color: white;
+            text-align: center;
+        }
+        
+        .instructor-name {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-info {
+            margin-top: 1rem;
+        }
+        
+        .contact-row {
+            background: rgba(255,255,255,0.1);
+            padding: 1rem 1.5rem;
+            margin-bottom: 0.75rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .contact-row:last-child {
+            margin-bottom: 0;
+        }
+        
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #0076A5;
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -1.75rem;
+            top: 1.5rem;
+            width: 12px;
+            height: 12px;
+            background: #0076A5;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #0076A5;
+        }
+        
+        .grade-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 1rem;
+        }
+        
+        .grade-item {
+            background: white;
+            color: #000000;
+            padding: 1.2rem 0.8rem;
+            border-radius: 8px;
+            border: 2px solid #0076A5;
+            text-align: center;
+            word-wrap: break-word;
+            hyphens: auto;
+            min-height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        
+        .grade-percentage {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            line-height: 1.1;
+            color: #0076A5;
+        }
+        
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .resource-card {
+            background: white;
+            border: 2px solid #C8C9C7;
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        .resource-card:hover {
+            border-color: #0076A5;
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(52, 152, 219, 0.2);
+        }
+        
+        .resource-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #0076A5;
+        }
+        
+        
+        .success-toolkit {
+            background: #C8C9C7;
+            color: #000000;
+            padding: 2rem;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+        
+        .toolkit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .toolkit-item {
+            background: rgba(255,255,255,0.9);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .course-title {
+                font-size: 2rem;
+            }
+            
+            .nav-list {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .content {
+                padding: 1rem;
+            }
+            
+            .timeline {
+                padding-left: 1rem;
+            }
+            
+            .course-info-bar {
+                flex-direction: column;
+                gap: 0.3rem;
+            }
+            
+            .info-item {
+                font-size: 0.85rem;
+                padding: 0.4rem 0.8rem;
+            }
+            
+            .grade-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem;
+            }
+            
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .toolkit-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .grade-item {
+                padding: 1rem 0.6rem;
+                min-height: 100px;
+            }
+            
+            .grade-percentage {
+                font-size: 1.5rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .grade-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .meta-item {
+                padding: 0.8rem;
+            }
+        }
+        
+        .print-only {
+            display: none;
+        }
+        
+        .web-only {
+            display: block;
+        }
+        
+        @media print {
+            body {
+                background: white !important;
+                font-size: 11pt;
+                line-height: 1.4;
+                color: #000 !important;
+            }
+            
+            .container {
+                box-shadow: none !important;
+                max-width: none !important;
+            }
+            
+            .header {
+                background: #888B8D !important;
+                color: white !important;
+                page-break-after: avoid;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .nav-menu {
+                display: none !important;
+            }
+            
+            .web-only {
+                display: none !important;
+            }
+            
+            .print-only {
+                display: block !important;
+            }
+            
+            .card {
+                break-inside: avoid;
+                background: #f8f9fa !important;
+                border: 1px solid #dee2e6 !important;
+                margin-bottom: 10pt !important;
+                padding: 12pt !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .instructor-card {
+                background: #888B8D !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .success-toolkit {
+                background: #0076A5 !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+                page-break-inside: avoid;
+            }
+            
+            .grade-item {
+                background: #0076A5 !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+            }
+            
+            .section-title {
+                page-break-after: avoid;
+                margin-top: 20pt;
+                font-size: 14pt !important;
+            }
+            
+            .timeline-item {
+                break-inside: avoid;
+                margin-bottom: 10pt !important;
+            }
+            
+            
+            .footer {
+                background: #888B8D !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                color-adjust: exact;
+                page-break-before: auto;
+            }
+            
+            h1, h2, h3 {
+                page-break-after: avoid;
+            }
+            
+            p, li {
+                orphans: 3;
+                widows: 3;
+            }
+            
+            .course-meta {
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 10pt !important;
+            }
+            
+            .grade-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+            }
+            
+            .resource-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+            
+            .toolkit-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="course-title">BCOR 3750</h1>
+                <p class="course-subtitle">Operations & Supply Chain Analytics</p>
+                <div class="course-info-bar">
+                    <span class="info-item">Fall 2025 • Section 01</span>
+                    <span class="info-item">Tue, Thu 8:00-9:40 AM • Hilton 113</span>
+                </div>
+            </div>
+        </header>
+
+        <nav class="nav-menu">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#course-info">Course Info</a></li>
+                <li class="nav-item"><a href="#learning-outcomes">Outcomes</a></li>
+                <li class="nav-item"><a href="#instructor">Instructor</a></li>
+                <li class="nav-item"><a href="#schedule">Schedule</a></li>
+                <li class="nav-item"><a href="#grading">Grading</a></li>
+                <li class="nav-item"><a href="#policies">Policies</a></li>
+                <li class="nav-item"><a href="#toolkit">Tips for Success</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <section id="course-info" class="section">
+                <h2 class="section-title">Course Information</h2>
+                
+                <div class="card">
+                    <h3>Course Description</h3>
+                    <p>This course introduces students to decision-making and model building in the management of operations which create products and/or services. The principles of operations management apply throughout the world to all productive enterprises. Efficient production methods require the effective application of the concepts, tools, and techniques that are covered in this course. Hands-on learning is an important feature of the course. Project case analyses will require students to collect, organize and analyze data to provide recommendations for how to improve the performance of a specified operating or supply chain system.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Prerequisites</h3>
+                    <p>AIMS or BCOR 2710 or ACCT 3140, ECON 2300 or MATH 104, MATH 112 or 131, all minimum grade of C</p>
+                </div>
+
+                <div class="card">
+                    <h3>Required Materials</h3>
+                    <div>
+                        <ul>
+                            <li><strong>Textbook:</strong> Supply Chain Analytics (Chopra & Meindl, Latest Edition)</li>
+                            <li><strong>Software:</strong> Excel, Tableau Desktop (free student license), SQL (PostgreSQL), Python (Anaconda distribution)</li>
+                            <li><strong>Datasets:</strong> Real supply chain data from partner companies and public sources</li>
+                            <li><strong>Platform:</strong> Brightspace for assignments, GitHub for project repositories</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="learning-outcomes" class="section">
+                <h2 class="section-title">Learning Outcomes</h2>
+                
+                <div class="card">
+                    <h3>🎓 CBA Core Learning Outcomes</h3>
+                    <p>This course contributes to student achievement of the following CBA core learning outcomes:</p>
+                    <ul>
+                        <li>Students will be able to analyze business processes to better serve stakeholders.</li>
+                        <li>Students will be able to frame a business problem and collect, organize and analyze qualitative and quantitative data to report and communicate insights for decision-making.</li>
+                        <li>Students will be able to apply information technology to solve business problems</li>
+                        <li>Students will demonstrate critical thinking skills by defining, modeling, analyzing and evaluating complex business problems</li>
+                    </ul>
+                </div>
+                
+                <div class="card">
+                    <h3>🔧 Course-Specific Learning Outcomes</h3>
+                    <p>Upon completion of this course students are expected to successfully meet the following operations & supply chain management analytics course learning outcomes:</p>
+                    <ul>
+                        <li>Understand the common principles of production and operations management.</li>
+                        <li>Apply strategies dealing with various problems encountered in the production of goods and services.</li>
+                        <li>Perform data processing and visualization.</li>
+                        <li>Use analytical techniques and a statistical package to support business decisions.</li>
+                        <li>Report and communicate insights and provide recommendations for an operations-related problem.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="instructor" class="section">
+                <h2 class="section-title">Instructor Information</h2>
+                <div class="card instructor-card">
+                    <div class="instructor-name">Prof. Greg Lontok</div>
+                    <p style="margin-bottom: 1.5rem;">With my background in business and tech, I will do my best to give you the skills and tools to develop your potential to create a meaningful impact in an organization.</p>
+                    
+                    <div class="contact-info">
+                        <div class="contact-row">
+                            <strong>📧 Email:</strong> gregory.lontok@lmu.edu
+                        </div>
+                        <div class="contact-row">
+                            <strong>🏢 Office:</strong> Hilton 114
+                        </div>
+                        <div class="contact-row">
+                            <strong>⏰ Office Hours:</strong> Thursday & Friday, 9:00 AM - 11:30 AM
+                        </div>
+                        <div class="contact-row">
+                            <strong>💬 Contact:</strong> Chat on Teams or visit in-person
+                        </div>
+                        <div class="contact-row">
+                            <strong>📹 Zoom Hours:</strong> By appointment
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="schedule" class="section">
+                <h2 class="section-title">Course Timeline</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Weeks 1-2: Analytics Strategy & Foundation</h3>
+                        <p>Analytics maturity assessment, data literacy, OKRs → KPI development, supply chain metrics introduction</p>
+                        <strong>Key Deliverable:</strong> Analytics Readiness Assessment
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Weeks 3-4: Data Management & Governance</h3>
+                        <p>Data governance frameworks, quality standards, security protocols, storage infrastructure</p>
+                        <strong>Key Deliverable:</strong> Data Governance Plan
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Weeks 5-6: Data Preparation & Wrangling</h3>
+                        <p>Data profiling, cleaning, enrichment, and transformation for analytics-ready datasets</p>
+                        <strong>Key Deliverable:</strong> Data Cleaning Project
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Weeks 7-8: Descriptive Analytics & Visualization</h3>
+                        <p>Descriptive statistics, RFM analysis, Pareto analysis, data storytelling, dashboard creation</p>
+                        <strong>Key Deliverable:</strong> Executive Dashboard
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Weeks 9-10: Diagnostic Analytics & Quality</h3>
+                        <p>Root-cause analysis, CAPA methodologies, Six Sigma principles for operational improvement</p>
+                        <strong>Key Deliverable:</strong> Quality Improvement Case Study
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Weeks 11-12: Predictive Analytics & Planning</h3>
+                        <p>Time series forecasting, regression modeling, demand planning, inventory optimization, S&OP</p>
+                        <strong>Key Deliverable:</strong> Demand Forecasting Model
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Weeks 13-15: Prescriptive Analytics & Optimization</h3>
+                        <p>Optimization algorithms, simulation modeling, constraint management, location strategy, supplier selection</p>
+                        <strong>Key Deliverable:</strong> Comprehensive Analytics Capstone Project
+                    </div>
+                </div>
+            </section>
+
+            <section id="grading" class="section">
+                <h2 class="section-title">Grading Scheme</h2>
+                <div class="grade-grid">
+                    <div class="grade-item">
+                        <div class="grade-percentage">30%</div>
+                        <div>Analytics Projects (6 weekly)</div>
+                    </div>
+                    <div class="grade-item">
+                        <div class="grade-percentage">25%</div>
+                        <div>Capstone Analytics Project</div>
+                    </div>
+                    <div class="grade-item">
+                        <div class="grade-percentage">20%</div>
+                        <div>Lab Assignments & Data Challenges</div>
+                    </div>
+                    <div class="grade-item">
+                        <div class="grade-percentage">15%</div>
+                        <div>Midterm Practical Exam</div>
+                    </div>
+                    <div class="grade-item">
+                        <div class="grade-percentage">10%</div>
+                        <div>Class Participation & Reflection Journals</div>
+                    </div>
+                </div>
+                
+                <div class="card" style="margin-top: 2rem;">
+                    <h3>Letter Grade Scale</h3>
+                    <p><strong>A:</strong> 93-100% | <strong>A-:</strong> 90-92% | <strong>B+:</strong> 87-89% | <strong>B:</strong> 83-86% | <strong>B-:</strong> 80-82% | <strong>C+:</strong> 77-79% | <strong>C:</strong> 73-76% | <strong>C-:</strong> 70-72% | <strong>D:</strong> 60-69% | <strong>F:</strong> Below 60%</p>
+                </div>
+            </section>
+
+            <section id="toolkit" class="section">
+                <h2 class="section-title">Tips for Succeeding in Class</h2>
+                
+                <div class="success-toolkit">
+                    <h3 style="text-align: center; margin-bottom: 2rem; font-size: 1.5rem;">5 Keys to Success in This Course</h3>
+                    
+                    <div class="card">
+                        <h3>🎯 Stay Present & Engaged</h3>
+                        <p>Show up — in person, on Teams, and in conversations. The more visible you are, the more I can coach you toward success. Disappearing is the fastest way to fall behind.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>💡 Bring Solutions, Not Just Problems</h3>
+                        <p>Challenges will come up: a tricky assignment, a group conflict, a late submission. When you reach out, also suggest a possible solution. This shows initiative and makes it easier for us to problem-solve together.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>🤝 Build a Professional Relationship</h3>
+                        <p>Treat this class like a career opportunity. Ask questions, <a href="https://www.linkedin.com/in/lontok" target="_blank" rel="noopener noreferrer">connect with me on LinkedIn</a>, and seek feedback. Faculty often recommend students for jobs, but only if they know and trust you.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>💼 Practice Professionalism Daily</h3>
+                        <p>How you write emails, present your work, and collaborate with peers reflects directly on your future career. Use this class as a low-risk environment to practice the habits employers value.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>🗣️ Find Your Voice</h3>
+                        <p>Speaking up in class isn't the only way to contribute. Use Teams chat, post questions, or share resources. What matters is showing that you are actively learning and thinking — not staying silent.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="policies" class="section">
+                <h2 class="section-title">Policies</h2>
+                
+                <div class="success-toolkit" style="margin-bottom: 2rem;">
+                    <h2 style="text-align: center; margin-bottom: 1rem; color: #2c3e50;">🤖 Artificial Intelligence (AI) Policy</h2>
+                    <p style="text-align: center; margin-bottom: 2rem; font-size: 1.1rem;">AI is a core part of this course and your future career</p>
+                    
+                    <div class="card">
+                        <p>I describe myself as an AI optimist: I believe these tools will shape the future of work and create new opportunities, but I also know they can be misused if relied on without thought. In this class, AI is treated the same way employers are starting to treat it — as a tool, not a substitute for your judgment.</p>
+                        
+                        <p>We will be using AI throughout the course. My goal is to help you learn how to use it effectively and responsibly, and to make your ability to use AI a skill differentiator that sets you apart in internships and job interviews.</p>
+                    </div>
+
+                    <div class="card">
+                        <h3>✅ You may use AI to:</h3>
+                        <ul>
+                            <li>Brainstorm ideas or outlines for assignments</li>
+                            <li>Reformat, polish, or reword text you've already written</li>
+                            <li>Automate routine tasks (for example, cleaning or formatting data in Excel)</li>
+                            <li>Explore alternative approaches to a problem (but not copy-paste answers)</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>❌ You may not use AI to:</h3>
+                        <ul>
+                            <li>Generate complete assignments, projects, or exam answers and submit them as your own</li>
+                            <li>Avoid learning the underlying skills we're practicing (for example, running a regression, building a forecast, designing a visualization)</li>
+                            <li>Hide your use of AI. Transparency matters</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>📋 Expectations:</h3>
+                        <ul>
+                            <li>If you use AI in your work, disclose it (for example, "I used ChatGPT to help me brainstorm project ideas")</li>
+                            <li>I grade your understanding and ability to explain your process, not just the final answer. If you can't explain your solution without the tool, you haven't met the learning goal</li>
+                            <li>Think of AI as a junior analyst — useful, but still needs your oversight</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>🎯 Bottom Line</h3>
+                        <p>AI can give you leverage, but your critical thinking, decision-making, and ability to explain your work are what will make you stand out. Use this course to practice turning AI from a shortcut into a competitive advantage.</p>
+                        
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Attendance & Participation</h3>
+                    <div>
+                        <p>If you feel ill, please stay home to keep others safe and recover.</p>
+                        
+                        <p>If an unexpected obligation arises that prevents you from attending class, please let me know before class or within 12 hours after the class start time. I get there are emergencies or things that come up. Do your best to tell me in advance (at least a day before, if possible). I'm most concerned about you communicating and keeping me in the loop.</p>
+                        
+                        <p><strong>Each undocumented absence is -2% of your total class grade.</strong></p>
+                        
+                        <p><Participation includes quality of contributions, preparation for class, and engagement in discussions.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Assignment Submission</h3>
+                    <div>
+                        <p>All assignments must be submitted via Brightspace by 11:59 PM on the due date. Late submissions will result in a <strong>10% reduction per day</strong> unless prior arrangements are made.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Academic Honesty</h3>
+                    <div>
+                        <p>All work must be original and properly cited. Collaboration is encouraged for group projects but individual assignments must represent your own work. See <a href="https://academics.lmu.edu/honesty/" target="_blank" rel="noopener noreferrer">LMU Academic Honesty Policy</a> for complete details.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Accommodations</h3>
+                    <div>
+                        <p>Students with documented disabilities who may need special accommodations should discuss these needs with me early in the semester. Please contact <a href="https://academics.lmu.edu/dss/" target="_blank" rel="noopener noreferrer">Disability Support Services</a> for assistance.</p>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3>Syllabus Changes</h3>
+                    <p>This syllabus may be revised during the semester. Changes will be announced in class and via email, and students are responsible for staying informed of modifications.</p>
+                </div>
+            </section>
+        </main>
+
+        <div class="web-only" style="text-align: center; padding: 2rem; background: #f8f9fa; margin-top: 2rem;">
+            <p style="color: #6c757d; margin-bottom: 1rem;">
+                💡 <strong>Tip:</strong> Use your browser's print function (Ctrl/Cmd + P) to save this syllabus as a PDF for offline access.
+            </p>
+            <p style="color: #6c757d;">
+                🔗 <strong>Bookmark this page</strong> for quick access to course resources and updates throughout the semester.
+            </p>
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2025 Loyola Marymount University | College of Business Administration</p>
+            <p>BCOR 3750 - Operations & Supply Chain Analytics | Prof. Greg Lontok</p>
+            <div class="print-only" style="margin-top: 1rem; font-size: 0.9em;">
+                <p>📱 Interactive version available at: [GitHub Pages URL will be updated after deployment]</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Smooth scrolling navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+
+        // Add some interactive animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        document.querySelectorAll('.card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
