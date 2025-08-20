@@ -182,41 +182,79 @@
             opacity: 0.9;
         }
         
-        .timeline {
-            position: relative;
-            padding-left: 2rem;
-        }
-        
-        .timeline::before {
-            content: '';
-            position: absolute;
-            left: 10px;
-            top: 0;
-            bottom: 0;
-            width: 2px;
-            background: #0076A5;
-        }
-        
-        .timeline-item {
-            position: relative;
-            margin-bottom: 2rem;
+        .schedule-table {
             background: white;
-            padding: 1.5rem;
-            border-radius: 12px;
+            border-radius: 8px;
+            overflow: hidden;
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
         
-        .timeline-item::before {
-            content: '';
-            position: absolute;
-            left: -1.75rem;
-            top: 1.5rem;
-            width: 12px;
-            height: 12px;
+        .schedule-header {
+            display: grid;
+            grid-template-columns: 80px 100px 60px 1fr;
             background: #0076A5;
-            border-radius: 50%;
-            border: 3px solid white;
-            box-shadow: 0 0 0 3px #0076A5;
+            color: white;
+            font-weight: 600;
+            border-bottom: 2px solid #005280;
+        }
+        
+        .schedule-col {
+            padding: 1rem 0.75rem;
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .schedule-col:last-child {
+            border-right: none;
+        }
+        
+        .schedule-row {
+            display: grid;
+            grid-template-columns: 80px 100px 60px 1fr;
+            border-bottom: 1px solid #f0f0f0;
+            transition: background-color 0.2s ease;
+        }
+        
+        .schedule-row:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .schedule-row .schedule-col {
+            padding: 0.75rem;
+            border-right: 1px solid #f0f0f0;
+            font-size: 0.9rem;
+        }
+        
+        .schedule-section {
+            background: #C8C9C7;
+            padding: 0.5rem 0.75rem;
+            border-bottom: 2px solid #0076A5;
+        }
+        
+        .schedule-section-title {
+            font-weight: 700;
+            color: #2c3e50;
+            font-size: 1rem;
+        }
+        
+        .schedule-row.no-class {
+            background-color: #f8f9fa;
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        .schedule-row.midterm {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+        }
+        
+        .schedule-row.final {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+        }
+        
+        .schedule-row.zoom {
+            background-color: #e7f3ff;
+            border-left: 4px solid #0076A5;
         }
         
         .grade-grid {
@@ -318,8 +356,19 @@
                 padding: 1rem;
             }
             
-            .timeline {
-                padding-left: 1rem;
+            .schedule-header,
+            .schedule-row {
+                grid-template-columns: 60px 80px 50px 1fr;
+                font-size: 0.8rem;
+            }
+            
+            .schedule-col {
+                padding: 0.5rem 0.4rem;
+            }
+            
+            .schedule-row .schedule-col {
+                padding: 0.6rem 0.4rem;
+                font-size: 0.8rem;
             }
             
             .course-info-bar {
@@ -457,9 +506,14 @@
                 font-size: 14pt !important;
             }
             
-            .timeline-item {
+            .schedule-table {
+                font-size: 10pt !important;
                 break-inside: avoid;
-                margin-bottom: 10pt !important;
+            }
+            
+            .schedule-header,
+            .schedule-row {
+                grid-template-columns: 60px 80px 50px 1fr !important;
             }
             
             
@@ -581,42 +635,243 @@
             </section>
 
             <section id="schedule" class="section">
-                <h2 class="section-title">Course Timeline</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <h3>Weeks 1-2: Analytics Strategy & Foundation</h3>
-                        <p>Analytics maturity assessment, data literacy, OKRs → KPI development, supply chain metrics introduction</p>
-                        <strong>Key Deliverable:</strong> Analytics Readiness Assessment
+                <h2 class="section-title">Course Schedule</h2>
+                
+                <div class="schedule-table">
+                    <div class="schedule-header">
+                        <div class="schedule-col">Week</div>
+                        <div class="schedule-col">Date</div>
+                        <div class="schedule-col">Day</div>
+                        <div class="schedule-col">Topic</div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Weeks 3-4: Data Management & Governance</h3>
-                        <p>Data governance frameworks, quality standards, security protocols, storage infrastructure</p>
-                        <strong>Key Deliverable:</strong> Data Governance Plan
+                    
+                    <div class="schedule-section">
+                        <div class="schedule-section-title">Analytics Strategy</div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Weeks 5-6: Data Preparation & Wrangling</h3>
-                        <p>Data profiling, cleaning, enrichment, and transformation for analytics-ready datasets</p>
-                        <strong>Key Deliverable:</strong> Data Cleaning Project
+                    
+                    <div class="schedule-row">
+                        <div class="schedule-col">1</div>
+                        <div class="schedule-col">Aug 26</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Intro to Operations & Supply Chain Analytics</div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Weeks 7-8: Descriptive Analytics & Visualization</h3>
-                        <p>Descriptive statistics, RFM analysis, Pareto analysis, data storytelling, dashboard creation</p>
-                        <strong>Key Deliverable:</strong> Executive Dashboard
+                    <div class="schedule-row">
+                        <div class="schedule-col">1</div>
+                        <div class="schedule-col">Aug 28</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Operations & Supply Chain Metrics</div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Weeks 9-10: Diagnostic Analytics & Quality</h3>
-                        <p>Root-cause analysis, CAPA methodologies, Six Sigma principles for operational improvement</p>
-                        <strong>Key Deliverable:</strong> Quality Improvement Case Study
+                    <div class="schedule-row no-class">
+                        <div class="schedule-col">2</div>
+                        <div class="schedule-col">Sep 01</div>
+                        <div class="schedule-col">Mon</div>
+                        <div class="schedule-col">Labor Day - No Class</div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Weeks 11-12: Predictive Analytics & Planning</h3>
-                        <p>Time series forecasting, regression modeling, demand planning, inventory optimization, S&OP</p>
-                        <strong>Key Deliverable:</strong> Demand Forecasting Model
+                    <div class="schedule-row">
+                        <div class="schedule-col">2</div>
+                        <div class="schedule-col">Sep 02</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Productivity and AI Productivity</div>
                     </div>
-                    <div class="timeline-item">
-                        <h3>Weeks 13-15: Prescriptive Analytics & Optimization</h3>
-                        <p>Optimization algorithms, simulation modeling, constraint management, location strategy, supplier selection</p>
-                        <strong>Key Deliverable:</strong> Comprehensive Analytics Capstone Project
+                    <div class="schedule-row">
+                        <div class="schedule-col">2</div>
+                        <div class="schedule-col">Sep 04</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Project Management</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">3</div>
+                        <div class="schedule-col">Sep 09</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Data Governance, Quality, and Security</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">3</div>
+                        <div class="schedule-col">Sep 11</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Data Preparation</div>
+                    </div>
+                    
+                    <div class="schedule-section">
+                        <div class="schedule-section-title">Descriptive Statistics</div>
+                    </div>
+                    
+                    <div class="schedule-row">
+                        <div class="schedule-col">4</div>
+                        <div class="schedule-col">Sep 16</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Descriptive Statistics & Exploratory Data Analysis (EDA)</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">4</div>
+                        <div class="schedule-col">Sep 18</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Segmentation, RFM, Pareto</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">5</div>
+                        <div class="schedule-col">Sep 23</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Data Storytelling & Dashboards</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">5</div>
+                        <div class="schedule-col">Sep 25</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Root-Cause Analysis</div>
+                    </div>
+                    
+                    <div class="schedule-section">
+                        <div class="schedule-section-title">Predictive Analytics</div>
+                    </div>
+                    
+                    <div class="schedule-row">
+                        <div class="schedule-col">6</div>
+                        <div class="schedule-col">Sep 30</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Predictive Analytics & Time Series Forecasting I</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">6</div>
+                        <div class="schedule-col">Oct 02</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Time Series Forecasting II</div>
+                    </div>
+                    <div class="schedule-row midterm">
+                        <div class="schedule-col">7</div>
+                        <div class="schedule-col">Oct 07</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Midterm Interview Review</div>
+                    </div>
+                    <div class="schedule-row midterm">
+                        <div class="schedule-col">7</div>
+                        <div class="schedule-col">Oct 09</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Midterm Interview II</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">8</div>
+                        <div class="schedule-col">Oct 14</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Regression I</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">8</div>
+                        <div class="schedule-col">Oct 16</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Regression II</div>
+                    </div>
+                    
+                    <div class="schedule-section">
+                        <div class="schedule-section-title">Prescriptive Analytics</div>
+                    </div>
+                    
+                    <div class="schedule-row">
+                        <div class="schedule-col">9</div>
+                        <div class="schedule-col">Oct 21</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Prescriptive Analytics, Aggregate Planning & S&OP</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">9</div>
+                        <div class="schedule-col">Oct 23</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Inventory Management I</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">10</div>
+                        <div class="schedule-col">Oct 28</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Inventory Management II</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">10</div>
+                        <div class="schedule-col">Oct 30</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Optimization (Linear Programming) I</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">11</div>
+                        <div class="schedule-col">Nov 04</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Optimization (Linear Programming) II</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">11</div>
+                        <div class="schedule-col">Nov 06</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Simulation (Monte Carlo) I</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">12</div>
+                        <div class="schedule-col">Nov 11</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Simulation (Monte Carlo) II</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">12</div>
+                        <div class="schedule-col">Nov 13</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Capacity & Constraint Management</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">13</div>
+                        <div class="schedule-col">Nov 18</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Location Strategy</div>
+                    </div>
+                    
+                    <div class="schedule-section">
+                        <div class="schedule-section-title">Continuous Improvement</div>
+                    </div>
+                    
+                    <div class="schedule-row">
+                        <div class="schedule-col">13</div>
+                        <div class="schedule-col">Nov 20</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Six Sigma & Quality Analytics</div>
+                    </div>
+                    <div class="schedule-row zoom">
+                        <div class="schedule-col">14</div>
+                        <div class="schedule-col">Nov 25</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Lean Operations - Zoom Class</div>
+                    </div>
+                    <div class="schedule-row no-class">
+                        <div class="schedule-col">15</div>
+                        <div class="schedule-col">Nov 27</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Thanksgiving Holiday - No Class</div>
+                    </div>
+                    <div class="schedule-row">
+                        <div class="schedule-col">14</div>
+                        <div class="schedule-col">Dec 02</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Supply Chain Management Strategy</div>
+                    </div>
+                    <div class="schedule-row final">
+                        <div class="schedule-col">15</div>
+                        <div class="schedule-col">Dec 04</div>
+                        <div class="schedule-col">Thu</div>
+                        <div class="schedule-col">Final Interview Review</div>
+                    </div>
+                    <div class="schedule-row final">
+                        <div class="schedule-col">16</div>
+                        <div class="schedule-col">Dec 08</div>
+                        <div class="schedule-col">Mon</div>
+                        <div class="schedule-col">Final Interview I</div>
+                    </div>
+                    <div class="schedule-row final">
+                        <div class="schedule-col">16</div>
+                        <div class="schedule-col">Dec 09</div>
+                        <div class="schedule-col">Tue</div>
+                        <div class="schedule-col">Final Interview II</div>
+                    </div>
+                    <div class="schedule-row final">
+                        <div class="schedule-col">16</div>
+                        <div class="schedule-col">Dec 10</div>
+                        <div class="schedule-col">Wed</div>
+                        <div class="schedule-col">Final Interview III</div>
                     </div>
                 </div>
             </section>
