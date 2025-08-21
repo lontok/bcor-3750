@@ -287,6 +287,51 @@
             color: #0076A5;
         }
         
+        .points-table {
+            margin-top: 1rem;
+        }
+        
+        .points-header {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            background: #0076A5;
+            color: white;
+            font-weight: 600;
+            border-radius: 6px 6px 0 0;
+        }
+        
+        .points-row {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .points-total {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            background: #C8C9C7;
+            font-weight: 600;
+            border-radius: 0 0 6px 6px;
+        }
+        
+        .points-col {
+            padding: 0.75rem;
+            text-align: center;
+            border-right: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .points-col:first-child {
+            text-align: left;
+        }
+        
+        .points-col:last-child {
+            border-right: none;
+        }
+        
+        .points-row .points-col {
+            border-right: 1px solid #f0f0f0;
+        }
+        
         .resource-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -414,6 +459,17 @@
             
             .contact-label {
                 font-size: 0.75rem;
+            }
+            
+            .points-header,
+            .points-row,
+            .points-total {
+                grid-template-columns: 2fr 0.8fr 0.8fr 0.8fr;
+                font-size: 0.85rem;
+            }
+            
+            .points-col {
+                padding: 0.5rem 0.3rem;
             }
         }
         
@@ -914,6 +970,42 @@
                 </div>
                 
                 <div class="card" style="margin-top: 2rem;">
+                    <h3>Detailed Point Breakdown</h3>
+                    <div class="points-table">
+                        <div class="points-header">
+                            <div class="points-col">Item</div>
+                            <div class="points-col">Quantity</div>
+                            <div class="points-col">Points Per Item</div>
+                            <div class="points-col">Total Points</div>
+                        </div>
+                        <div class="points-row">
+                            <div class="points-col">Lesson Exercises</div>
+                            <div class="points-col">10</div>
+                            <div class="points-col">1.5</div>
+                            <div class="points-col">15</div>
+                        </div>
+                        <div class="points-row">
+                            <div class="points-col">Interviews</div>
+                            <div class="points-col">2</div>
+                            <div class="points-col">20</div>
+                            <div class="points-col">40</div>
+                        </div>
+                        <div class="points-row">
+                            <div class="points-col">Project Milestones</div>
+                            <div class="points-col">3</div>
+                            <div class="points-col">15</div>
+                            <div class="points-col">45</div>
+                        </div>
+                        <div class="points-total">
+                            <div class="points-col"></div>
+                            <div class="points-col"><strong>15</strong></div>
+                            <div class="points-col"></div>
+                            <div class="points-col"><strong>100</strong></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card" style="margin-top: 1rem;">
                     <h3>Letter Grade Scale</h3>
                     <p><strong>A:</strong> 93-100% | <strong>A-:</strong> 90-92% | <strong>B+:</strong> 87-89% | <strong>B:</strong> 83-86% | <strong>B-:</strong> 80-82% | <strong>C+:</strong> 77-79% | <strong>C:</strong> 73-76% | <strong>C-:</strong> 70-72% | <strong>D:</strong> 60-69% | <strong>F:</strong> Below 60%</p>
                 </div>
