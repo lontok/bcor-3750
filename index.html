@@ -332,6 +332,62 @@
             border-right: 1px solid #f0f0f0;
         }
         
+        .grade-scale-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        
+        .grade-scale-item {
+            text-align: center;
+            padding: 1rem 0.5rem;
+            border-radius: 8px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+        }
+        
+        .grade-letter {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+        
+        .grade-range {
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .grade-a, .grade-a-minus {
+            background: #d4edda;
+            color: #155724;
+            border-color: #28a745;
+        }
+        
+        .grade-b-plus, .grade-b, .grade-b-minus {
+            background: #cce7ff;
+            color: #004085;
+            border-color: #0076A5;
+        }
+        
+        .grade-c-plus, .grade-c, .grade-c-minus {
+            background: #fff3cd;
+            color: #856404;
+            border-color: #ffc107;
+        }
+        
+        .grade-d {
+            background: #fde2e4;
+            color: #721c24;
+            border-color: #fd7e14;
+        }
+        
+        .grade-f {
+            background: #f8d7da;
+            color: #721c24;
+            border-color: #dc3545;
+        }
+        
         .resource-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -471,6 +527,23 @@
             .points-col {
                 padding: 0.5rem 0.3rem;
             }
+            
+            .grade-scale-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.5rem;
+            }
+            
+            .grade-scale-item {
+                padding: 0.75rem 0.4rem;
+            }
+            
+            .grade-letter {
+                font-size: 1.2rem;
+            }
+            
+            .grade-range {
+                font-size: 0.8rem;
+            }
         }
         
         @media (max-width: 480px) {
@@ -484,6 +557,10 @@
             
             .contact-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .grade-scale-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
         
@@ -948,24 +1025,16 @@
                 <h2 class="section-title">Grading Scheme</h2>
                 <div class="grade-grid">
                     <div class="grade-item">
-                        <div class="grade-percentage">30%</div>
-                        <div>Analytics Projects (6 weekly)</div>
+                        <div class="grade-percentage">45%</div>
+                        <div>Project Milestones</div>
                     </div>
                     <div class="grade-item">
-                        <div class="grade-percentage">25%</div>
-                        <div>Capstone Analytics Project</div>
-                    </div>
-                    <div class="grade-item">
-                        <div class="grade-percentage">20%</div>
-                        <div>Lab Assignments & Data Challenges</div>
+                        <div class="grade-percentage">40%</div>
+                        <div>Interviews</div>
                     </div>
                     <div class="grade-item">
                         <div class="grade-percentage">15%</div>
-                        <div>Midterm Practical Exam</div>
-                    </div>
-                    <div class="grade-item">
-                        <div class="grade-percentage">10%</div>
-                        <div>Class Participation & Reflection Journals</div>
+                        <div>Lesson Exercises</div>
                     </div>
                 </div>
                 
@@ -1007,7 +1076,48 @@
                 
                 <div class="card" style="margin-top: 1rem;">
                     <h3>Letter Grade Scale</h3>
-                    <p><strong>A:</strong> 93-100% | <strong>A-:</strong> 90-92% | <strong>B+:</strong> 87-89% | <strong>B:</strong> 83-86% | <strong>B-:</strong> 80-82% | <strong>C+:</strong> 77-79% | <strong>C:</strong> 73-76% | <strong>C-:</strong> 70-72% | <strong>D:</strong> 60-69% | <strong>F:</strong> Below 60%</p>
+                    <div class="grade-scale-grid">
+                        <div class="grade-scale-item grade-a">
+                            <div class="grade-letter">A</div>
+                            <div class="grade-range">93-100%</div>
+                        </div>
+                        <div class="grade-scale-item grade-a-minus">
+                            <div class="grade-letter">A-</div>
+                            <div class="grade-range">90-92%</div>
+                        </div>
+                        <div class="grade-scale-item grade-b-plus">
+                            <div class="grade-letter">B+</div>
+                            <div class="grade-range">87-89%</div>
+                        </div>
+                        <div class="grade-scale-item grade-b">
+                            <div class="grade-letter">B</div>
+                            <div class="grade-range">83-86%</div>
+                        </div>
+                        <div class="grade-scale-item grade-b-minus">
+                            <div class="grade-letter">B-</div>
+                            <div class="grade-range">80-82%</div>
+                        </div>
+                        <div class="grade-scale-item grade-c-plus">
+                            <div class="grade-letter">C+</div>
+                            <div class="grade-range">77-79%</div>
+                        </div>
+                        <div class="grade-scale-item grade-c">
+                            <div class="grade-letter">C</div>
+                            <div class="grade-range">73-76%</div>
+                        </div>
+                        <div class="grade-scale-item grade-c-minus">
+                            <div class="grade-letter">C-</div>
+                            <div class="grade-range">70-72%</div>
+                        </div>
+                        <div class="grade-scale-item grade-d">
+                            <div class="grade-letter">D</div>
+                            <div class="grade-range">60-69%</div>
+                        </div>
+                        <div class="grade-scale-item grade-f">
+                            <div class="grade-letter">F</div>
+                            <div class="grade-range">Below 60%</div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
