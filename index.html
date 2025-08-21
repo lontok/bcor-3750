@@ -86,11 +86,92 @@
         
         
         .content {
-            padding: 2rem;
+            padding: 0;
+        }
+        
+        .hero-section {
+            background: linear-gradient(135deg, #0076A5 0%, #005280 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .hero-question {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .supporting-questions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .question-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem 1.5rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+        
+        .question-card:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .question-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .question-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            line-height: 1.4;
+            margin: 0;
         }
         
         .section {
             margin-bottom: 3rem;
+            padding: 0 2rem;
         }
         
         .section-title {
@@ -451,6 +532,32 @@
                 font-size: 2rem;
             }
             
+            .hero-section {
+                padding: 3rem 1rem;
+            }
+            
+            .hero-question {
+                font-size: 2rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+            
+            .supporting-questions {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .question-card {
+                padding: 1.5rem 1rem;
+            }
+            
+            .question-icon {
+                font-size: 2.5rem;
+            }
+            
             
             
             .content {
@@ -701,6 +808,28 @@
 
 
         <main class="content">
+            <section class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-question">How do organizations maximize production efficiency, business effectiveness, and customer value?</h1>
+                    <p class="hero-subtitle">This is why you're here - to answer this question. With this knowledge, you can increase profit and customer satisfaction while producing goods and services. The course deliverables will answer this question in one form or another!</p>
+                    
+                    <div class="supporting-questions">
+                        <div class="question-card">
+                            <div class="question-icon">📊</div>
+                            <h3>How can I turn data into better decisions?</h3>
+                        </div>
+                        <div class="question-card">
+                            <div class="question-icon">💡</div>
+                            <h3>What's the smartest way to increase profit and decrease cost without sacrificing quality?</h3>
+                        </div>
+                        <div class="question-card">
+                            <div class="question-icon">🔗</div>
+                            <h3>How do leading companies design and optimize their supply chains?</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section id="course-info" class="section">
                 <h2 class="section-title">Course Information</h2>
                 
