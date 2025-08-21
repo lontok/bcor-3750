@@ -148,6 +148,11 @@
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255,255,255,0.2);
             transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200px;
         }
         
         .question-card:hover {
@@ -165,8 +170,13 @@
         .question-card h3 {
             font-size: 1.1rem;
             font-weight: 600;
-            line-height: 1.4;
+            line-height: 1.5;
             margin: 0;
+            text-align: center;
+            max-width: 280px;
+            word-wrap: break-word;
+            hyphens: auto;
+            text-wrap: balance;
         }
         
         .section {
@@ -552,6 +562,12 @@
             
             .question-card {
                 padding: 1.5rem 1rem;
+                min-height: 180px;
+            }
+            
+            .question-card h3 {
+                max-width: 250px;
+                font-size: 1rem;
             }
             
             .question-icon {
@@ -820,7 +836,7 @@
                         </div>
                         <div class="question-card">
                             <div class="question-icon">💡</div>
-                            <h3>What's the smartest way to increase profit and decrease cost without sacrificing quality?</h3>
+                            <h3>What's the smartest way to increase profit while decreasing cost without sacrificing quality?</h3>
                         </div>
                         <div class="question-card">
                             <div class="question-icon">🔗</div>
