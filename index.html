@@ -184,6 +184,10 @@
             padding: 0 2rem;
         }
         
+        #course-info {
+            margin-top: 3rem;
+        }
+        
         .section-title {
             font-size: 1.8rem;
             color: #2c3e50;
@@ -282,7 +286,7 @@
         
         .schedule-header {
             display: grid;
-            grid-template-columns: 80px 100px 60px 1fr;
+            grid-template-columns: 80px 100px 60px 2fr 180px;
             background: #0076A5;
             color: white;
             font-weight: 600;
@@ -300,7 +304,7 @@
         
         .schedule-row {
             display: grid;
-            grid-template-columns: 80px 100px 60px 1fr;
+            grid-template-columns: 80px 100px 60px 2fr 180px;
             border-bottom: 1px solid #f0f0f0;
             transition: background-color 0.2s ease;
         }
@@ -582,7 +586,7 @@
             
             .schedule-header,
             .schedule-row {
-                grid-template-columns: 60px 80px 50px 1fr;
+                grid-template-columns: 50px 70px 40px 2fr 140px;
                 font-size: 0.8rem;
             }
             
@@ -769,7 +773,7 @@
             
             .schedule-header,
             .schedule-row {
-                grid-template-columns: 60px 80px 50px 1fr !important;
+                grid-template-columns: 50px 70px 40px 2fr 140px !important;
             }
             
             
@@ -920,6 +924,7 @@
                         <div class="schedule-col">Date</div>
                         <div class="schedule-col">Day</div>
                         <div class="schedule-col">Topic</div>
+                        <div class="schedule-col">Due</div>
                     </div>
                     
                     <div class="schedule-section">
@@ -931,42 +936,49 @@
                         <div class="schedule-col">Aug 26</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Intro to Operations & Supply Chain Analytics</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">1</div>
                         <div class="schedule-col">Aug 28</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Operations & Supply Chain Metrics</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row no-class">
                         <div class="schedule-col">2</div>
                         <div class="schedule-col">Sep 01</div>
                         <div class="schedule-col">Mon</div>
                         <div class="schedule-col">Labor Day - No Class</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">2</div>
                         <div class="schedule-col">Sep 02</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Productivity and AI Productivity</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">2</div>
                         <div class="schedule-col">Sep 04</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Project Management</div>
+                        <div class="schedule-col">Lesson Exercise 01</div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">3</div>
                         <div class="schedule-col">Sep 09</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Data Governance, Quality, and Security</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">3</div>
                         <div class="schedule-col">Sep 11</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Data Preparation</div>
+                        <div class="schedule-col">Lesson Exercise 02</div>
                     </div>
                     
                     <div class="schedule-section">
@@ -978,24 +990,28 @@
                         <div class="schedule-col">Sep 16</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Descriptive Statistics & Exploratory Data Analysis (EDA)</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">4</div>
                         <div class="schedule-col">Sep 18</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Segmentation, RFM, Pareto</div>
+                        <div class="schedule-col">Lesson Exercise 03</div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">5</div>
                         <div class="schedule-col">Sep 23</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Data Storytelling & Dashboards</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">5</div>
                         <div class="schedule-col">Sep 25</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Root-Cause Analysis</div>
+                        <div class="schedule-col">Lesson Exercise 04</div>
                     </div>
                     
                     <div class="schedule-section">
@@ -1007,48 +1023,56 @@
                         <div class="schedule-col">Sep 30</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Predictive Analytics & Time Series Forecasting 01</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">6</div>
                         <div class="schedule-col">Oct 02</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Time Series Forecasting 02</div>
+                        <div class="schedule-col">Lesson Exercise 05</div>
                     </div>
                     <div class="schedule-row midterm">
                         <div class="schedule-col">7</div>
                         <div class="schedule-col">Oct 07</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Midterm Interview Review</div>
+                        <div class="schedule-col"><strong>Project Milestone 01</strong></div>
                     </div>
                     <div class="schedule-row midterm">
                         <div class="schedule-col">7</div>
                         <div class="schedule-col">Oct 08</div>
                         <div class="schedule-col">Wed</div>
                         <div class="schedule-col">Midterm Interview 01</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row midterm">
                         <div class="schedule-col">7</div>
                         <div class="schedule-col">Oct 09</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Midterm Interview 02</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row midterm">
                         <div class="schedule-col">7</div>
                         <div class="schedule-col">Oct 10</div>
                         <div class="schedule-col">Fri</div>
                         <div class="schedule-col">Midterm Interview 03</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">8</div>
                         <div class="schedule-col">Oct 14</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Regression 01</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">8</div>
                         <div class="schedule-col">Oct 16</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Regression 02</div>
+                        <div class="schedule-col">Lesson Exercise 06</div>
                     </div>
                     
                     <div class="schedule-section">
@@ -1060,54 +1084,63 @@
                         <div class="schedule-col">Oct 21</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Prescriptive Analytics, Aggregate Planning & S&OP</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">9</div>
                         <div class="schedule-col">Oct 23</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Inventory Management 01</div>
+                        <div class="schedule-col"><strong>Project Milestone 02</strong></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">10</div>
                         <div class="schedule-col">Oct 28</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Inventory Management 02</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">10</div>
                         <div class="schedule-col">Oct 30</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Optimization (Linear Programming) 01</div>
+                        <div class="schedule-col">Lesson Exercise 07</div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">11</div>
                         <div class="schedule-col">Nov 04</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Optimization (Linear Programming) 02</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">11</div>
                         <div class="schedule-col">Nov 06</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Simulation (Monte Carlo) 01</div>
+                        <div class="schedule-col">Lesson Exercise 08</div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">12</div>
                         <div class="schedule-col">Nov 11</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Simulation (Monte Carlo) 02</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">12</div>
                         <div class="schedule-col">Nov 13</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Capacity & Constraint Management</div>
+                        <div class="schedule-col">Lesson Exercise 09</div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">13</div>
                         <div class="schedule-col">Nov 18</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Location Strategy</div>
+                        <div class="schedule-col"></div>
                     </div>
                     
                     <div class="schedule-section">
@@ -1119,48 +1152,56 @@
                         <div class="schedule-col">Nov 20</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Six Sigma & Quality Analytics</div>
+                        <div class="schedule-col">Lesson Exercise 10</div>
                     </div>
                     <div class="schedule-row zoom">
                         <div class="schedule-col">14</div>
                         <div class="schedule-col">Nov 25</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Lean Operations - Zoom Class</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row no-class">
                         <div class="schedule-col">15</div>
                         <div class="schedule-col">Nov 27</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Thanksgiving Holiday - No Class</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row">
                         <div class="schedule-col">14</div>
                         <div class="schedule-col">Dec 02</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Supply Chain Management Strategy</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row final">
                         <div class="schedule-col">15</div>
                         <div class="schedule-col">Dec 04</div>
                         <div class="schedule-col">Thu</div>
                         <div class="schedule-col">Final Interview Review</div>
+                        <div class="schedule-col"><strong>Project Milestone 03</strong></div>
                     </div>
                     <div class="schedule-row final">
                         <div class="schedule-col">16</div>
                         <div class="schedule-col">Dec 08</div>
                         <div class="schedule-col">Mon</div>
                         <div class="schedule-col">Final Interview 01</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row final">
                         <div class="schedule-col">16</div>
                         <div class="schedule-col">Dec 09</div>
                         <div class="schedule-col">Tue</div>
                         <div class="schedule-col">Final Interview 02</div>
+                        <div class="schedule-col"></div>
                     </div>
                     <div class="schedule-row final">
                         <div class="schedule-col">16</div>
                         <div class="schedule-col">Dec 10</div>
                         <div class="schedule-col">Wed</div>
                         <div class="schedule-col">Final Interview 03</div>
+                        <div class="schedule-col"></div>
                     </div>
                 </div>
             </section>
@@ -1198,20 +1239,38 @@
                             <div class="points-col">15</div>
                         </div>
                         <div class="points-row">
-                            <div class="points-col">Interviews</div>
-                            <div class="points-col">2</div>
-                            <div class="points-col">20</div>
-                            <div class="points-col">40</div>
+                            <div class="points-col">Midterm Interview</div>
+                            <div class="points-col">1</div>
+                            <div class="points-col">15</div>
+                            <div class="points-col">15</div>
                         </div>
                         <div class="points-row">
-                            <div class="points-col">Project Milestones</div>
-                            <div class="points-col">3</div>
+                            <div class="points-col">Final Interview</div>
+                            <div class="points-col">1</div>
+                            <div class="points-col">25</div>
+                            <div class="points-col">25</div>
+                        </div>
+                        <div class="points-row">
+                            <div class="points-col">Project Milestone 01</div>
+                            <div class="points-col">1</div>
+                            <div class="points-col">10</div>
+                            <div class="points-col">10</div>
+                        </div>
+                        <div class="points-row">
+                            <div class="points-col">Project Milestone 02</div>
+                            <div class="points-col">1</div>
                             <div class="points-col">15</div>
-                            <div class="points-col">45</div>
+                            <div class="points-col">15</div>
+                        </div>
+                        <div class="points-row">
+                            <div class="points-col">Project Milestone 03</div>
+                            <div class="points-col">1</div>
+                            <div class="points-col">20</div>
+                            <div class="points-col">20</div>
                         </div>
                         <div class="points-total">
                             <div class="points-col"></div>
-                            <div class="points-col"><strong>15</strong></div>
+                            <div class="points-col"><strong>16</strong></div>
                             <div class="points-col"></div>
                             <div class="points-col"><strong>100</strong></div>
                         </div>
