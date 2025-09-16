@@ -125,7 +125,7 @@
 
 • Formula-based checks
 
-## **Address Data Quality Framework**
+## **Data Quality Framework**
 
 1. Identify the data quality issue
 
