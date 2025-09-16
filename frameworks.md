@@ -124,3 +124,15 @@
 • Visual / Point-and-click methods
 
 • Formula-based checks
+
+## **Address Data Quality Framework**
+
+1. Identify the data quality issue
+
+2. Assess the business ramification
+
+3. Analyze the root cause
+
+4. Decide on the best option (Remove / Update / Do Nothing)
+
+5. Apply the fix, if applicable
