@@ -8,7 +8,6 @@
 
 • Finance → Tracks financial performance
 
----
 
 ## **10 Operations Management Decision Areas**
 
