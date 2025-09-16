@@ -135,4 +135,4 @@
 
 4. Decide on the best option (Remove / Update / Do Nothing)
 
-5. Apply the fix, if applicable
+5. Fix the issue, if applicable
