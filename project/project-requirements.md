@@ -1,4 +1,4 @@
-# BCOR 3750 Project Requirements
+no# BCOR 3750 Project Requirements
 
 ## Table of Contents
 
@@ -196,25 +196,25 @@ Find and save a **real, currently posted job** in operations or supply chain man
 
 **Problem Statement Template:**
 
-> "[Stakeholder] at [Company] is facing [specific challenge] which is causing [business impact]. Currently, [what's not working well]. Success would look like [desired outcome]."
+> "[Stakeholder] at [Company] is facing [problem] which is causing [impact]."
 
 **Examples by Decision Area:**
 
 **Supply Chain Management:**
 
-> "The Fulfillment Operations Manager at ShopNow is facing increasing delivery times (average 5.2 days vs. target of 3 days) which is causing customer complaints to rise 40% quarter-over-quarter. Currently, they don't understand which factors (carrier, region, warehouse location) are driving delays. Success would look like identifying root causes and reducing delivery times back to 3-day target."
+> "The Fulfillment Operations Manager at ShopNow is facing increasing delivery times which is causing customer complaints to rise."
 
 **Inventory Management:**
 
-> "The Inventory Analyst at TechParts Inc. is facing high carrying costs ($2M annually, 30% above industry benchmark) combined with frequent stockouts (15% of SKUs out of stock weekly). Currently, they use fixed reorder points that don't account for demand variability. Success would look like optimizing reorder points to reduce carrying costs by 20% while maintaining 95% in-stock rate."
+> "The Inventory Analyst at TechParts Inc. is facing high carrying costs ($2M annually, 30% above industry benchmark) combined with frequent stockouts (15% of SKUs out of stock weekly)."
 
 **Process & Capacity Design:**
 
-> "The Production Planning Manager at AutoSupply Manufacturing is facing unpredictable production output (ranging from 200-400 units daily) which is causing missed customer order deadlines. Currently, they can't forecast production capacity accurately due to variable cycle times. Success would look like predicting daily production capacity within ±10% to improve order promising accuracy."
+> "The Production Planning Manager at AutoSupply Manufacturing is facing unpredictable production output which is causing missed customer order deadlines."
 
 **Quality Management:**
 
-> "The Quality Manager at FoodCo is facing increasing defect rates (currently 4.2% vs. target of 2%) which is causing customer returns and warranty costs to increase. Currently, they don't know which production factors (shift, line, supplier batch) correlate with defects. Success would look like identifying root causes and implementing controls to achieve 2% defect target."
+> "The Quality Manager at FoodCo is facing increasing defect rates which is causing customer returns and warranty costs to increase."
 
 **Action Items:**
 
