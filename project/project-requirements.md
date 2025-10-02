@@ -207,7 +207,7 @@ Find and save a **real, currently posted job** in operations or supply chain man
 
 **Inventory Management:**
 
-> "The Inventory Analyst at TechParts Inc. is facing high carrying costs ($2M annually, 30% above industry benchmark) combined with frequent stockouts (15% of SKUs out of stock weekly)."
+> "The Inventory Analyst at TechParts Inc. is facing high carrying costs (the Carrying Cost metric is well above the industry benchmark) combined with frequent stockouts (the SKU Stockout Rate shows a significant portion of items out of stock each week)."
 
 **Process & Capacity Design:**
 
