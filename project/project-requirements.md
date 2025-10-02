@@ -836,6 +836,18 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take to address this root cause?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
+  **Appendix Slide: Dashboard Links** (REQUIRED if using external dashboards)
+
+  - **Title**: "Dashboard Links"
+  - **Content**:
+    - List each external dashboard with its publicly accessible URL
+    - Include dashboard name and brief description
+    - Example format:
+      - **Strategic Dashboard**: [URL] - Executive-level view of key performance metrics
+      - **Operational Dashboard**: [URL] - Detailed operational performance and root cause analysis
+  - **CRITICAL**: Dashboard links must be publicly viewable from an incognito or private browser window (no login required)
+  - **Note**: This slide is NOT required if both dashboards are built within your Excel workbook
+
   **Key Requirements**:
 
   - **Slide Title = The Insight**: Your title should state the finding, not describe the visual type (NOT "Strategic Dashboard" or "Central Tendency Analysis")
@@ -870,7 +882,7 @@ Upload to Brightspace by **Monday, October 13, 2025, 11:59 PM**:
    - Dashboard tabs for Strategic (Executive) and Operational dashboards (if using Excel)
    - Additional analysis tabs as needed
 
-3. **`milestone-01-slides-fname-lname.pdf`** (minimum 13 slides):
+3. **`milestone-01-slides-fname-lname.pdf`** (minimum 13 slides, plus appendix slide if using external dashboards):
    - Slide 1: Project overview (job, why selected, stakeholder, problem statement)
    - Slide 2: Operations Management Decision Area with justification
    - Slide 3: Primary Metric Definition (why this metric matters and decision support)
@@ -884,6 +896,7 @@ Upload to Brightspace by **Monday, October 13, 2025, 11:59 PM**:
    - Slide 11: Operational Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
    - Slide 12: Operational Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
    - Slide 13: Operational Dashboard - Root Cause Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
+   - **Appendix**: Dashboard Links slide (REQUIRED if using Tableau, Power BI, Looker, or other external tools - must be publicly viewable from incognito/private browser)
    - **ONE visual per slide** with takeaway titles and two bullets below (Recommendation, Prediction)
 
 **Notes**:
@@ -1586,7 +1599,7 @@ Good luck! Use office hours. Start early. Make it something you're proud to show
   - [ ] Strategic Dashboard with 2+ scorecards, 1 line chart, 1 bar chart, 1+ filter
   - [ ] Operational Dashboard with 2+ scorecards, 1 line chart, 1 bar chart, 1+ filter
   - [ ] Additional analysis tabs as needed
-- [ ] **milestone-01-slides-fname-lname.pdf** (minimum 13 slides):
+- [ ] **milestone-01-slides-fname-lname.pdf** (minimum 13 slides, plus appendix if using external dashboards):
   - [ ] Slide 1: Project overview (job, why selected, stakeholder, problem statement)
   - [ ] Slide 2: Operations Management Decision Area with justification
   - [ ] Slide 3: Primary Metric Definition (why this metric matters)
@@ -1600,6 +1613,7 @@ Good luck! Use office hours. Start early. Make it something you're proud to show
   - [ ] Slide 11: Operational Dashboard - Scorecard insight with Recommendation/Prediction
   - [ ] Slide 12: Operational Dashboard - Trend insight with Recommendation/Prediction
   - [ ] Slide 13: Operational Dashboard - Root Cause Breakdown insight with Recommendation/Prediction
+  - [ ] Appendix: Dashboard Links slide (if using external dashboards - must be publicly viewable from incognito/private browser)
 
 **Milestone 2:**
 
