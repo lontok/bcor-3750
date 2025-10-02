@@ -31,7 +31,7 @@ This semester-long project is your opportunity to build a **portfolio-quality an
 ### Project Weight
 
 - **Total**: 45% of your final grade (15% per milestone)
-- **Milestone 1** (Descriptive + Diagnostic): 15% of final grade - Due **Monday, October 13, 2025**
+- **Milestone 1** (Descriptive + Diagnostic): 15% of final grade - Due **Monday, October 20, 2025**
 - **Milestone 2** (Predictive): 15% of final grade - Due **Tuesday, November 4, 2025**
 - **Milestone 3** (Prescriptive): 15% of final grade - Due **Thursday, December 4, 2025**
 
@@ -562,7 +562,7 @@ Create a **Data_Cleaning_Log** worksheet in your Excel workbook with these colum
 
 ### Milestone 1: Descriptive & Diagnostic Analytics
 
-**Due: Monday, October 13, 2025 by 11:59 PM**
+**Due: Monday, October 20, 2025 by 11:59 PM**
 **Weight: 15 points**
 
 #### What You're Answering:
@@ -614,7 +614,7 @@ You have two options for creating your dashboards:
 - Create dashboard tabs within your Excel workbook using pivot charts, slicers, and formatted visuals
 - Advantage: Everything in one file, no external dependencies
 
-**Option 2: External Dashboard Tool** (Tableau, Power BI, Looker, Google Data Studio)
+**Option 2: External Dashboard Tool** (Tableau, Power BI, Looker Studio)
 
 - Create dashboards in your preferred tool
 - **MUST be publicly accessible** (anyone with link can view - no login required)
@@ -702,7 +702,7 @@ You have two options for creating your dashboards:
 - **Dashboard Requirements** (Strategic & Operational):
 
   - **Option 1**: Excel dashboards (within the same workbook as separate tabs)
-  - **Option 2**: External tools (Tableau, Power BI, Looker, Google Data Studio)
+  - **Option 2**: External tools (Tableau, Power BI, Looker Studio)
     - Must be **publicly accessible** (anyone with link can view)
     - Include dashboard URLs in the **Dashboard_Links** tab of your Excel workbook
     - Strategic Dashboard (Descriptive): High-level view of what happened
@@ -866,7 +866,7 @@ Note: Your recommendations and predictions are already covered in each insight s
 
 #### Submission Files
 
-Upload to Brightspace by **Monday, October 13, 2025, 11:59 PM**:
+Upload to Brightspace by **Monday, October 20, 2025, 11:59 PM**:
 
 1. **`job-posting-fname-lname.pdf`** (your saved job description)
 
@@ -1190,7 +1190,7 @@ Takeaway titles communicate YOUR INSIGHT, not what the slide is about.
 
 **Midterm Interview (covers Milestone 1):**
 
-- **When**: Week of October 13-14, 2025
+- **When**: Week of October 20-22, 2025
 - **Duration**: 20 minutes + 5 minutes debrief
 - **Format**: Individual, one-on-one with professor
 - **Opening**: "Tell me about your project"
@@ -1576,7 +1576,7 @@ Good luck! Use office hours. Start early. Make it something you're proud to show
 
 ### Project Timeline Overview
 
-- **Milestone 1**: Due Monday, October 13, 2025
+- **Milestone 1**: Due Monday, October 20, 2025
 - **Milestone 2**: Due Tuesday, November 4, 2025
 - **Milestone 3**: Due Thursday, December 4, 2025
 - **Midterm Interviews**: Week 7
