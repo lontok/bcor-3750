@@ -187,6 +187,7 @@ Find and save a **real, currently posted job** in operations or supply chain man
    - Company
    - LinkedIn profile URL
    - 2-3 key responsibilities related to your analysis
+4. Add these details to **Slide 1: Project Overview** in your slide deck (see Section 4: Communicate for slide instructions) so the stakeholder information is included in your milestone submission
 
 ---
 
