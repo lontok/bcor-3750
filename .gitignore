@@ -208,3 +208,4 @@ __marimo__/
 
 # Course planning documents (private)
 planning/
+.DS_Store
