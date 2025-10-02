@@ -10,8 +10,7 @@
 - [Part 5: Presentation & Communication Guidelines](#part-5-presentation--communication-guidelines)
 - [Part 6: Interview Preparation](#part-6-interview-preparation)
 - [Part 7: Common Pitfalls & How to Avoid Them](#part-7-common-pitfalls--how-to-avoid-them)
-- [Part 8: Resources & Support](#part-8-resources--support)
-- [Part 9: Frequently Asked Questions (FAQ)](#part-9-frequently-asked-questions-faq)
+- [Part 8: Frequently Asked Questions (FAQ)](#part-8-frequently-asked-questions-faq)
 - [Conclusion](#conclusion)
 - [Appendix: Quick Reference](#appendix-quick-reference)
 
@@ -1435,56 +1434,7 @@ Example:
 
 ---
 
-## Part 8: Resources & Support
-
-### Custom GPT: Data Craft
-
-- **Access**: [Link will be provided in Brightspace]
-- **User Guide**: See "How to Use Data Craft GPT" document in Brightspace
-- **What It Does**: Generates customized operational datasets tailored to your job, problem, and decision area
-- **When to Use**: Before you start data collection (Week 3-4)
-
----
-
-### Office Hours
-
-- **When**: [Schedule will be posted in Brightspace]
-- **What to Bring**: Your project foundation (job, stakeholder, problem), specific questions, partially completed work
-- **Best Times to Come**:
-  - Week 3-4: Review project foundation before data collection
-  - 1 week before each milestone: Review analysis and get feedback on insights
-  - Anytime you're stuck: Don't wait until deadline
-
----
-
-### Example Projects
-
-**See Brightspace for:**
-
-- Example project showing all four analytics types
-- Sample slides with excellent takeaway titles
-- Sample data quality assessment
-- Sample Excel workbooks with clear formatting
-
----
-
-### Technical Support
-
-- **Excel Help**: Data Analysis Toolpak tutorials in Brightspace
-- **Looker Studio**: Dashboard building tutorials in Brightspace
-- **Solver Add-In**: Optimization model tutorials in Brightspace
-- **Monte Carlo**: Simulation tutorials in Brightspace
-
----
-
-### Peer Support
-
-- **Study Groups**: Consider forming study groups to discuss projects (individual work, but shared learning)
-- **Peer Review**: Exchange slides with classmates for feedback on clarity (before submission)
-
----
-
-## Part 9: Frequently Asked Questions (FAQ)
+## Part 8: Frequently Asked Questions (FAQ)
 
 ### General
 
