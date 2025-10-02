@@ -32,7 +32,7 @@ This semester-long project is your opportunity to build a **portfolio-quality an
 
 - **Total**: 45% of your final grade (15% per milestone)
 - **Milestone 1** (Descriptive + Diagnostic): 15% of final grade - Due **Monday, October 20, 2025**
-- **Milestone 2** (Predictive): 15% of final grade - Due **Tuesday, November 4, 2025**
+- **Milestone 2** (Predictive): 15% of final grade - Due **Thursday, November 6, 2025**
 - **Milestone 3** (Prescriptive): 15% of final grade - Due **Thursday, December 4, 2025**
 
 **Note**: Each milestone is graded out of **100 points**, then converted to 15% of your final course grade.
@@ -910,7 +910,7 @@ Upload to Brightspace by **Monday, October 20, 2025, 11:59 PM**:
 
 ### Milestone 2: Predictive Analytics
 
-**Due: Tuesday, November 4, 2025 by 11:59 PM**
+**Due: Thursday, November 6, 2025 by 11:59 PM**
 **Weight: 15 points**
 
 **Detailed requirements for Milestone 2 will be released after Milestone 1 is completed.**
@@ -1577,7 +1577,7 @@ Good luck! Use office hours. Start early. Make it something you're proud to show
 ### Project Timeline Overview
 
 - **Milestone 1**: Due Monday, October 20, 2025
-- **Milestone 2**: Due Tuesday, November 4, 2025
+- **Milestone 2**: Due Thursday, November 6, 2025
 - **Milestone 3**: Due Thursday, December 4, 2025
 - **Midterm Interviews**: Week 7
 - **Final Interviews**: Finals Week
