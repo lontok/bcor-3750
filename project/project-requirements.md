@@ -41,8 +41,6 @@ This semester-long project is your opportunity to build a **portfolio-quality an
 
 ### How to Use Your Excel Workbook and Slide Deck
 
-**IMPORTANT: Understanding the Two-Deliverable System**
-
 For each milestone, you will submit **two separate files** that serve distinct purposes:
 
 #### **Excel Workbook = Technical Analysis Workspace**
@@ -109,7 +107,7 @@ Throughout this project, you will apply:
 
 ### 1.1 Job Description Selection
 
-**Requirement**: Find and save a **real, currently posted job** in operations or supply chain management that you can realistically see yourself pursuing.
+Find and save a **real, currently posted job** in operations or supply chain management that you can realistically see yourself pursuing.
 
 **Specifications:**
 
@@ -122,7 +120,7 @@ Throughout this project, you will apply:
 
 1. Search job boards (LinkedIn, Indeed, company career sites) for relevant positions
 2. Select ONE job that interests you and aligns with your career goals
-3. **Save the complete job posting as a PDF** (in case it disappears later) and name the file `company-role-YYYYMMDD.pdf`, replacing `company` and `role` with the specific posting details.
+3. **Save the complete job posting as a PDF** (in case it disappears later) and name the file `job-posting-fname-lname.pdf`
 4. Review the job description to identify:
 
    - Key responsibilities related to data and analytics
@@ -718,18 +716,24 @@ You have two options for creating your dashboards:
 
 **4. Communicate**
 
-- **Slide Deck** (minimum 12 slides - THIS IS WHERE ALL INTERPRETATIONS LIVE):
+- **Slide Deck** (minimum 13 slides - THIS IS WHERE ALL INTERPRETATIONS LIVE):
 
   **Slide 1: Project Overview**
 
   - **Job description and company**: List the job title and company name
+  - **Why I selected this job** (2 bullets):
+    - What specific aspects of this role align with your career interests?
+    - How does this position connect to your skills or experience?
   - **Stakeholder (name/title)**: Identify the specific person or role you're analyzing for
   - **Problem statement** in required format: "For [stakeholder], they have [problem] which causes [impact]."
-  - **Operations Management Decision Area**: State your selected decision area with 2-3 sentence justification
-    - Format: **Decision Area Name** followed by justification explaining alignment with job responsibilities
+
+  **Slide 2: Operations Management Decision Area**
+
+  - **Decision Area Name** (in bold)
+  - **2-3 sentence justification** explaining alignment with job responsibilities
     - Example: "**Supply Chain Management** - I selected Supply Chain Management as my decision area because the Supply Chain Analyst role at Amazon focuses on optimizing order fulfillment and delivery performance. The job description mentions analyzing delivery times, carrier performance, and distribution network efficiency—all core supply chain decisions."
 
-  **Slide 2: Primary Metric Definition**
+  **Slide 3: Primary Metric Definition**
 
   - **Takeaway slide title** stating why this metric matters (this IS the insight - not a label)
     - Example: "Delivery Time is the Key Metric Because It Directly Drives Customer Satisfaction and Repeat Business"
@@ -740,7 +744,7 @@ You have two options for creating your dashboards:
     - **Decision support**: Describe how measuring this metric will help the stakeholder make better decisions
   - Note: This slide establishes the foundation for all analysis that follows - it answers "What are we measuring and why does it matter?"
 
-  **Slide 3: Central Tendency Insight**
+  **Slide 4: Central Tendency Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "Typical Delivery Time is 4.2 Days (Median), Not 5.1 Days (Mean Skewed by Outliers)"
@@ -750,7 +754,7 @@ You have two options for creating your dashboards:
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
   - Note: The slide title contains your insight about which measure is most appropriate and why
 
-  **Slide 4: Variability Insight**
+  **Slide 5: Variability Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "Delivery Times Vary Wildly (±2.8 Days), Creating Unpredictable Customer Experience"
@@ -760,7 +764,7 @@ You have two options for creating your dashboards:
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
   - Note: The slide title contains your insight about what variability reveals about consistency/predictability
 
-  **Slide 5: Diagnostic Pivot Table #1 Insight**
+  **Slide 6: Diagnostic Pivot Table #1 Insight**
 
   - **Takeaway slide title** stating the root cause insight (this IS the insight - not a label)
     - Example: "East Region Accounts for 65% of Late Deliveries Due to Understaffing"
@@ -769,7 +773,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What specific action addresses this root cause?
     - **Prediction**: What improvement will result from this action?
 
-  **Slide 6: Diagnostic Pivot Table #2 Insight**
+  **Slide 7: Diagnostic Pivot Table #2 Insight**
 
   - **Takeaway slide title** stating the root cause insight (this IS the insight - not a label)
     - Example: "Morning Shift Has 2x Higher Defect Rate Than Afternoon Shift"
@@ -778,7 +782,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What specific action addresses this root cause?
     - **Prediction**: What improvement will result from this action?
 
-  **Slide 7: Strategic Dashboard - Scorecard Insight**
+  **Slide 8: Strategic Dashboard - Scorecard Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "Order Volume Up 35% YoY But Revenue Only Up 12%"
@@ -787,7 +791,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take based on this?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 8: Strategic Dashboard - Trend Insight**
+  **Slide 9: Strategic Dashboard - Trend Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "Revenue Peaked in Q2 Then Declined 18% Despite Stable Order Volume"
@@ -796,7 +800,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take based on this trend?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 9: Strategic Dashboard - Breakdown Insight**
+  **Slide 10: Strategic Dashboard - Breakdown Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "West Region Drives 45% of Total Revenue Despite Having Only 28% of Orders"
@@ -805,7 +809,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take based on this breakdown?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 10: Operational Dashboard - Scorecard Insight**
+  **Slide 11: Operational Dashboard - Scorecard Insight**
 
   - **Takeaway slide title** stating the diagnostic insight (this IS the insight - not a label)
     - Example: "Average Delivery Time 5.2 Days vs Target of 3 Days (73% Over Target)"
@@ -814,7 +818,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take to address this?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 11: Operational Dashboard - Trend Insight**
+  **Slide 12: Operational Dashboard - Trend Insight**
 
   - **Takeaway slide title** stating the diagnostic insight (this IS the insight - not a label)
     - Example: "Delivery Times Spike Every Monday, Suggesting Weekend Backlog Issues"
@@ -823,7 +827,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take to address this pattern?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 12: Operational Dashboard - Root Cause Breakdown Insight**
+  **Slide 13: Operational Dashboard - Root Cause Breakdown Insight**
 
   - **Takeaway slide title** stating the root cause insight (this IS the insight - not a label)
     - Example: "East Region Accounts for 65% of Late Deliveries Due to Understaffing"
@@ -866,19 +870,20 @@ Upload to Brightspace by **Monday, October 13, 2025, 11:59 PM**:
    - Dashboard tabs for Strategic (Executive) and Operational dashboards (if using Excel)
    - Additional analysis tabs as needed
 
-3. **`milestone-01-slides-fname-lname.pdf`** (minimum 12 slides):
-   - Slide 1: Project overview with problem statement and decision area
-   - Slide 2: Primary Metric Definition (why this metric matters and decision support)
-   - Slide 3: Central Tendency insight (1 visual with Recommendation/Prediction bullets)
-   - Slide 4: Variability insight (1 visual with Recommendation/Prediction bullets)
-   - Slide 5: Diagnostic Pivot Table #1 insight (1 chart with Recommendation/Prediction bullets)
-   - Slide 6: Diagnostic Pivot Table #2 insight (1 chart with Recommendation/Prediction bullets)
-   - Slide 7: Strategic Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
-   - Slide 8: Strategic Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
-   - Slide 9: Strategic Dashboard - Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
-   - Slide 10: Operational Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
-   - Slide 11: Operational Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
-   - Slide 12: Operational Dashboard - Root Cause Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
+3. **`milestone-01-slides-fname-lname.pdf`** (minimum 13 slides):
+   - Slide 1: Project overview (job, why selected, stakeholder, problem statement)
+   - Slide 2: Operations Management Decision Area with justification
+   - Slide 3: Primary Metric Definition (why this metric matters and decision support)
+   - Slide 4: Central Tendency insight (1 visual with Recommendation/Prediction bullets)
+   - Slide 5: Variability insight (1 visual with Recommendation/Prediction bullets)
+   - Slide 6: Diagnostic Pivot Table #1 insight (1 chart with Recommendation/Prediction bullets)
+   - Slide 7: Diagnostic Pivot Table #2 insight (1 chart with Recommendation/Prediction bullets)
+   - Slide 8: Strategic Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
+   - Slide 9: Strategic Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
+   - Slide 10: Strategic Dashboard - Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
+   - Slide 11: Operational Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
+   - Slide 12: Operational Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
+   - Slide 13: Operational Dashboard - Root Cause Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
    - **ONE visual per slide** with takeaway titles and two bullets below (Recommendation, Prediction)
 
 **Notes**:
@@ -1581,19 +1586,20 @@ Good luck! Use office hours. Start early. Make it something you're proud to show
   - [ ] Strategic Dashboard with 2+ scorecards, 1 line chart, 1 bar chart, 1+ filter
   - [ ] Operational Dashboard with 2+ scorecards, 1 line chart, 1 bar chart, 1+ filter
   - [ ] Additional analysis tabs as needed
-- [ ] **milestone-01-slides-fname-lname.pdf** (minimum 12 slides):
-  - [ ] Slide 1: Project overview with problem statement and decision area
-  - [ ] Slide 2: Primary Metric Definition (why this metric matters)
-  - [ ] Slide 3: Central Tendency insight with Recommendation/Prediction
-  - [ ] Slide 4: Variability insight with Recommendation/Prediction
-  - [ ] Slide 5: Diagnostic Pivot Table #1 insight with Recommendation/Prediction
-  - [ ] Slide 6: Diagnostic Pivot Table #2 insight with Recommendation/Prediction
-  - [ ] Slide 7: Strategic Dashboard - Scorecard insight with Recommendation/Prediction
-  - [ ] Slide 8: Strategic Dashboard - Trend insight with Recommendation/Prediction
-  - [ ] Slide 9: Strategic Dashboard - Breakdown insight with Recommendation/Prediction
-  - [ ] Slide 10: Operational Dashboard - Scorecard insight with Recommendation/Prediction
-  - [ ] Slide 11: Operational Dashboard - Trend insight with Recommendation/Prediction
-  - [ ] Slide 12: Operational Dashboard - Root Cause Breakdown insight with Recommendation/Prediction
+- [ ] **milestone-01-slides-fname-lname.pdf** (minimum 13 slides):
+  - [ ] Slide 1: Project overview (job, why selected, stakeholder, problem statement)
+  - [ ] Slide 2: Operations Management Decision Area with justification
+  - [ ] Slide 3: Primary Metric Definition (why this metric matters)
+  - [ ] Slide 4: Central Tendency insight with Recommendation/Prediction
+  - [ ] Slide 5: Variability insight with Recommendation/Prediction
+  - [ ] Slide 6: Diagnostic Pivot Table #1 insight with Recommendation/Prediction
+  - [ ] Slide 7: Diagnostic Pivot Table #2 insight with Recommendation/Prediction
+  - [ ] Slide 8: Strategic Dashboard - Scorecard insight with Recommendation/Prediction
+  - [ ] Slide 9: Strategic Dashboard - Trend insight with Recommendation/Prediction
+  - [ ] Slide 10: Strategic Dashboard - Breakdown insight with Recommendation/Prediction
+  - [ ] Slide 11: Operational Dashboard - Scorecard insight with Recommendation/Prediction
+  - [ ] Slide 12: Operational Dashboard - Trend insight with Recommendation/Prediction
+  - [ ] Slide 13: Operational Dashboard - Root Cause Breakdown insight with Recommendation/Prediction
 
 **Milestone 2:**
 
