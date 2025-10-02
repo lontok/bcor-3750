@@ -42,8 +42,8 @@ This repository hosts an interactive, modern syllabus for BCOR 3750 Strategic Ma
 ### 📝 Course Information
 
 - **Course:** BCOR 3750 - Strategic Management
-- **Instructor:** Dr. Greg Lontok
-- **Semester:** Fall 2024
+- **Instructor:** Greg Lontok
+- **Semester:** Fall 2025
 - **Institution:** Loyola Marymount University
 
 ---
