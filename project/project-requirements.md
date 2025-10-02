@@ -1,5 +1,22 @@
 # BCOR 3750 Project Requirements
 
+## Table of Contents
+
+- [Progressive Analytics Across the Maturity Scale](#progressive-analytics-across-the-maturity-scale)
+- [Part 1: Project Foundation](#part-1-project-foundation)
+- [Part 2: Data Collection & Quality (All Milestones)](#part-2-data-collection--quality-all-milestones)
+- [Part 3: Milestone Requirements](#part-3-milestone-requirements)
+- [Part 4: Grading Rubrics](#part-4-grading-rubrics)
+- [Part 5: Presentation & Communication Guidelines](#part-5-presentation--communication-guidelines)
+- [Part 6: Interview Preparation](#part-6-interview-preparation)
+- [Part 7: Common Pitfalls & How to Avoid Them](#part-7-common-pitfalls--how-to-avoid-them)
+- [Part 8: Resources & Support](#part-8-resources--support)
+- [Part 9: Frequently Asked Questions (FAQ)](#part-9-frequently-asked-questions-faq)
+- [Conclusion](#conclusion)
+- [Appendix: Quick Reference](#appendix-quick-reference)
+
+---
+
 ## Progressive Analytics Across the Maturity Scale
 
 ### Project Overview
