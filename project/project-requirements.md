@@ -128,6 +128,8 @@ Find and save a **real, currently posted job** in operations or supply chain man
    - Operational challenges the role addresses
    - Tools or systems mentioned
 
+5. **Optional**: Use the chatbot at https://r.isba.co/chat to connect your resume to the job description and generate a high-level project spec. The chatbot is useful for understanding the job description and how it connects to your experience.
+
 ---
 
 ### 1.2 Operations Management Decision Area Selection
