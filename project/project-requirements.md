@@ -573,9 +573,7 @@ Create a **Data_Cleaning_Log** worksheet in your Excel workbook with these colum
 - **Descriptive**: "What happened?" - Summary, trends, patterns
 - **Diagnostic**: "Why did it happen?" - Root cause analysis
 
-#### Technical Requirements
-
-**Excel Analysis:**
+####Excel Analysis:
 
 **Descriptive Statistics Worksheet:**
 Create a dedicated worksheet called **Descriptive_Statistics** that analyzes your **primary metric of interest** (the key metric related to your problem statement) using the Descriptive Statistics tool from the Data Analysis ToolPak.
@@ -1219,10 +1217,10 @@ Takeaway titles communicate YOUR INSIGHT, not what the slide is about.
 
 The interview assesses different dimensions than the milestone submissions:
 
-**Milestone Submission** = Deliverables, documentation, technical accuracy
+**Milestone Submission** = Deliverables, documentation, technical accuracy  
 **Interview** = Understanding, synthesis, communication under pressure
 
-**What Professors Evaluate:**
+**How You Are Evaluated:**
 
 1. **Depth of Understanding** (40%)
 
