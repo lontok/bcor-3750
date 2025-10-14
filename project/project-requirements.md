@@ -717,7 +717,7 @@ You have two options for creating your dashboards:
 
 **4. Communicate**
 
-- **Slide Deck** (minimum 13 slides - THIS IS WHERE ALL INTERPRETATIONS LIVE):
+- **Slide Deck** (minimum 15 slides - THIS IS WHERE ALL INTERPRETATIONS LIVE):
 
   **Slide 1: Project Overview**
 
@@ -734,7 +734,32 @@ You have two options for creating your dashboards:
   - **2-3 sentence justification** explaining alignment with job responsibilities
     - Example: "**Supply Chain Management** - I selected Supply Chain Management as my decision area because the Supply Chain Analyst role at Amazon focuses on optimizing order fulfillment and delivery performance. The job description mentions analyzing delivery times, carrier performance, and distribution network efficiency—all core supply chain decisions."
 
-  **Slide 3: Primary Metric Definition**
+  **Slide 3: Dataset Overview**
+
+  - **Takeaway slide title** stating the value/relevance of the dataset (this IS the insight - not a label)
+    - Example: "6 Months of Fulfillment Data Provides Sufficient History to Identify Delivery Patterns"
+  - **Visual**: Table showing key dataset characteristics:
+    - Data source (Custom GPT, Kaggle, company, public data, etc.)
+    - Time period covered (e.g., "January 2025 - June 2025")
+    - Number of records (e.g., "1,247 transactions")
+    - Key variables (list 5-8 main columns: Order_ID, Order_Date, Delivery_Time, Region, etc.)
+    - Granularity (daily, weekly, transaction-level, etc.)
+  - **Two bullets below the visual**:
+    - **Relevance**: How this dataset connects to the job description and problem statement
+    - **Scope**: What operational aspects this data enables you to analyze
+
+  **Slide 4: Data Quality Improvements**
+
+  - **Takeaway slide title** stating the impact of data quality work (this IS the insight - not a label)
+    - Example: "Cleaning 3 Critical Data Issues Ensures Accurate Analysis of Delivery Performance"
+  - **Visual**: Table summarizing the top 3 data quality issues from your Data_Cleaning_Log:
+    - Columns: Column Name | Issue Type | Records Affected | Decision
+    - Example row: "Order_Date | Missing Values | 45 records (3%) | Removed"
+  - **Two bullets below the visual**:
+    - **Impact**: How cleaning these issues improves analysis reliability and prevents misleading conclusions
+    - **Confidence**: Why the stakeholder can trust the insights that follow in subsequent slides
+
+  **Slide 5: Primary Metric Definition**
 
   - **Takeaway slide title** stating why this metric matters (this IS the insight - not a label)
     - Example: "Delivery Time is the Key Metric Because It Directly Drives Customer Satisfaction and Repeat Business"
@@ -745,7 +770,7 @@ You have two options for creating your dashboards:
     - **Decision support**: Describe how measuring this metric will help the stakeholder make better decisions
   - Note: This slide establishes the foundation for all analysis that follows - it answers "What are we measuring and why does it matter?"
 
-  **Slide 4: Central Tendency Insight**
+  **Slide 6: Central Tendency Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "Typical Delivery Time is 4.2 Days (Median), Not 5.1 Days (Mean Skewed by Outliers)"
@@ -755,7 +780,7 @@ You have two options for creating your dashboards:
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
   - Note: The slide title contains your insight about which measure is most appropriate and why
 
-  **Slide 5: Variability Insight**
+  **Slide 7: Variability Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "Delivery Times Vary Wildly (±2.8 Days), Creating Unpredictable Customer Experience"
@@ -765,7 +790,7 @@ You have two options for creating your dashboards:
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
   - Note: The slide title contains your insight about what variability reveals about consistency/predictability
 
-  **Slide 6: Diagnostic Pivot Table #1 Insight**
+  **Slide 8: Diagnostic Pivot Table #1 Insight**
 
   - **Takeaway slide title** stating the root cause insight (this IS the insight - not a label)
     - Example: "East Region Accounts for 65% of Late Deliveries Due to Understaffing"
@@ -774,7 +799,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What specific action addresses this root cause?
     - **Prediction**: What improvement will result from this action?
 
-  **Slide 7: Diagnostic Pivot Table #2 Insight**
+  **Slide 9: Diagnostic Pivot Table #2 Insight**
 
   - **Takeaway slide title** stating the root cause insight (this IS the insight - not a label)
     - Example: "Morning Shift Has 2x Higher Defect Rate Than Afternoon Shift"
@@ -783,7 +808,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What specific action addresses this root cause?
     - **Prediction**: What improvement will result from this action?
 
-  **Slide 8: Strategic Dashboard - Scorecard Insight**
+  **Slide 10: Strategic Dashboard - Scorecard Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "Order Volume Up 35% YoY But Revenue Only Up 12%"
@@ -792,7 +817,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take based on this?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 9: Strategic Dashboard - Trend Insight**
+  **Slide 11: Strategic Dashboard - Trend Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "Revenue Peaked in Q2 Then Declined 18% Despite Stable Order Volume"
@@ -801,7 +826,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take based on this trend?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 10: Strategic Dashboard - Breakdown Insight**
+  **Slide 12: Strategic Dashboard - Breakdown Insight**
 
   - **Takeaway slide title** stating the insight (this IS the insight - not a label)
     - Example: "West Region Drives 45% of Total Revenue Despite Having Only 28% of Orders"
@@ -810,7 +835,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take based on this breakdown?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 11: Operational Dashboard - Scorecard Insight**
+  **Slide 13: Operational Dashboard - Scorecard Insight**
 
   - **Takeaway slide title** stating the diagnostic insight (this IS the insight - not a label)
     - Example: "Average Delivery Time 5.2 Days vs Target of 3 Days (73% Over Target)"
@@ -819,7 +844,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take to address this?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 12: Operational Dashboard - Trend Insight**
+  **Slide 14: Operational Dashboard - Trend Insight**
 
   - **Takeaway slide title** stating the diagnostic insight (this IS the insight - not a label)
     - Example: "Delivery Times Spike Every Monday, Suggesting Weekend Backlog Issues"
@@ -828,7 +853,7 @@ You have two options for creating your dashboards:
     - **Recommendation**: What action should the stakeholder take to address this pattern?
     - **Prediction**: If they follow this recommendation, what outcome can they expect?
 
-  **Slide 13: Operational Dashboard - Root Cause Breakdown Insight**
+  **Slide 15: Operational Dashboard - Root Cause Breakdown Insight**
 
   - **Takeaway slide title** stating the root cause insight (this IS the insight - not a label)
     - Example: "East Region Accounts for 65% of Late Deliveries Due to Understaffing"
@@ -860,7 +885,7 @@ You have two options for creating your dashboards:
 
 **5. Act**
 
-Note: Your recommendations and predictions are already covered in each insight slide (Slides 2-11). This step ensures you've addressed:
+Note: Your recommendations and predictions are already covered in each insight slide (Slides 5-15). This step ensures you've addressed:
 - **Actionable recommendations**: Each slide has a specific action for the stakeholder (covered in your Recommendation bullets)
 - **Expected outcomes**: Each slide predicts the result of following your recommendation (covered in your Prediction bullets)
 - **Tracking metrics**: Consider mentioning in your predictions what metrics would show improvement (e.g., "Delivery time variance should decrease from ±2.8 days to ±1.5 days within 3 months")
@@ -883,20 +908,22 @@ Upload to Brightspace by **Monday, October 20, 2025, 8:00 AM**:
    - Dashboard tabs for Strategic (Executive) and Operational dashboards (if using Excel)
    - Additional analysis tabs as needed
 
-3. **`milestone-01-slides-fname-lname.pdf`** (minimum 13 slides, plus appendix slide if using external dashboards):
+3. **`milestone-01-slides-fname-lname.pdf`** (minimum 15 slides, plus appendix slide if using external dashboards):
    - Slide 1: Project overview (job, why selected, stakeholder, problem statement)
    - Slide 2: Operations Management Decision Area with justification
-   - Slide 3: Primary Metric Definition (why this metric matters and decision support)
-   - Slide 4: Central Tendency insight (1 visual with Recommendation/Prediction bullets)
-   - Slide 5: Variability insight (1 visual with Recommendation/Prediction bullets)
-   - Slide 6: Diagnostic Pivot Table #1 insight (1 chart with Recommendation/Prediction bullets)
-   - Slide 7: Diagnostic Pivot Table #2 insight (1 chart with Recommendation/Prediction bullets)
-   - Slide 8: Strategic Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
-   - Slide 9: Strategic Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
-   - Slide 10: Strategic Dashboard - Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
-   - Slide 11: Operational Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
-   - Slide 12: Operational Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
-   - Slide 13: Operational Dashboard - Root Cause Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
+   - Slide 3: Dataset Overview (data source, time period, records, key variables, relevance)
+   - Slide 4: Data Quality Improvements (top 3 issues, impact, confidence)
+   - Slide 5: Primary Metric Definition (why this metric matters and decision support)
+   - Slide 6: Central Tendency insight (1 visual with Recommendation/Prediction bullets)
+   - Slide 7: Variability insight (1 visual with Recommendation/Prediction bullets)
+   - Slide 8: Diagnostic Pivot Table #1 insight (1 chart with Recommendation/Prediction bullets)
+   - Slide 9: Diagnostic Pivot Table #2 insight (1 chart with Recommendation/Prediction bullets)
+   - Slide 10: Strategic Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
+   - Slide 11: Strategic Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
+   - Slide 12: Strategic Dashboard - Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
+   - Slide 13: Operational Dashboard - Scorecard insight (1 scorecard with Recommendation/Prediction bullets)
+   - Slide 14: Operational Dashboard - Trend insight (1 line chart with Recommendation/Prediction bullets)
+   - Slide 15: Operational Dashboard - Root Cause Breakdown insight (1 bar/column chart with Recommendation/Prediction bullets)
    - **Appendix**: Dashboard Links slide (REQUIRED if using Tableau, Power BI, Looker, or other external tools - must be publicly viewable from incognito/private browser)
    - **ONE visual per slide** with takeaway titles and two bullets below (Recommendation, Prediction)
 
@@ -1016,26 +1043,28 @@ Each milestone is graded out of **100 points** (which equals 15% of your final c
 #### Business Insights & Interpretation (17 points)
 
 - **17 - Excellent**:
-  - All 10 insight slides present with structured format:
-    - Slide 2: Central Tendency, Slide 3: Variability
-    - Slides 4-5: 2 Pivot Tables
-    - Slides 6-8: 3 Strategic Dashboard insights (scorecard, trend, breakdown)
-    - Slides 9-11: 3 Operational Dashboard insights (scorecard, trend, breakdown)
-  - Each follows **Insight → Recommendation → Prediction** format with specificity
+  - All 13 insight slides present with structured format:
+    - Slides 3-4: Dataset Overview and Data Quality
+    - Slide 5: Primary Metric Definition
+    - Slides 6-7: Central Tendency and Variability
+    - Slides 8-9: 2 Pivot Tables
+    - Slides 10-12: 3 Strategic Dashboard insights (scorecard, trend, breakdown)
+    - Slides 13-15: 3 Operational Dashboard insights (scorecard, trend, breakdown)
+  - Each follows **Insight → Recommendation → Prediction** format with specificity (except Slides 3-4 which follow the Dataset/Data Quality format)
   - Insights are business-relevant, actionable, reveal root causes, connect clearly to decision area
   - ONE visual per slide, screenshots focused on specific charts that tell the story
 - **13 - Good**:
-  - 8-9 insight slides present with structured format (Insight/Recommendation/Prediction)
+  - 11-12 insight slides present with structured format (Insight/Recommendation/Prediction)
   - Most insights are relevant and actionable, identify some root causes
   - One visual per slide, screenshots appropriate
 - **10 - Adequate**:
-  - 6-7 insight slides present, some follow structured format
+  - 9-10 insight slides present, some follow structured format
   - Insights are somewhat generic, limited actionability, surface-level root cause analysis
   - May have multiple visuals per slide or full dashboard screenshots
 - **7 - Poor**:
-  - Fewer than 6 insight slides, format inconsistently applied
+  - Fewer than 9 insight slides, format inconsistently applied
   - Insights are obvious or irrelevant, no clear root cause identification
-- **0 - Missing**: No insights provided or severely inadequate (fewer than 5 slides)
+- **0 - Missing**: No insights provided or severely inadequate (fewer than 8 slides)
 
 #### Recommendations & Actions (13 points)
 
@@ -1048,36 +1077,40 @@ Each milestone is graded out of **100 points** (which equals 15% of your final c
 #### Presentation Clarity (30 points)
 
 - **30 - Excellent**:
-  - **Minimum 11 slides present** (1 overview + 10 insight slides)
-  - **Slide 1**: Problem statement in exact required format with all elements (stakeholder, problem, impact, decision area with justification)
-  - **Insight slides (2-11)**: Each has compelling **takeaway title that IS the insight** (NOT descriptive labels like "Strategic Dashboard"), ONE focused visual, **two bullets below** (Recommendation, Prediction)
+  - **Minimum 15 slides present** (Slides 1-2 overview + Slides 3-15 insight slides)
+  - **Slide 1-2**: Problem statement in exact required format with all elements (stakeholder, problem, impact, decision area with justification)
+  - **Slide 3-4**: Dataset Overview and Data Quality slides with appropriate format (data characteristics and quality improvements)
+  - **Insight slides (5-15)**: Each has compelling **takeaway title that IS the insight** (NOT descriptive labels like "Strategic Dashboard"), ONE focused visual, **two bullets below** (Recommendation, Prediction)
   - **Dashboard slides**: 3 insights per dashboard (scorecard, trend, breakdown) for both Strategic and Operational
   - Screenshots show **specific charts** from Excel/dashboards (not full dashboard screenshots)
   - Professional design throughout, polished communication, clear visual hierarchy
   - **NO interpretation in Excel workbook** - all insights in slides only
 - **23 - Good**:
-  - 9-10 slides present
+  - 13-14 slides present
   - Problem statement follows format with minor issues
+  - Dataset and Data Quality slides present with good content
   - Most insight slides have takeaway titles that state insights, with two bullets below (Recommendation, Prediction)
   - Most dashboard insights present (may be missing 1-2)
   - Screenshots show specific visuals (may occasionally include full dashboard)
   - Good design, clear communication
   - Follows "no interpretation in Excel" rule
 - **17 - Adequate**:
-  - 7-8 slides present
+  - 11-12 slides present
   - Problem statement present but doesn't fully follow format
+  - Dataset and/or Data Quality slides present but basic
   - Insight slides present but some titles are descriptive rather than takeaway-focused
   - Missing several dashboard insights
   - Screenshots included but may be unclear or full dashboards
   - Basic design, adequate communication
 - **10 - Poor**:
-  - Fewer than 7 slides
+  - Fewer than 11 slides
   - Problem statement vague or missing elements
+  - Missing Dataset or Data Quality slides
   - Insight slides missing OR titles are purely descriptive, screenshots unclear
   - Most dashboard insights missing
   - Poor design, weak communication
   - May have interpretation text in Excel workbook (violates instructions)
-- **0 - Missing**: No slides or severely inadequate presentation (fewer than 6 slides or missing problem statement)
+- **0 - Missing**: No slides or severely inadequate presentation (fewer than 10 slides or missing problem statement)
 
 ---
 
@@ -1600,20 +1633,22 @@ Good luck! Use office hours. Start early. Make it something you're proud to show
   - [ ] Strategic Dashboard with 2+ scorecards, 1 line chart, 1 bar chart, 1+ filter
   - [ ] Operational Dashboard with 2+ scorecards, 1 line chart, 1 bar chart, 1+ filter
   - [ ] Additional analysis tabs as needed
-- [ ] **milestone-01-slides-fname-lname.pdf** (minimum 13 slides, plus appendix if using external dashboards):
+- [ ] **milestone-01-slides-fname-lname.pdf** (minimum 15 slides, plus appendix if using external dashboards):
   - [ ] Slide 1: Project overview (job, why selected, stakeholder, problem statement)
   - [ ] Slide 2: Operations Management Decision Area with justification
-  - [ ] Slide 3: Primary Metric Definition (why this metric matters)
-  - [ ] Slide 4: Central Tendency insight with Recommendation/Prediction
-  - [ ] Slide 5: Variability insight with Recommendation/Prediction
-  - [ ] Slide 6: Diagnostic Pivot Table #1 insight with Recommendation/Prediction
-  - [ ] Slide 7: Diagnostic Pivot Table #2 insight with Recommendation/Prediction
-  - [ ] Slide 8: Strategic Dashboard - Scorecard insight with Recommendation/Prediction
-  - [ ] Slide 9: Strategic Dashboard - Trend insight with Recommendation/Prediction
-  - [ ] Slide 10: Strategic Dashboard - Breakdown insight with Recommendation/Prediction
-  - [ ] Slide 11: Operational Dashboard - Scorecard insight with Recommendation/Prediction
-  - [ ] Slide 12: Operational Dashboard - Trend insight with Recommendation/Prediction
-  - [ ] Slide 13: Operational Dashboard - Root Cause Breakdown insight with Recommendation/Prediction
+  - [ ] Slide 3: Dataset Overview (data source, time period, records, key variables, relevance)
+  - [ ] Slide 4: Data Quality Improvements (top 3 issues, impact, confidence)
+  - [ ] Slide 5: Primary Metric Definition (why this metric matters)
+  - [ ] Slide 6: Central Tendency insight with Recommendation/Prediction
+  - [ ] Slide 7: Variability insight with Recommendation/Prediction
+  - [ ] Slide 8: Diagnostic Pivot Table #1 insight with Recommendation/Prediction
+  - [ ] Slide 9: Diagnostic Pivot Table #2 insight with Recommendation/Prediction
+  - [ ] Slide 10: Strategic Dashboard - Scorecard insight with Recommendation/Prediction
+  - [ ] Slide 11: Strategic Dashboard - Trend insight with Recommendation/Prediction
+  - [ ] Slide 12: Strategic Dashboard - Breakdown insight with Recommendation/Prediction
+  - [ ] Slide 13: Operational Dashboard - Scorecard insight with Recommendation/Prediction
+  - [ ] Slide 14: Operational Dashboard - Trend insight with Recommendation/Prediction
+  - [ ] Slide 15: Operational Dashboard - Root Cause Breakdown insight with Recommendation/Prediction
   - [ ] Appendix: Dashboard Links slide (if using external dashboards - must be publicly viewable from incognito/private browser)
 
 **Milestone 2:**
