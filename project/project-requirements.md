@@ -565,7 +565,7 @@ Create a **Data_Cleaning_Log** worksheet in your Excel workbook with these colum
 
 ### Milestone 1: Descriptive & Diagnostic Analytics
 
-**Due: Monday, October 20, 2025 by 11:59 PM**
+**Due: Monday, October 20, 2025 by 8:00 AM**
 **Weight: 15 points**
 
 #### What You're Answering:
@@ -869,7 +869,7 @@ Note: Your recommendations and predictions are already covered in each insight s
 
 #### Submission Files
 
-Upload to Brightspace by **Monday, October 20, 2025, 11:59 PM**:
+Upload to Brightspace by **Monday, October 20, 2025, 8:00 AM**:
 
 1. **`job-posting-fname-lname.pdf`** (your saved job description)
 
