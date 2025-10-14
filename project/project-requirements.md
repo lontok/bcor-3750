@@ -573,7 +573,7 @@ Create a **Data_Cleaning_Log** worksheet in your Excel workbook with these colum
 - **Descriptive**: "What happened?" - Summary, trends, patterns
 - **Diagnostic**: "Why did it happen?" - Root cause analysis
 
-####Excel Analysis:
+#### Excel Analysis:
 
 **Descriptive Statistics Worksheet:**
 Create a dedicated worksheet called **Descriptive_Statistics** that analyzes your **primary metric of interest** (the key metric related to your problem statement) using the Descriptive Statistics tool from the Data Analysis ToolPak.
