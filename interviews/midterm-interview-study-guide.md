@@ -1,4 +1,4 @@
-## **[Midterm Interview Study Guide](hhttps://r.isba.co/3750-midterm-interview-study-guide)**
+## **[Midterm Interview Study Guide](https://r.isba.co/3750-midterm-interview-study-guide)**
 
 **Overall Grade %:** 15  
 **Total Points:** 100 (Make every effort to attempt all questions for partial credit)  
@@ -37,18 +37,17 @@ Job → Problem → Data → Descriptive Analytics → Diagnostic Analytics → 
 
 **Timing Breakdown** (15 minutes total):
 - **"Tell me about yourself"**: 1 minute
-- **Foundation** (Slides 1-8): 3-4 minutes
-  - Job through High-level Solution: 1-1.5 min
+- **Foundation** (Slides 1-5): 2-3 minutes
+  - Job through Decision Area: 1 min
   - Dataset Overview: 30-45 sec
   - Data Quality: 45-60 sec
   - Primary Metric: 30 sec
-- **Descriptive Analytics** (Slides 9-12): 3-4 minutes
-  - Descriptive Statistics: 1.5-2 min
-  - Strategic Dashboard (ONE chart): 1.5-2 min
-- **Diagnostic Analytics** (Slides 13-15): 3-4 minutes
-  - PivotTable 1: 1-1.5 min
-  - PivotTable 2: 1-1.5 min
-  - Operational Dashboard (ONE chart): 30-45 sec
+- **Descriptive Analytics** (Slides 6-7, 10-12): 4-5 minutes
+  - Descriptive Statistics (Central Tendency & Variability): 1.5-2 min
+  - Strategic Dashboard (ONE chart from Scorecard/Trend/Breakdown): 2-3 min
+- **Diagnostic Analytics** (Slides 8-9, 13-15): 4-5 minutes
+  - PivotTable 1 & 2: 2-2.5 min
+  - Operational Dashboard (ONE chart from Scorecard/Trend/Root Cause): 1.5-2 min
 - **Follow-up Questions & Discussion**: 2-3 minutes
 
 1. "Tell me about yourself." (1 minute | 15 points)
@@ -63,24 +62,28 @@ Job → Problem → Data → Descriptive Analytics → Diagnostic Analytics → 
    > "I'm a junior at LMU studying Business Analytics. I'm passionate about using data to solve operational challenges - I've been leading a supply chain optimization project for our student consulting group where we helped a local restaurant reduce food waste by 30%. Last summer, I interned at [Company] where I worked with inventory data and built Excel dashboards for the operations team. Outside of academics, I enjoy rock climbing, which has taught me a lot about problem-solving under pressure.
    >
    > That experience actually connects directly to the Operations Analyst project I'd like to walk you through today. I analyzed [your specific problem area] to help [your stakeholder] improve [your metric], and I'm excited to share what I discovered."  
-2. "Tell me about your project." (10-14 minutes | 85 points)  
-   1. Refer to [your project](https://r.isba.co/3750-project-f25).  
-   2. You must use the whiteboard to draw the project roadmap.  
-   3. Foundation (Slides 1-8)
-      1. Job Description
-      2. Operations Decision Area
-      3. Stakeholder
-      4. Problem Statement
-      5. High-level Solution Overview
-      6. Dataset Overview
+2. "Tell me about your project." (10-14 minutes | 85 points)
+   1. Refer to [your project](https://r.isba.co/3750-project-f25).
+   2. You must use the whiteboard to draw the project roadmap.
+   3. Foundation (Slides 1-5)
+      1. **Slide 1 - Project Overview**:
+         1. Job Description
+         2. Why I selected this job
+         3. Stakeholder
+         4. Problem Statement
+      2. **Slide 2 - Operations Management Decision Area**:
+         1. Decision area name and justification
+      3. **Slide 3 - Dataset Overview**:
          1. Data source and collection process
          2. Key variables and their meaning
          3. Data structure (rows, columns, timeframe)
-      7. Data Quality Improvements
+      4. **Slide 4 - Data Quality Improvements**:
          1. Issues identified (missing data, duplicates, errors)
          2. Assessment approach (5-step framework: Define → Collect → Analyze → Communicate → Act)
          3. Fixes implemented and validation
-      8. Primary Metric  
+      5. **Slide 5 - Primary Metric**:
+         1. Metric definition and why it matters
+         2. Connection to stakeholder's problem  
    4. Analysis
 
    **IRPM Framework** (use for EVERY analysis component):
@@ -107,13 +110,12 @@ Job → Problem → Data → Descriptive Analytics → Diagnostic Analytics → 
 
       | Analysis Component | Slides | What to Cover | IRPM Required? |
       |-------------------|--------|---------------|----------------|
-      | **Descriptive Statistics** | 9 | Central Tendency + Variability | Yes (both) |
+      | **Descriptive Statistics** | 6-7 | Central Tendency + Variability | Yes (both) |
+      | **Diagnostic PivotTables** | 8-9 | PivotTable 1 & PivotTable 2 root cause analysis | Yes (both) |
       | **Strategic Dashboard** | 10-12 | ONE chart (Scorecard, Trend, OR Breakdown) | Yes (1 chart) |
-      | **PivotTable 1** | 13 | Root cause analysis | Yes |
-      | **PivotTable 2** | 14 | Root cause analysis | Yes |
-      | **Operational Dashboard** | 15 | ONE chart (Scorecard, Trend, OR Root Cause) | Yes (1 chart) |
+      | **Operational Dashboard** | 13-15 | ONE chart (Scorecard, Trend, OR Root Cause) | Yes (1 chart) |
 
-      **Total IRPM Cycles**: 5 minimum (2 descriptive stats + 1 strategic chart + 2 pivots + 1 operational chart)
+      **Total IRPM Cycles**: 5 minimum (2 descriptive stats + 2 pivot tables + 1 strategic chart + 1 operational chart)
 
       3. Connect to the job description along the way  
    5. Follow-Up Questions
@@ -209,7 +211,7 @@ Use this visual roadmap structure on the whiteboard to guide your presentation:
    - Compares performance across categories (products, regions, etc.)
    - Good for demonstrating detail-oriented analysis
 
-**For Operational Dashboard (Slide 15)** - Choose ONE to present:
+**For Operational Dashboard (Slides 13-15)** - Choose ONE to present:
 1. **Scorecard Chart**: Best for operational metric monitoring
    - Shows current operational performance
    - Good for demonstrating operations management mindset
