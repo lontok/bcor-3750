@@ -258,12 +258,18 @@ Use this visual roadmap structure on the whiteboard to guide your presentation:
 - 💡 **One thing to practice**: Most critical item before interview
 - 📊 **Rubric estimate**: Where would they fall (A/B/C/D)?
 
-**Practice with AI** - [Interview Practice Chatbot](https://r.isba.co/chat):
-- Upload your Milestone 1 slides
-- Ask the chatbot to interview you using this study guide
-- Practice responding to follow-up questions and "Why?" prompts
-- Request feedback on your IRPM framework usage
-- Run multiple practice sessions focusing on different sections
+**Practice with AI** - [BCOR 3750 Midterm Interview Coach](https://chatgpt.com/g/g-68efca526c6c819186dc3a8a2cffa8b4-bcor-3750-midterm-interview-coach):
+- **Use Voice Mode** (sound wave icon at bottom) for most realistic practice - speak your answers like the real interview
+- Upload your Milestone 1 slides for personalized questions about YOUR specific project
+- Choose difficulty: Practice (gentler), Realistic (standard), or Challenging (deeper drilling)
+- Get ruthlessly honest yet supportive feedback on all 4 rubric dimensions
+- IRPM framework validation - coach flags missing elements and guides you with Socratic questions
+- Conversation starters to get started:
+  - "I want to practice the full interview with my slides"
+  - "Help me prepare my 'Tell me about yourself' response"
+  - "Practice quick section: Foundation only (Job through Primary Metric)"
+  - "Practice quick section: Descriptive Analytics only"
+  - "Practice quick section: Diagnostic Analytics only"
 
 **Practice with Yourself**:
 - Record yourself presenting (video preferred, audio minimum)
@@ -289,14 +295,12 @@ Use this visual roadmap structure on the whiteboard to guide your presentation:
 ### **Common Mistakes to Avoid**
 
 **❌ Content Mistakes**:
-- Skipping Dataset Overview or Data Quality sections (new slides!)
+- Skipping Dataset Overview or Data Quality sections
 - Discussing all 3 dashboard charts instead of choosing ONE
 - Forgetting to connect analysis back to job description
-- Saying "I don't know" instead of explaining your reasoning
 - Presenting data without IRPM framework (Insight → Recommendation → Prediction → Method)
 
 **❌ Communication Mistakes**:
-- Reading directly from slides or notes
 - Using technical jargon without explaining it
 - Rambling without structure (use IRPM!)
 - Not making eye contact or facing the whiteboard
@@ -334,13 +338,13 @@ Print or write this on a notecard for last-minute review:
 ┌─────────────────────────────────────────────────────┐
 │ INTERVIEW CHECKLIST                                 │
 ├─────────────────────────────────────────────────────┤
-│ ☐ Tell me about yourself (1 min) + PROJECT SEGUE   │
-│ ☐ Foundation: Job → Problem → Dataset → Quality    │
-│ ☐ Descriptive: Stats (Central + Variability)       │
-│ ☐ Descriptive: Strategic Dashboard (1 of 3)        │
-│ ☐ Diagnostic: PivotTable 1 (Root Cause)            │
-│ ☐ Diagnostic: PivotTable 2 (Root Cause)            │
-│ ☐ Diagnostic: Operational Dashboard (1 of 3)       │
+│ ☐ Tell me about yourself (1 min) + PROJECT SEGUE    │
+│ ☐ Foundation: Job → Problem → Dataset → Quality     │
+│ ☐ Descriptive: Stats (Central + Variability)        │
+│ ☐ Descriptive: Strategic Dashboard (1 of 3)         │
+│ ☐ Diagnostic: PivotTable 1 (Root Cause)             │
+│ ☐ Diagnostic: PivotTable 2 (Root Cause)             │
+│ ☐ Diagnostic: Operational Dashboard (1 of 3)        │
 │                                                     │
 │ IRPM EVERY TIME:                                    │
 │ I - Insight (what I found)                          │
@@ -349,11 +353,10 @@ Print or write this on a notecard for last-minute review:
 │ M - Method (how I analyzed)                         │
 │                                                     │
 │ DON'T FORGET:                                       │
-│ ✓ Draw whiteboard roadmap first                    │
-│ ✓ Connect back to job description                  │
-│ ✓ ONE dashboard chart, not all 3                   │
-│ ✓ Dataset Overview + Data Quality (new!)           │
-│ ✓ Make eye contact, don't read slides              │
+│ ✓ Draw whiteboard roadmap first                     │
+│ ✓ Connect back to job description                   │
+│ ✓ ONE dashboard chart, not all 3                    │
+│ ✓ Dataset Overview + Data Quality                   │
 └─────────────────────────────────────────────────────┘
 ```
 
