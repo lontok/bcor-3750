@@ -1,4 +1,4 @@
-## **[Midterm Interview Study Guide](https://r.isba.co/sql-final-study-guide-s25)**
+## **[Midterm Interview Study Guide](hhttps://r.isba.co/3750-midterm-interview-study-guide)**
 
 **Overall Grade %:** 15  
 **Total Points:** 100 (Make every effort to attempt all questions for partial credit)  
@@ -8,6 +8,7 @@
 Schedule a 20-minute interview between Monday, October 20, and Wednesday, October 22\.
 
 The assessment simulates an entry‑level interview for a role that blends analytics with operations and supply chain management. Your project will serve as the primary case study throughout the interview conversation. If you’ve completed Milestone 01, you already have everything you need.  
+
 This guide helps you organize it into a confident, 20-minute interview conversation.
 
 ---
@@ -265,11 +266,12 @@ Use this visual roadmap structure on the whiteboard to guide your presentation:
 - Get ruthlessly honest yet supportive feedback on all 4 rubric dimensions
 - IRPM framework validation - coach flags missing elements and guides you with Socratic questions
 - Conversation starters to get started:
+  - "I want to practice the full interview without my slides"
   - "I want to practice the full interview with my slides"
   - "Help me prepare my 'Tell me about yourself' response"
-  - "Practice quick section: Foundation only (Job through Primary Metric)"
-  - "Practice quick section: Descriptive Analytics only"
-  - "Practice quick section: Diagnostic Analytics only"
+  - "Practice only Job through Primary Metric"
+  - "Practice Descriptive Analytics only"
+  - "Practice Diagnostic Analytics only"
 
 **Practice with Yourself**:
 - Record yourself presenting (video preferred, audio minimum)
