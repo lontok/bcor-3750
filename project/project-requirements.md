@@ -578,7 +578,7 @@ Create a **Data_Cleaning_Log** worksheet in your Excel workbook with these colum
 **Descriptive Statistics Worksheet:**
 Create a dedicated worksheet called **Descriptive_Statistics** that analyzes your **primary metric of interest** (the key metric related to your problem statement) using the Descriptive Statistics tool from the Data Analysis ToolPak.
 
-Calculate all measures of central tendency (mean, median, mode) and variability (standard deviation, range, coefficient of variation). This analysis will support **Slide 2** (Primary Metric Definition), **Slide 3** (Central Tendency Insight), and **Slide 4** (Variability Insight). See the detailed slide instructions in section 4. Communicate for specific requirements on how to present and interpret these statistics.
+Calculate all measures of central tendency (mean, median, mode) and variability (standard deviation, range, coefficient of variation). This analysis will support **Slide 5** (Primary Metric Definition), **Slide 6** (Central Tendency Insight), and **Slide 7** (Variability Insight). See the detailed slide instructions in **section 4. Communicate** for specific requirements on how to present and interpret these statistics.
 
 ---
 
