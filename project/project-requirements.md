@@ -966,7 +966,7 @@ You will complete TWO distinct predictive analyses using the same dataset:
    - Generate forecast for next period
 
 2. **Multiple Linear Regression Analysis** - Predict an outcome based on drivers (Problem B - different from A)
-   - Test minimum 3 different multiple regression models (each with at least 2 independent variables)
+   - Test minimum 2 different multiple regression models (each with at least 2 independent variables)
    - Select 1 best model based on fit and significance
    - Make predictions using selected model
 
@@ -987,9 +987,10 @@ You will complete TWO distinct predictive analyses using the same dataset:
 
 **Multiple Linear Regression:**
 - Conduct correlation analysis to identify promising predictor variables
-- Test minimum 3 multiple regression models:
+- Create scatter plots for the top 3 independent variables (most correlated with dependent variable) to visualize relationships
+- Test minimum 2 multiple regression models:
   - Each model must have at least 2 independent variables
-  - Test different combinations of variables (e.g., 2-variable model, 3-variable model, 4-variable model)
+  - Test different combinations of variables (e.g., 2-variable model, 3-variable model)
 - Interpret key regression outputs:
   - Adjusted R² (model fit)
   - Coefficients (relationships between variables)
@@ -1025,7 +1026,8 @@ You will complete TWO distinct predictive analyses using the same dataset:
     - Selected forecast with next period prediction
   - **Regression_Analysis** tab:
     - Correlation matrix with conditional formatting
-    - Minimum 3 multiple regression models (each with 2+ independent variables)
+    - Scatter plots for top 3 independent variables (most correlated with dependent variable)
+    - Minimum 2 multiple regression models (each with 2+ independent variables)
     - Model comparison table (Adjusted R², Standard Error, Significance F)
     - Selected model with coefficient interpretation
     - Scenario predictions (2-3 scenarios)
@@ -1112,11 +1114,10 @@ You will complete TWO distinct predictive analyses using the same dataset:
     - **Recommendation**: Which variables are promising predictors based on correlation strength?
 
   **Slide 9: Regression Model Comparison**
-  - Takeaway title announcing winning model (e.g., "4-Variable Model Explains 82% of Delivery Time Variation (Best Balance of Fit and Significance)")
-  - Visual: Model comparison table showing **minimum 3 multiple regression models** (each with at least 2 independent variables):
+  - Takeaway title announcing winning model (e.g., "3-Variable Model Explains 82% of Delivery Time Variation (Best Balance of Fit and Significance)")
+  - Visual: Model comparison table showing **minimum 2 multiple regression models** (each with at least 2 independent variables):
     - Model 1: 2 variables (e.g., Distance + Weight)
     - Model 2: 3 variables (e.g., Distance + Weight + Carrier)
-    - Model 3: 4 variables (e.g., Distance + Weight + Carrier + Weather)
     - Key metrics: Adjusted R², Standard Error, Significance F
     - Highlight best model
   - Two bullets:
@@ -1188,7 +1189,6 @@ Required worksheets:
    - Model comparison table showing all models with accuracy measures
    - Selected best model highlighted with justification
    - Forecast for next period using best model
-   - All formulas visible and clearly labeled
    - Professional formatting with clear section headers
 
 **Workbook 2: Multiple Linear Regression Analysis**
@@ -1203,13 +1203,16 @@ Required worksheets:
    - Data Type: Text, number, date, etc.
    - Notes: Description and any important details
 4. **Regression_Analysis** - All regression analysis work:
-   - Dataset with dependent variable (Y) and independent variables (X₁, X₂, X₃, etc.)
    - Correlation matrix with conditional formatting:
      - Shows relationships between all variables
      - Color-coded by correlation strength
-   - Minimum 3 multiple regression models tested:
+   - Scatter plots for top 3 independent variables:
+     - Create scatter plots showing relationship between each of the top 3 most correlated independent variables and the dependent variable
+     - Add trendlines to visualize relationships
+     - Clear axis labels and titles
+   - Minimum 2 multiple regression models tested:
      - Each model must have at least 2 independent variables
-     - Test different combinations (e.g., 2-variable, 3-variable, 4-variable models)
+     - Test different combinations (e.g., 2-variable model, 3-variable model)
    - Regression outputs for each model clearly labeled:
      - Adjusted R² (model fit)
      - Coefficients (slope for each variable)
@@ -1231,11 +1234,9 @@ Required worksheets:
      - Different input values for independent variables
      - Predicted outcome for each scenario
      - Show regression equation used
-   - All formulas visible and clearly labeled
    - Professional formatting with clear section headers
 
 **Key Requirements for Both Workbooks:**
-- All formulas must be visible (not just results)
 - Clear labels and annotations explaining what calculations mean
 - Professional formatting with consistent styling
 - Section headers to organize different parts of analysis
@@ -1434,22 +1435,20 @@ Use this checklist to verify you have all required components before submitting:
   - ☐ Model comparison table with all models and accuracy measures
   - ☐ Best model highlighted with justification
   - ☐ Forecast for next period using best model
-  - ☐ All formulas visible and clearly labeled
   - ☐ Professional formatting with section headers
 
 **REGRESSION EXCEL WORKBOOK (`milestone-02-regression-fname-lname.xlsx`):**
 - ☐ Raw worksheet with original regression dataset (unmodified)
 - ☐ Data_Dictionary with all fields documented (column name, data type, notes)
 - ☐ Regression_Analysis worksheet with:
-  - ☐ Dataset with dependent variable (Y) and independent variables (X's)
   - ☐ Correlation matrix with conditional formatting (color-coded by strength)
-  - ☐ Minimum 3 multiple regression models tested (each with 2+ independent variables)
+  - ☐ Scatter plots for top 3 independent variables (most correlated with dependent variable) with trendlines
+  - ☐ Minimum 2 multiple regression models tested (each with 2+ independent variables)
   - ☐ Regression outputs for each model clearly labeled (Adjusted R², Coefficients, P-values, Standard Error, Significance F)
   - ☐ Model comparison table (model name/variables, Adjusted R², Standard Error, Significance F)
   - ☐ Best model highlighted with justification
   - ☐ Coefficient interpretation annotations (what 1-unit change in X does to Y)
   - ☐ Scenario predictions table (2-3 scenarios with different inputs)
-  - ☐ All formulas visible and clearly labeled
   - ☐ Professional formatting with section headers
 
 **SLIDE DECK (`milestone-02-slides-fname-lname.pdf`):**
@@ -1508,7 +1507,8 @@ Use this checklist to verify you have all required components before submitting:
 
 - **25 - Excellent**:
   - **Correlation Matrix**: Complete correlation matrix with conditional formatting showing relationships between all variables; color-coded appropriately
-  - **Models Tested**: Minimum 3 multiple regression models tested (each with 2+ independent variables); different variable combinations tested; all regression outputs clearly labeled
+  - **Scatter Plots**: Scatter plots for top 3 most correlated independent variables with dependent variable; trendlines added; clear axis labels and titles
+  - **Models Tested**: Minimum 2 multiple regression models tested (each with 2+ independent variables); different variable combinations tested; all regression outputs clearly labeled
   - **Model Comparison**: Comparison table shows all models with key metrics (Adjusted R², Standard Error, Significance F); best model clearly highlighted
   - **Model Selection**: Best model selected with strong justification (accuracy, statistical significance, parsimony); explains why this model over others
   - **Coefficient Interpretation**: All coefficients interpreted correctly with clear annotations explaining what 1-unit change in X does to Y; identifies which variables are statistically significant (p < 0.05)
@@ -1517,7 +1517,8 @@ Use this checklist to verify you have all required components before submitting:
 
 - **19 - Good**:
   - **Correlation Matrix**: Correlation matrix present with conditional formatting; shows key relationships
-  - **Models Tested**: 3 multiple regression models tested correctly (2+ variables each); outputs labeled
+  - **Scatter Plots**: Scatter plots present for top correlated variables; trendlines included
+  - **Models Tested**: 2 multiple regression models tested correctly (2+ variables each); outputs labeled
   - **Model Comparison**: Comparison table present with key metrics; best model highlighted
   - **Model Selection**: Model selected with reasonable justification based on fit and significance
   - **Coefficient Interpretation**: Most coefficients interpreted correctly; identifies significant variables
@@ -1526,7 +1527,8 @@ Use this checklist to verify you have all required components before submitting:
 
 - **13 - Adequate**:
   - **Correlation Matrix**: Basic correlation matrix present; limited formatting
-  - **Models Tested**: 3 models tested but may have minor issues; some with fewer than 2 variables OR incomplete labeling
+  - **Scatter Plots**: Some scatter plots present but may be missing trendlines or clear labels
+  - **Models Tested**: 2 models tested but may have minor issues; some with fewer than 2 variables OR incomplete labeling
   - **Model Comparison**: Basic comparison table present
   - **Model Selection**: Model selected but weak justification
   - **Coefficient Interpretation**: Basic interpretation present; may miss some key elements
@@ -1535,7 +1537,8 @@ Use this checklist to verify you have all required components before submitting:
 
 - **6 - Poor**:
   - **Correlation Matrix**: Missing or poorly formatted
-  - **Models Tested**: Fewer than 3 models OR models don't meet requirements (fewer than 2 variables)
+  - **Scatter Plots**: Missing or poorly formatted
+  - **Models Tested**: Fewer than 2 models OR models don't meet requirements (fewer than 2 variables)
   - **Model Comparison**: Incomplete or missing
   - **Model Selection**: No clear justification
   - **Coefficient Interpretation**: Incorrect or missing interpretations
@@ -1618,7 +1621,6 @@ Use this checklist to verify you have all required components before submitting:
 **Professional Polish & Completeness (15 points)**
 
 - **15 - Excellent**:
-  - **Excel Formulas**: All formulas visible in both workbooks (not just results)
   - **Labels & Annotations**: Clear labels throughout Excel; annotations explain what calculations mean and interpret key outputs
   - **Completeness**: No missing elements; all required components present in both workbooks and slides
   - **Organization**: Professional structure with section headers in Excel; logical flow in slides
