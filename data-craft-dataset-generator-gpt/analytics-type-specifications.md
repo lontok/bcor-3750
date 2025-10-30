@@ -130,7 +130,7 @@ Predict a dependent variable based on relationships with independent variables u
 
 **Correlation Structure**:
 - Create realistic relationships between IVs and DV (r = 0.3 to 0.7)
-- Some multicollinearity between IVs (realistic, r = 0.3-0.6, not perfect)
+- **NO multicollinearity between IVs** - independent variables should be independent of each other (r < 0.3 between IVs)
 - Target adjusted R² of 0.65-0.80 for best model
 
 **Variable Design**:

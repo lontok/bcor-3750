@@ -114,7 +114,7 @@
 - **ALL variables must be NUMERIC/CONTINUOUS** - NO categorical variables (students have not learned dummy variables)
 - Examples: distance, weight, time, cost, quantity, temperature, price, volume, speed, rating
 - Realistic correlations (r = 0.3 to 0.7 between IVs and DV)
-- Some multicollinearity between IVs (r = 0.3-0.6, realistic)
+- **NO multicollinearity between IVs** - independent variables should be independent (r < 0.3 between IVs)
 - Target adjusted R² of 0.65-0.80 for best model
 - Clean data ready for regression (no missing values, no duplicates)
 
