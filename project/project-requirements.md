@@ -967,7 +967,9 @@ You will complete TWO distinct predictive analyses using the same dataset:
    - Select 1 best model based on fit and significance
    - Make predictions using selected model
 
-#### Excel Analysis:
+**IMPORTANT: You MUST use Excel for all time series forecasting and regression analysis. Do not use Python, R, or other statistical software.**
+
+#### Excel Analysis (REQUIRED):
 
 **Time Series Forecasting:**
 - Test minimum 3 models from:
@@ -1148,9 +1150,9 @@ You will complete TWO distinct predictive analyses using the same dataset:
 - What are risks/limitations of predictions?
 - How to monitor actual vs. predicted (track prediction accuracy)
 
-#### Excel Workbook Requirements
+#### Excel Workbook Requirements (REQUIRED - Must Use Excel)
 
-You will submit **TWO separate Excel workbooks** (one for time series, one for regression) since you're solving two different predictive problems that may use different datasets.
+You will submit **TWO separate Excel workbooks** (one for time series, one for regression) since you're solving two different predictive problems that may use different datasets. All analysis MUST be completed in Excel.
 
 **Workbook 1: Time Series Forecasting Analysis**
 
@@ -1408,6 +1410,243 @@ Each milestone is graded out of **100 points** (which equals 15% of your final c
   - Poor design, weak communication
   - May have interpretation text in Excel workbook (violates instructions)
 - **0 - Missing**: No slides or severely inadequate presentation (fewer than 10 slides or missing problem statement)
+
+---
+
+### Milestone 2: Predictive Analytics Rubric (100 points)
+
+#### Pre-Submission Checklist
+
+Use this checklist to verify you have all required components before submitting:
+
+**TIME SERIES EXCEL WORKBOOK (`milestone-02-time-series-fname-lname.xlsx`):**
+- ☐ Raw worksheet with original time series dataset (unmodified)
+- ☐ Data_Dictionary with all fields documented (column name, data type, notes)
+- ☐ Time_Series_Forecasting worksheet with:
+  - ☐ Historical data with date/time column
+  - ☐ Line chart showing target variable over time
+  - ☐ Pattern decomposition analysis (trend, seasonal, cyclic, random identified)
+  - ☐ Minimum 3 forecasting models tested (from: MA, Weighted MA, FORECAST.LINEAR, FORECAST.ETS)
+  - ☐ Error measures calculated for each model (MAD, MSE, MAPE)
+  - ☐ Model comparison table with all models and accuracy measures
+  - ☐ Best model highlighted with justification
+  - ☐ Forecast for next period using best model
+  - ☐ All formulas visible and clearly labeled
+  - ☐ Professional formatting with section headers
+
+**REGRESSION EXCEL WORKBOOK (`milestone-02-regression-fname-lname.xlsx`):**
+- ☐ Raw worksheet with original regression dataset (unmodified)
+- ☐ Data_Dictionary with all fields documented (column name, data type, notes)
+- ☐ Regression_Analysis worksheet with:
+  - ☐ Dataset with dependent variable (Y) and independent variables (X's)
+  - ☐ Correlation matrix with conditional formatting (color-coded by strength)
+  - ☐ Minimum 3 multiple regression models tested (each with 2+ independent variables)
+  - ☐ Regression outputs for each model clearly labeled (Adjusted R², Coefficients, P-values, Standard Error, Significance F)
+  - ☐ Model comparison table (model name/variables, Adjusted R², Standard Error, Significance F)
+  - ☐ Best model highlighted with justification
+  - ☐ Coefficient interpretation annotations (what 1-unit change in X does to Y)
+  - ☐ Scenario predictions table (2-3 scenarios with different inputs)
+  - ☐ All formulas visible and clearly labeled
+  - ☐ Professional formatting with section headers
+
+**SLIDE DECK (`milestone-02-slides-fname-lname.pdf`):**
+- ☐ Total of 11 slides (separate deck, NOT attached to Milestone 01)
+- ☐ Slide 1: Overview (job, stakeholder, two predictive problems, connection to M01)
+- ☐ Slides 2-5: Time Series Analysis (problem, decomposition, model comparison, forecast results)
+- ☐ Slides 6-11: Regression Analysis (problem, dataset, correlation, model comparison, drivers, scenarios)
+- ☐ Every slide has a takeaway title that states the INSIGHT (not descriptive labels)
+- ☐ Every slide has exactly ONE visual (focused chart/table, not full dashboards)
+- ☐ Every slide has exactly two bullets below visual:
+  - ☐ Recommendation (what action to take)
+  - ☐ Prediction OR Justification/Interpretation
+- ☐ Professional design and formatting throughout
+
+---
+
+#### Technical Execution (50 points)
+
+**Time Series Analysis Execution (25 points)**
+
+- **25 - Excellent**:
+  - **Pattern Decomposition**: Thoroughly identifies all components (trend, seasonal, cyclic, random) with clear analysis of what patterns exist in the data
+  - **Models Tested**: Minimum 3 models tested correctly with appropriate methods based on patterns identified; formulas visible and correct
+  - **Accuracy Measures**: MAD, MSE, and MAPE calculated correctly for each model; comparison table shows all models with clear formatting
+  - **Model Selection**: Best model selected with strong justification based on accuracy measures and pattern fit; reasoning is clear and evidence-based
+  - **Forecast Generated**: Forecast for next period clearly shown using best model; forecast is reasonable given historical patterns
+  - All work professionally organized with clear labels, section headers, and annotations explaining calculations
+
+- **19 - Good**:
+  - **Pattern Decomposition**: Identifies main components (trend, seasonal) with adequate analysis
+  - **Models Tested**: 3 models tested correctly; formulas mostly visible; appropriate methods used
+  - **Accuracy Measures**: MAD, MSE, MAPE calculated for each model; comparison table present with good formatting
+  - **Model Selection**: Best model selected with reasonable justification based on accuracy
+  - **Forecast Generated**: Forecast shown using best model; forecast is reasonable
+  - Work is well-organized with labels and some annotations
+
+- **13 - Adequate**:
+  - **Pattern Decomposition**: Basic identification of patterns; limited analysis
+  - **Models Tested**: 3 models tested but may have minor errors; some formulas visible
+  - **Accuracy Measures**: Most accuracy measures calculated; comparison table present but basic
+  - **Model Selection**: Model selected but justification is weak or generic
+  - **Forecast Generated**: Forecast present but may be unclear
+  - Work has basic organization and labels
+
+- **6 - Poor**:
+  - **Pattern Decomposition**: Incomplete or incorrect pattern identification
+  - **Models Tested**: Fewer than 3 models OR significant errors in calculations
+  - **Accuracy Measures**: Incomplete or incorrect error calculations
+  - **Model Selection**: No clear justification for model choice
+  - **Forecast Generated**: Missing or incorrect forecast
+  - Work is poorly organized or unclear
+
+- **0 - Missing**: Time series analysis missing or severely incomplete
+
+**Regression Analysis Execution (25 points)**
+
+- **25 - Excellent**:
+  - **Correlation Matrix**: Complete correlation matrix with conditional formatting showing relationships between all variables; color-coded appropriately
+  - **Models Tested**: Minimum 3 multiple regression models tested (each with 2+ independent variables); different variable combinations tested; all regression outputs clearly labeled
+  - **Model Comparison**: Comparison table shows all models with key metrics (Adjusted R², Standard Error, Significance F); best model clearly highlighted
+  - **Model Selection**: Best model selected with strong justification (accuracy, statistical significance, parsimony); explains why this model over others
+  - **Coefficient Interpretation**: All coefficients interpreted correctly with clear annotations explaining what 1-unit change in X does to Y; identifies which variables are statistically significant (p < 0.05)
+  - **Scenario Predictions**: 2-3 scenarios completed with different input values; predicted outcomes shown for each; regression equation visible
+  - All work professionally organized with clear labels, section headers, and annotations
+
+- **19 - Good**:
+  - **Correlation Matrix**: Correlation matrix present with conditional formatting; shows key relationships
+  - **Models Tested**: 3 multiple regression models tested correctly (2+ variables each); outputs labeled
+  - **Model Comparison**: Comparison table present with key metrics; best model highlighted
+  - **Model Selection**: Model selected with reasonable justification based on fit and significance
+  - **Coefficient Interpretation**: Most coefficients interpreted correctly; identifies significant variables
+  - **Scenario Predictions**: 2-3 scenarios completed; predictions shown
+  - Work is well-organized with labels and annotations
+
+- **13 - Adequate**:
+  - **Correlation Matrix**: Basic correlation matrix present; limited formatting
+  - **Models Tested**: 3 models tested but may have minor issues; some with fewer than 2 variables OR incomplete labeling
+  - **Model Comparison**: Basic comparison table present
+  - **Model Selection**: Model selected but weak justification
+  - **Coefficient Interpretation**: Basic interpretation present; may miss some key elements
+  - **Scenario Predictions**: 1-2 scenarios completed; predictions present but basic
+  - Work has basic organization
+
+- **6 - Poor**:
+  - **Correlation Matrix**: Missing or poorly formatted
+  - **Models Tested**: Fewer than 3 models OR models don't meet requirements (fewer than 2 variables)
+  - **Model Comparison**: Incomplete or missing
+  - **Model Selection**: No clear justification
+  - **Coefficient Interpretation**: Incorrect or missing interpretations
+  - **Scenario Predictions**: Missing or incorrect
+  - Work is poorly organized
+
+- **0 - Missing**: Regression analysis missing or severely incomplete
+
+---
+
+#### Presentation Clarity (50 points)
+
+**Slide Design & Visual Quality (15 points)**
+
+- **15 - Excellent**:
+  - Every slide has exactly ONE focused visual (specific chart/table that tells the story)
+  - Charts and tables are clear, easy to read, professionally formatted
+  - Visuals are appropriately sized and positioned
+  - Consistent design and layout throughout all 11 slides
+  - Screenshots show specific charts from Excel, not full worksheets or dashboards
+  - Visual hierarchy is clear (titles, visuals, bullets)
+
+- **11 - Good**:
+  - Most slides have one focused visual; occasional exceptions
+  - Charts and tables are clear and readable
+  - Good formatting with minor inconsistencies
+  - Mostly consistent design
+  - Most screenshots show specific visuals
+
+- **8 - Adequate**:
+  - Some slides have multiple visuals or unclear visuals
+  - Charts/tables are readable but basic formatting
+  - Some design inconsistencies
+  - Some full worksheet/dashboard screenshots
+
+- **4 - Poor**:
+  - Multiple visuals per slide OR visuals are unclear
+  - Charts/tables are difficult to read
+  - Inconsistent or unprofessional design
+  - Mostly full screenshots rather than focused visuals
+
+- **0 - Missing**: No visuals or severely inadequate visual quality
+
+**Takeaway Titles & Two-Bullet Format (20 points)**
+
+- **20 - Excellent**:
+  - All 11 slides present:
+    - Slide 1: Overview
+    - Slides 2-5: Time Series (problem, decomposition, comparison, results)
+    - Slides 6-11: Regression (problem, dataset, correlation, comparison, drivers, scenarios)
+  - Every slide title is a compelling **TAKEAWAY that states the insight** (e.g., "FORECAST.ETS Achieves Lowest Error Rate at 8.2% MAPE" NOT "Time Series Model Comparison")
+  - Every slide has exactly **two bullets below the visual**:
+    - First bullet: **Recommendation** (specific action to take)
+    - Second bullet: **Prediction** (expected outcome) OR **Justification/Interpretation** (for analysis slides)
+  - Bullets are specific, actionable, and business-relevant
+  - Format is consistent across all slides
+
+- **15 - Good**:
+  - 10-11 slides present covering most required content
+  - Most slide titles state insights; a few may be descriptive
+  - Most slides follow two-bullet format (Recommendation + Prediction/Justification)
+  - Bullets are mostly specific and relevant
+  - Format is mostly consistent
+
+- **10 - Adequate**:
+  - 9-10 slides present; may be missing 1-2 required slides
+  - Some slide titles are descriptive rather than insight-focused
+  - Two-bullet format inconsistently applied
+  - Bullets are somewhat generic or vague
+  - Format varies across slides
+
+- **5 - Poor**:
+  - Fewer than 9 slides present; missing multiple required slides
+  - Most titles are descriptive labels rather than insights
+  - Two-bullet format rarely followed OR bullets are generic/irrelevant
+  - Format is inconsistent
+
+- **0 - Missing**: Severely inadequate presentation (fewer than 8 slides)
+
+**Professional Polish & Completeness (15 points)**
+
+- **15 - Excellent**:
+  - **Excel Formulas**: All formulas visible in both workbooks (not just results)
+  - **Labels & Annotations**: Clear labels throughout Excel; annotations explain what calculations mean and interpret key outputs
+  - **Completeness**: No missing elements; all required components present in both workbooks and slides
+  - **Organization**: Professional structure with section headers in Excel; logical flow in slides
+  - **Formatting**: Consistent professional formatting; tables properly formatted; no clutter or unnecessary elements
+  - **File Naming**: Correct file names used for all three submissions
+
+- **11 - Good**:
+  - Most formulas visible; a few may be hidden
+  - Good labels and some annotations present
+  - All major components present; may have minor omissions
+  - Well-organized with clear structure
+  - Good formatting with minor inconsistencies
+  - File naming mostly correct
+
+- **8 - Adequate**:
+  - Some formulas visible but many hidden
+  - Basic labels; limited annotations
+  - Some required components missing
+  - Basic organization; structure could be clearer
+  - Adequate formatting but inconsistent
+  - File naming partially correct
+
+- **4 - Poor**:
+  - Most formulas hidden
+  - Minimal labels and annotations
+  - Multiple missing components
+  - Poor organization; unclear structure
+  - Unprofessional or inconsistent formatting
+  - Incorrect file naming
+
+- **0 - Missing**: Severely incomplete or unprofessional work
 
 ---
 
