@@ -109,17 +109,16 @@ Predict a dependent variable based on relationships with independent variables u
 - **4-6 independent variables** (to support testing minimum 3 different models)
 
 **Variable Mix**:
-- At least 2-3 continuous variables (numeric predictors)
-- At least 1-2 categorical variables (dummy coded: 0/1 or categorical text)
+- **ALL 4-6 independent variables must be NUMERIC/CONTINUOUS** (distance, weight, time, cost, quantity, temperature, etc.)
+- **NO categorical variables** (students have not learned dummy variable creation)
 - Realistic correlations (not perfect, not random)
 - **Data Quality**: CLEAN data only - no missing values, no duplicates, no format issues
 
 ### Key Questions to Ask
 
 1. **Dependent Variable**: "What are you trying to predict? (e.g., delivery time, order cost, defect rate, satisfaction score)"
-2. **Independent Variables**: "What factors might influence this? I recommend 4-6 variables so you can test different model combinations."
-3. **Variable Types**: "Which should be continuous (like distance, weight) vs categorical (like is_express, region)?"
-4. **Business Context**: "What's the business scenario?"
+2. **Independent Variables**: "What numeric factors might influence this? I recommend 4-6 variables so you can test different model combinations. All variables must be numeric (like distance, weight, time, cost, quantity, temperature)."
+3. **Business Context**: "What's the business scenario?"
 
 ### Data Generation Guidelines
 
@@ -135,10 +134,10 @@ Predict a dependent variable based on relationships with independent variables u
 - Target adjusted R² of 0.65-0.80 for best model
 
 **Variable Design**:
-- **Continuous**: distance, weight, time, cost, quantity, temperature, experience
-- **Categorical**: yes/no flags (is_express, is_premium), binary (0/1)
+- **ALL variables must be NUMERIC/CONTINUOUS**: distance, weight, time, cost, quantity, temperature, experience, age, price, volume, speed, rating, hours, days, percentage, count
+- **NO categorical variables allowed**: Do not include yes/no flags, binary (0/1), or category labels
 - **Significant variables**: 3-4 should have p < 0.05 in best model
-- **Weaker variables**: 1-2 can be less significant
+- **Weaker variables**: 1-2 can be less significant (but still numeric)
 
 **Realistic Business Relationships**:
 - Coefficients should make business sense

@@ -41,8 +41,8 @@ Ask about:
 Then INFORM (don't ask): "Your dataset will include all standard data quality issues for comprehensive learning practice: missing values, duplicates, date format inconsistencies, outliers, and inconsistent categories."
 
 **For Predictive (Milestone 2)**:
-- Time Series Forecasting: Target variable, time horizon, trends/seasonality
-- OR Regression: Dependent variable, independent variables (3-8)
+- Time Series Forecasting: Target variable, time horizon, data period
+- Regression: Dependent variable (numeric), independent variables (4-6 numeric variables ONLY - NO categorical variables)
 
 **For Prescriptive (Milestone 3)**:
 - Optimization: Decision variables, objective function, constraints
@@ -127,6 +127,7 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
   - Milestone 3: Include ALL 5 quality issues
 - **For Milestone 2**: Generate TWO separate datasets (time series + regression) with different problems
 - **For Milestone 2 Time Series**: MUST include trend + seasonal patterns, but don't reveal patterns to student
+- **For Milestone 2 Regression**: ALL independent variables must be NUMERIC only - NO categorical variables (students have not learned dummy variable creation)
 - After generating data, provide clear next steps for the student's milestone
 - Ensure README explains connection to Operations Management Decision Area
 - Confirm deliverables match milestone requirements before delivery

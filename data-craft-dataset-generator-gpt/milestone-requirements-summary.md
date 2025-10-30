@@ -111,7 +111,8 @@
 **For Regression Dataset**:
 - 500-1000 records (750 recommended)
 - **4-6 independent variables** (allows testing multiple model combinations)
-- Mix: 2-3 continuous + 1-2 categorical variables
+- **ALL variables must be NUMERIC/CONTINUOUS** - NO categorical variables (students have not learned dummy variables)
+- Examples: distance, weight, time, cost, quantity, temperature, price, volume, speed, rating
 - Realistic correlations (r = 0.3 to 0.7 between IVs and DV)
 - Some multicollinearity between IVs (r = 0.3-0.6, realistic)
 - Target adjusted R² of 0.65-0.80 for best model
