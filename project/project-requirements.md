@@ -941,12 +941,309 @@ Upload to Brightspace by **Monday, October 20, 2025, 8:00 AM**:
 **Due: Tuesday, November 11, 2025 by 11:59 PM**
 **Weight: 15 points**
 
-**Detailed requirements for Milestone 2 will be released after Milestone 1 is completed.**
+#### What You're Answering:
 
-Key focus areas:
+- **Predictive**: "What will happen?" - Forecasting and prediction
 
-- **Time Series Forecasting**: Moving average and exponential smoothing methods
-- **Multiple Linear Regression**: Predictive modeling with interpretation
+#### Project Continuity:
+
+- **Same job and stakeholder** from Milestone 01
+- **Flexible decision area** (can be same OR different from Milestone 01)
+- **New problem** focused on predictive analytics (related to job/stakeholder)
+- **New dataset** structured for time series forecasting and multiple linear regression
+- **Clean data** - no Data_Cleaning_Log required (data will be ready for predictions)
+
+#### Two Separate Predictive Analyses:
+
+You will complete TWO distinct predictive analyses using the same dataset:
+
+1. **Time Series Forecasting Analysis** - Forecast a metric over time (Problem A)
+   - Test minimum 3 different forecasting models
+   - Select 1 best model based on accuracy measures
+   - Generate forecast for next period
+
+2. **Multiple Linear Regression Analysis** - Predict an outcome based on drivers (Problem B - different from A)
+   - Test minimum 3 different multiple regression models (each with at least 2 independent variables)
+   - Select 1 best model based on fit and significance
+   - Make predictions using selected model
+
+#### Excel Analysis:
+
+**Time Series Forecasting:**
+- Test minimum 3 models from:
+  - N-Period Moving Average (e.g., 3-month, 6-month, etc.)
+  - N-Period Weighted Moving Average
+  - Excel's FORECAST.LINEAR (for trend projection)
+  - Excel's FORECAST.ETS (for trend + seasonality)
+- Calculate forecast accuracy for each model (MAD, MSE, and/or MAPE)
+- Create comparison table showing all models with accuracy measures
+- Select best method and justify choice
+- Generate forecast for next period using best method
+
+**Multiple Linear Regression:**
+- Conduct correlation analysis to identify promising predictor variables
+- Test minimum 3 multiple regression models:
+  - Each model must have at least 2 independent variables
+  - Test different combinations of variables (e.g., 2-variable model, 3-variable model, 4-variable model)
+- Interpret key regression outputs:
+  - Adjusted R² (model fit)
+  - Coefficients (relationships between variables)
+  - P-values (statistical significance)
+  - Y-intercept (baseline prediction)
+- Select best model and justify choice
+- Make predictions for 2-3 scenarios using selected model
+- Discuss business implications of relationships found
+
+#### Deliverables (DC ACT Framework)
+
+**1. Define**
+
+- Connection to Milestone 01: Same job and stakeholder
+- **Time Series Problem Statement**: What are you forecasting and why does it matter to stakeholder?
+- **Regression Problem Statement**: What are you predicting and why does it matter to stakeholder?
+- How do these predictions help stakeholder make better decisions?
+
+**2. Collect**
+
+- New dataset suitable for both time series forecasting and regression analysis
+- Data dictionary for new dataset
+- No Data_Cleaning_Log required (data is clean and ready)
+
+**3. Analyze**
+
+- Excel workbook with:
+  - **Time_Series_Forecasting** tab:
+    - Historical data plotted over time
+    - Decomposition analysis (trend, seasonal, cyclic, random patterns)
+    - Minimum 3 models tested with formulas visible
+    - Accuracy comparison table (MAD, MSE, MAPE)
+    - Selected forecast with next period prediction
+  - **Regression_Analysis** tab:
+    - Correlation matrix with conditional formatting
+    - Minimum 3 multiple regression models (each with 2+ independent variables)
+    - Model comparison table (Adjusted R², Standard Error, Significance F)
+    - Selected model with coefficient interpretation
+    - Scenario predictions (2-3 scenarios)
+  - Clear labels, formulas visible, professional formatting
+  - **Show your work**: Annotate what outputs mean
+
+**4. Communicate**
+
+- **Slide Deck** (11 slides - SEPARATE DECK, not attached to Milestone 01):
+
+  **Slide 1: Milestone 02 Overview**
+  - Job and stakeholder (reference from Milestone 01)
+  - **Two predictive problems** you'll address:
+    - **Time Series Problem**: [Brief statement - what you're forecasting]
+    - **Regression Problem**: [Brief statement - what you're predicting]
+  - How these predictions help stakeholder make better decisions
+  - Connection to Milestone 01 (1 sentence): "Building on the [descriptive/diagnostic insights from M01], these forecasts enable proactive planning"
+
+  **SECTION A: TIME SERIES FORECASTING (4 slides)**
+
+  **Slide 2: Time Series Problem Statement**
+  - Takeaway title stating what's being forecasted and why it matters to stakeholder
+  - Visual: Line chart showing historical data of target variable over time
+  - Two bullets:
+    - **Problem**: What are we forecasting and why does it matter to stakeholder?
+    - **Impact**: How does this forecast enable better decisions?
+
+  **Slide 3: Time Series Decomposition and Pattern Identification**
+  - Takeaway title identifying the patterns found (e.g., "Order Volume Shows Strong Seasonal Pattern with Upward Trend, No Cyclical Component")
+  - Visual: Decomposition chart OR annotated line chart highlighting patterns:
+    - Trend (long-term increase/decrease?)
+    - Seasonal (regular up/down fluctuations?)
+    - Cyclic (multi-year patterns?)
+    - Random (erratic variation?)
+  - Two bullets:
+    - **Data**: Time period, granularity, number of observations (e.g., "24 months of weekly order data, 104 observations")
+    - **Recommendation**: Which time series methods are appropriate given these patterns? (e.g., "Strong trend suggests FORECAST.LINEAR; seasonality suggests FORECAST.ETS")
+
+  **Slide 4: Time Series Model Comparison**
+  - Takeaway title announcing the winner (e.g., "FORECAST.ETS Achieves Lowest Error Rate at 8.2% MAPE, Outperforming Moving Average Methods")
+  - Visual: Comparison table showing **minimum 3 models** with accuracy measures:
+    - Model names (e.g., 3-Month MA, 6-Month MA, Weighted MA, FORECAST.LINEAR, FORECAST.ETS)
+    - MAD, MSE, and/or MAPE for each
+    - Highlight the best model
+  - Two bullets:
+    - **Recommendation**: Which model to use and why it's superior
+    - **Justification**: What makes it better (accuracy, captures trend/seasonality, pattern fit)
+
+  **Slide 5: Forecast Results**
+  - Takeaway title with the forecast insight (e.g., "Demand Will Increase 18% Over Next Quarter, Requiring 25% Capacity Expansion")
+  - Visual: Line chart showing historical actuals + forecast period
+  - Two bullets:
+    - **Recommendation**: What action should stakeholder take?
+    - **Prediction**: What outcome if they follow recommendation?
+
+  **SECTION B: REGRESSION ANALYSIS (6 slides)**
+
+  **Slide 6: Regression Problem Statement**
+  - Takeaway title stating what you're predicting and why it matters to stakeholder
+  - Visual: Conceptual diagram OR simple visual showing the prediction challenge
+  - Two bullets:
+    - **Problem**: What are we predicting (dependent variable Y) and why does it matter to stakeholder?
+    - **Impact**: How will understanding drivers of Y enable better decisions?
+
+  **Slide 7: Regression Dataset Overview**
+  - Takeaway title about the data characteristics (e.g., "1,500 Delivery Records Across 6 Months Provide Robust Sample for Driver Analysis")
+  - Visual: Table or infographic showing dataset characteristics:
+    - Data source
+    - Time period or scope (e.g., "Q1-Q4 2024")
+    - Number of observations (e.g., "1,500 delivery records")
+    - Dependent variable (Y) being predicted
+    - Number of potential independent variables available
+  - Two bullets:
+    - **Data**: Brief description of dataset scope and structure
+    - **Variables**: What dependent variable (Y) will be predicted
+
+  **Slide 8: Correlation Analysis**
+  - Takeaway title revealing correlation insight (e.g., "Distance and Weight Show Strong Correlation with Delivery Time (r > 0.7)")
+  - Visual: Correlation matrix with conditional formatting showing relationships between:
+    - Dependent variable (Y)
+    - Independent variables (X₁, X₂, X₃, etc.)
+  - Two bullets:
+    - **Variables**: Introduce the independent variables (X's) being tested (e.g., "Testing Distance, Weight, Carrier, Weather, Time of Day as potential drivers")
+    - **Recommendation**: Which variables are promising predictors based on correlation strength?
+
+  **Slide 9: Regression Model Comparison**
+  - Takeaway title announcing winning model (e.g., "4-Variable Model Explains 82% of Delivery Time Variation (Best Balance of Fit and Significance)")
+  - Visual: Model comparison table showing **minimum 3 multiple regression models** (each with at least 2 independent variables):
+    - Model 1: 2 variables (e.g., Distance + Weight)
+    - Model 2: 3 variables (e.g., Distance + Weight + Carrier)
+    - Model 3: 4 variables (e.g., Distance + Weight + Carrier + Weather)
+    - Key metrics: Adjusted R², Standard Error, Significance F
+    - Highlight best model
+  - Two bullets:
+    - **Recommendation**: Which model to use and why
+    - **Justification**: Why this model over others (accuracy, statistical significance, parsimony, all variables significant)
+
+  **Slide 10: Key Drivers and Relationships**
+  - Takeaway title revealing the insight (e.g., "Each Additional Mile Adds 0.12 Days to Delivery Time; Weather Has Minimal Impact (p > 0.05)")
+  - Visual: Coefficient bar chart OR regression equation with coefficients and p-values
+  - Two bullets:
+    - **Recommendation**: Which factors should stakeholder manage/control?
+    - **Interpretation**: What does a 1-unit change in X do to Y? (interpret the coefficients)
+
+  **Slide 11: Prediction Scenarios**
+  - Takeaway title with scenario insight (e.g., "Peak Season Scenario Predicts 6.2-Day Delivery, Exceeding 5-Day Target by 24%")
+  - Visual: Table showing 2-3 scenarios with different input values and predicted outcomes
+  - Two bullets:
+    - **Recommendation**: How to use predictions for planning/decision-making
+    - **Prediction**: Expected outcomes under each scenario
+
+  **Key Requirements**:
+  - **Slide Title = The Insight**: Your title should state the finding, not describe the visual type
+  - **ONE visual per slide**: Select the specific chart/table that tells the story
+  - **Two bullets below visual**:
+    1. Recommendation (what action to take)
+    2. Prediction (what outcome to expect) OR Justification/Interpretation (for analysis slides)
+  - **Separate deck**: Do NOT attach to Milestone 01 slides
+
+**5. Act**
+
+- How should stakeholder use time series forecast? (covered in Slide 5)
+- How should stakeholder use regression predictions? (covered in Slide 11)
+- What decisions can be made with these forecasts?
+- What are risks/limitations of predictions?
+- How to monitor actual vs. predicted (track prediction accuracy)
+
+#### Excel Workbook Requirements
+
+You will submit **TWO separate Excel workbooks** (one for time series, one for regression) since you're solving two different predictive problems that may use different datasets.
+
+**Workbook 1: Time Series Forecasting Analysis**
+
+File name: `milestone-02-time-series-fname-lname.xlsx`
+
+Required worksheets:
+1. **Raw** - Original time series dataset (unmodified)
+2. **Prep** (optional) - Data cleaning/wrangling if needed
+3. **Data_Dictionary** - Field definitions for time series dataset:
+   - Column: Field name
+   - Data Type: Text, number, date, etc.
+   - Notes: Description and any important details
+4. **Time_Series_Forecasting** - All time series analysis work:
+   - Historical data with date/time column
+   - Line chart showing target variable over time
+   - Pattern decomposition analysis:
+     - Trend component identified (increasing, decreasing, stable?)
+     - Seasonal component identified (regular fluctuations?)
+     - Cyclic component identified (multi-year patterns?)
+     - Random component identified (irregular variations?)
+   - Minimum 3 forecasting models tested:
+     - N-Period Moving Average (show multiple period lengths)
+     - N-Period Weighted Moving Average
+     - Excel's FORECAST.LINEAR
+     - Excel's FORECAST.ETS
+   - Forecast accuracy calculations for each model:
+     - MAD (Mean Absolute Deviation)
+     - MSE (Mean Square Error)
+     - MAPE (Mean Absolute Percentage Error)
+   - Model comparison table showing all models with accuracy measures
+   - Selected best model highlighted with justification
+   - Forecast for next period using best model
+   - All formulas visible and clearly labeled
+   - Professional formatting with clear section headers
+
+**Workbook 2: Multiple Linear Regression Analysis**
+
+File name: `milestone-02-regression-fname-lname.xlsx`
+
+Required worksheets:
+1. **Raw** - Original regression dataset (unmodified)
+2. **Prep** (optional) - Data cleaning/wrangling if needed
+3. **Data_Dictionary** - Field definitions for regression dataset:
+   - Column: Field name
+   - Data Type: Text, number, date, etc.
+   - Notes: Description and any important details
+4. **Regression_Analysis** - All regression analysis work:
+   - Dataset with dependent variable (Y) and independent variables (X₁, X₂, X₃, etc.)
+   - Correlation matrix with conditional formatting:
+     - Shows relationships between all variables
+     - Color-coded by correlation strength
+   - Minimum 3 multiple regression models tested:
+     - Each model must have at least 2 independent variables
+     - Test different combinations (e.g., 2-variable, 3-variable, 4-variable models)
+   - Regression outputs for each model clearly labeled:
+     - Adjusted R² (model fit)
+     - Coefficients (slope for each variable)
+     - P-values (statistical significance)
+     - Standard Error
+     - Significance F
+     - Y-intercept
+   - Model comparison table showing:
+     - Model name/variables included
+     - Adjusted R²
+     - Standard Error
+     - Significance F
+     - Highlight best model
+   - Selected best model with annotations explaining:
+     - Why this model was chosen
+     - Interpretation of coefficients (what 1-unit change in X does to Y)
+     - Which variables are statistically significant (p < 0.05)
+   - Scenario predictions table (2-3 scenarios):
+     - Different input values for independent variables
+     - Predicted outcome for each scenario
+     - Show regression equation used
+   - All formulas visible and clearly labeled
+   - Professional formatting with clear section headers
+
+**Key Requirements for Both Workbooks:**
+- All formulas must be visible (not just results)
+- Clear labels and annotations explaining what calculations mean
+- Professional formatting with consistent styling
+- Section headers to organize different parts of analysis
+- Charts/tables properly titled
+- No unnecessary worksheets or clutter
+
+#### Submission Files
+
+Upload to Brightspace by **Tuesday, November 11, 2025, 11:59 PM**:
+
+1. **`milestone-02-time-series-fname-lname.xlsx`** (Time Series Forecasting Analysis - see Excel requirements above)
+2. **`milestone-02-regression-fname-lname.xlsx`** (Multiple Linear Regression Analysis - see Excel requirements above)
+3. **`milestone-02-slides-fname-lname.pdf`** (11 slides as specified above)
 
 ---
 
