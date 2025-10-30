@@ -954,7 +954,7 @@ Upload to Brightspace by **Monday, October 20, 2025, 8:00 AM**:
 - **Flexible decision area** (can be same OR different from Milestone 01)
 - **New problem** focused on predictive analytics (related to job/stakeholder)
 - **New dataset** structured for time series forecasting and multiple linear regression
-- **Clean data** - no Data_Cleaning_Log required (data will be ready for predictions)
+- **Clean data** - The dataset for Milestone 02 will NOT have data quality issues, so you do NOT need to clean the data or create a Data_Cleaning_Log. The data will be ready for predictive analysis.
 
 #### Two Separate Predictive Analyses:
 
@@ -1012,7 +1012,7 @@ You will complete TWO distinct predictive analyses using the same dataset:
 
 - New dataset suitable for both time series forecasting and regression analysis
 - Data dictionary for new dataset
-- No Data_Cleaning_Log required (data is clean and ready)
+- **No Data_Cleaning_Log required** - The Milestone 02 dataset will be generated without data quality issues, so you will NOT need to identify, assess, or fix data quality problems. The data is clean and ready for predictive analysis.
 
 **3. Analyze**
 
