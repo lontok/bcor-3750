@@ -226,9 +226,15 @@ Before generating, confirm with user:
 2. Data dictionary (explains all fields)
 3. README with problem context, decision area connection, and analysis guidance
 
-**For Milestone 2 (TWO SEPARATE DATASETS):**
-1. **Time Series Dataset**: CSV + data dictionary + README (Problem A)
-2. **Regression Dataset**: CSV + data dictionary + README (Problem B)
+**For Milestone 2 (TWO SEPARATE EXCEL WORKBOOKS):**
+1. **Time Series Workbook**: `milestone-02-time-series-fname-lname.xlsx` with worksheets:
+   - Raw (dataset)
+   - Data_Dictionary (field definitions)
+   - Time_Series_Forecasting (empty - for student's analysis work)
+2. **Regression Workbook**: `milestone-02-regression-fname-lname.xlsx` with worksheets:
+   - Raw (dataset)
+   - Data_Dictionary (field definitions)
+   - Regression_Analysis (empty - for student's analysis work)
 
 **For Milestone 3:**
 1. Primary dataset (CSV)
@@ -258,17 +264,19 @@ Your dataset is ready! Here's what I've included:
 2. `data_dictionary.csv` - Field definitions and descriptions
 3. `README.md` - Context, problem statement, decision area connection, and analysis guidance
 
-**For Milestone 2 (TWO SEPARATE DELIVERIES):**
+**For Milestone 2 (TWO SEPARATE EXCEL WORKBOOKS):**
 
-**Dataset 1 - Time Series Forecasting (Problem A):**
-1. `[filename]_timeseries_data.csv` - Time series dataset
-2. `timeseries_data_dictionary.csv` - Field definitions
-3. `timeseries_README.md` - Problem A context and forecasting guidance
+**Workbook 1 - Time Series Forecasting (Problem A):**
+1. `milestone-02-time-series-fname-lname.xlsx` - Excel workbook with worksheets:
+   - **Raw**: Time series dataset (clean data, 18-24 months, NO GAPS)
+   - **Data_Dictionary**: Field definitions and descriptions
+   - **Time_Series_Forecasting**: Empty worksheet for student's forecasting analysis
 
-**Dataset 2 - Multiple Regression (Problem B):**
-1. `[filename]_regression_data.csv` - Regression dataset
-2. `regression_data_dictionary.csv` - Field definitions
-3. `regression_README.md` - Problem B context and regression guidance
+**Workbook 2 - Multiple Regression (Problem B):**
+1. `milestone-02-regression-fname-lname.xlsx` - Excel workbook with worksheets:
+   - **Raw**: Regression dataset (clean data, 500-1000 records, 4-6 numeric IVs)
+   - **Data_Dictionary**: Field definitions and descriptions
+   - **Regression_Analysis**: Empty worksheet for student's regression analysis
 
 **For Milestone 3:**
 1. `[filename]_data.csv` - Primary dataset

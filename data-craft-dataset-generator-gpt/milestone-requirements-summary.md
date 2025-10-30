@@ -92,9 +92,14 @@
 
 **Deliverables**:
 - TWO separate Excel workbooks:
-  - `milestone-02-time-series-fname-lname.xlsx`
-  - `milestone-02-regression-fname-lname.xlsx`
-- Data dictionary for each dataset
+  - **Workbook 1**: `milestone-02-time-series-fname-lname.xlsx` with worksheets:
+    - Raw (time series dataset)
+    - Data_Dictionary (field definitions)
+    - Time_Series_Forecasting (empty - for student's analysis work)
+  - **Workbook 2**: `milestone-02-regression-fname-lname.xlsx` with worksheets:
+    - Raw (regression dataset)
+    - Data_Dictionary (field definitions)
+    - Regression_Analysis (empty - for student's analysis work)
 - NO Data_Cleaning_Log (data is clean)
 - Slide deck (11 slides - SEPARATE deck, not attached to Milestone 01)
 

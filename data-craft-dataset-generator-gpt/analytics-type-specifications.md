@@ -92,6 +92,13 @@ Forecast future values of a metric based on historical time patterns.
 - DO NOT mention: "trend", "seasonal", "increasing", "cyclical" in any documentation
 - Let students discover patterns through their own analysis
 
+**Delivery Format**:
+- Excel workbook: `milestone-02-time-series-fname-lname.xlsx`
+- Worksheets:
+  - **Raw**: Time series dataset (clean data)
+  - **Data_Dictionary**: Field definitions
+  - **Time_Series_Forecasting**: Empty worksheet for student's analysis
+
 ---
 
 ## Predictive Analytics - Regression Analysis (Milestone 2B)
@@ -143,6 +150,13 @@ Predict a dependent variable based on relationships with independent variables u
 - Coefficients should make business sense
 - Scale variables appropriately
 - Add realistic noise to prevent perfect predictions
+
+**Delivery Format**:
+- Excel workbook: `milestone-02-regression-fname-lname.xlsx`
+- Worksheets:
+  - **Raw**: Regression dataset (clean data, 500-1000 records)
+  - **Data_Dictionary**: Field definitions
+  - **Regression_Analysis**: Empty worksheet for student's analysis
 
 ---
 

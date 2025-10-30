@@ -100,10 +100,16 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
 - Data dictionary (column names, data types, notes)
 - README with problem context, decision area connection, and analysis guidance
 
-**Milestone 2** (TWO SEPARATE DATASETS):
-- **Dataset 1**: Time Series CSV file + data dictionary + README
-- **Dataset 2**: Regression CSV file + data dictionary + README
-- Each dataset addresses a different predictive problem (Problem A and Problem B)
+**Milestone 2** (TWO SEPARATE EXCEL WORKBOOKS):
+- **Workbook 1**: `milestone-02-time-series-fname-lname.xlsx` with worksheets:
+  - Raw (time series dataset)
+  - Data_Dictionary (field definitions)
+  - Time_Series_Forecasting (empty - for student's analysis)
+- **Workbook 2**: `milestone-02-regression-fname-lname.xlsx` with worksheets:
+  - Raw (regression dataset)
+  - Data_Dictionary (field definitions)
+  - Regression_Analysis (empty - for student's analysis)
+- Each workbook addresses a different predictive problem (Problem A and Problem B)
 
 **Milestone 3**:
 - CSV file(s) appropriate for optimization/simulation
