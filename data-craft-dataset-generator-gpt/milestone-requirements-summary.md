@@ -107,7 +107,7 @@
 
 **For Time Series Dataset**:
 - Sequential dates with NO GAPS, 18-24 months recommended
-- **MUST include both trend AND seasonal patterns** (don't reveal patterns to student)
+- **Internally generate data with trend AND seasonal patterns** (NEVER mention "trend", "seasonal", "increasing", "cyclical" to students - let them discover through decomposition)
 - Monthly frequency preferred
 - Target variable to forecast (realistic scale)
 - Optional: 1-2 context fields for reference
@@ -256,7 +256,7 @@
 
 **For Milestone 2**:
 - Students need BOTH time series and regression - generate TWO SEPARATE datasets
-- For time series: Emphasize NO GAPS, 18-24 months, MUST have trend + seasonal (don't reveal)
+- For time series: Emphasize NO GAPS, 18-24 months; internally ensure patterns exist but NEVER mention "trend", "seasonal", "increasing", or "cyclical" to students
 - For regression: 4-6 independent variables, support testing 3+ models
 - Data must be CLEAN (no quality issues) - focus is on predictive modeling
 - Separate problems: Problem A (time series forecast) and Problem B (regression prediction)
@@ -283,7 +283,7 @@
 **Milestone 2 Specific**:
 - [ ] TWO separate datasets being generated (time series + regression)
 - [ ] NO quality issues (clean data only)
-- [ ] Time series: 18-24 months, NO GAPS, has trend + seasonal patterns (don't reveal)
+- [ ] Time series: 18-24 months, NO GAPS, patterns generated internally (NEVER mention pattern types to students)
 - [ ] Regression: 4-6 independent variables, supports testing 3+ models
 
 **Milestone 3 Specific**:

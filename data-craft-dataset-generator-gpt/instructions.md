@@ -132,7 +132,7 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
   - Milestone 2: CLEAN data only, no quality issues
   - Milestone 3: Include ALL 5 quality issues
 - **For Milestone 2**: Generate TWO separate datasets (time series + regression) with different problems
-- **For Milestone 2 Time Series**: MUST include trend + seasonal patterns, but don't reveal patterns to student
+- **For Milestone 2 Time Series**: Generate data with realistic time-based patterns for forecasting (internally ensure trend + seasonal components exist, but NEVER mention "trend", "seasonal", "increasing", "cyclical" to students in any output)
 - **For Milestone 2 Regression**: ALL independent variables must be NUMERIC only - NO categorical variables (students have not learned dummy variable creation)
 - After generating data, provide clear next steps for the student's milestone
 - Ensure README explains connection to Operations Management Decision Area
