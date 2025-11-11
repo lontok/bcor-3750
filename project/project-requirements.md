@@ -1017,21 +1017,21 @@ You will complete TWO distinct predictive analyses using the same dataset:
 
 **3. Analyze**
 
-- Excel workbook with:
-  - **Time_Series_Forecasting** tab:
+- **Two separate Excel workbooks** (one for time series, one for regression):
+  - **Time Series Forecasting Workbook** (`milestone-02-time-series-fname-lname.xlsx`):
     - Historical data plotted over time
     - Decomposition analysis (trend, seasonal, cyclic, random patterns)
     - Minimum 3 models tested with formulas visible
     - Accuracy comparison table (MAD, MSE, MAPE)
     - Selected forecast with next period prediction
-  - **Regression_Analysis** tab:
+  - **Multiple Linear Regression Workbook** (`milestone-02-regression-fname-lname.xlsx`):
     - Correlation matrix with conditional formatting
     - Scatter plots for top 3 independent variables (most correlated with dependent variable)
     - Minimum 2 multiple regression models (each with 2+ independent variables)
     - Model comparison table (Adjusted R², Standard Error, Significance F)
     - Selected model with coefficient interpretation
     - Scenario predictions (2-3 scenarios)
-  - Clear labels, formulas visible, professional formatting
+  - **Both workbooks**: Clear labels, formulas visible, professional formatting
   - **Show your work**: Annotate what outputs mean
 
 **4. Communicate**
@@ -1258,12 +1258,197 @@ Upload to Brightspace by **Tuesday, November 11, 2025, 11:59 PM**:
 **Due: Thursday, December 4, 2025 by 11:59 PM**
 **Weight: 15 points**
 
-**Detailed requirements for Milestone 3 will be released after Milestone 2 is completed.**
+#### What You're Answering:
 
-Key focus areas:
+- **Prescriptive**: "What should we do?" - Optimization and decision-making under constraints
 
-- **Linear Programming with Excel Solver**: Optimization modeling
-- **Monte Carlo Simulation**: Risk analysis under uncertainty
+#### Project Continuity:
+
+- **Same job and stakeholder** from Milestones 01 and 02
+- **Flexible decision area** (can be same OR different from previous milestones)
+- **New problem** focused on prescriptive analytics (optimization and decision-making)
+- **Optimization focus**: Select ONE optimization problem type from the four options below
+
+#### Four Optimization Problem Types (Choose ONE):
+
+You will complete ONE prescriptive analytics problem focused on optimization. Choose the problem type that best fits your stakeholder's needs:
+
+**1. Aggregate Planning**
+- Workforce planning and production scheduling over multiple periods
+- Minimize total costs (regular time, overtime, hiring, firing, inventory holding, backorder)
+- Balance supply and demand across planning horizon
+- Constraints: workforce levels, production capacity, demand requirements
+- Example applications: Manufacturing production planning, seasonal workforce planning, resource allocation over time
+
+**2. Inventory Management**
+- Economic Order Quantity (EOQ) or reorder point optimization
+- Minimize total inventory costs (ordering costs + holding costs)
+- Determine optimal order quantities and reorder timing
+- Constraints: demand rates, lead times, storage capacity, budget
+- Example applications: Retail inventory optimization, warehouse management, supply chain efficiency
+
+**3. Capacity & Constraint Management**
+- Product mix optimization with limited resources
+- Maximize profit (or minimize cost) given resource constraints
+- Determine optimal production or service mix
+- Constraints: machine hours, labor hours, materials, storage space
+- Example applications: Manufacturing product mix, service allocation, resource utilization
+
+**4. Location Strategy**
+- Facility location or network optimization
+- Minimize total distribution costs or maximize coverage
+- Determine optimal facility locations and allocation patterns
+- Constraints: facility capacities, customer demands, geographic coverage
+- Example applications: Distribution center placement, retail location selection, service network design
+
+**IMPORTANT: You MUST use Excel Solver for optimization analysis. Do not use Python, R, or other software.**
+
+#### Required Components for All Problem Types:
+
+**Problem Definition:**
+- Clear statement of what you're optimizing (objective function)
+- Decision variables (what you're deciding)
+- Constraints (limitations and requirements)
+- Connection to stakeholder needs
+
+**Excel Solver Model:**
+- Decision variables clearly defined and labeled
+- Objective function (what you're maximizing or minimizing)
+- Constraints properly formulated
+- Solver parameters configured correctly
+- Solution shows optimal values for decision variables
+
+**Sensitivity Analysis:**
+- What-if analysis showing how solution changes with different parameters
+- Shadow prices or reduced costs interpretation (when applicable)
+- Business implications of binding vs. non-binding constraints
+- Recommendations based on sensitivity insights
+
+**Monte Carlo Simulation (Optional Enhancement):**
+- If problem involves uncertainty, add Monte Carlo simulation
+- Model uncertain parameters (demand, costs, etc.) with probability distributions
+- Run simulation to analyze range of possible outcomes
+- Risk analysis and confidence intervals
+
+#### Deliverables (DC ACT Framework)
+
+**1. Define**
+
+- Connection to Milestones 01-02: Same job and stakeholder
+- **Problem Statement**: What optimization problem are you solving and why does it matter to stakeholder?
+- **Problem Type**: Which of the four problem types are you addressing?
+- **Decision Variables**: What decisions need to be made?
+- **Objective**: What are you optimizing (maximizing profit, minimizing cost, etc.)?
+- **Constraints**: What limitations or requirements must be satisfied?
+
+**2. Collect**
+
+- Dataset or parameters needed for optimization model
+- Data dictionary documenting all inputs and parameters
+- **No Data_Cleaning_Log required** - Focus on model setup and optimization
+
+**3. Analyze**
+
+- Excel workbook with:
+  - **Model_Setup** worksheet:
+    - Decision variables section
+    - Objective function calculation
+    - Constraints formulated
+    - Parameters and input data organized
+    - All formulas clearly labeled
+  - **Solver_Solution** worksheet:
+    - Solver parameters documented
+    - Optimal solution displayed
+    - Decision variable values highlighted
+    - Objective function value shown
+    - Constraint satisfaction verified
+  - **Sensitivity_Analysis** worksheet:
+    - What-if analysis for key parameters
+    - Sensitivity table or data table
+    - Shadow prices or reduced costs (when applicable)
+    - Scenario comparison (best case, worst case, expected)
+  - **Monte_Carlo_Simulation** worksheet (if applicable):
+    - Uncertain parameter distributions defined
+    - Simulation results (mean, std dev, percentiles)
+    - Histogram or probability distribution chart
+    - Risk analysis and confidence intervals
+
+**4. Communicate**
+
+- **Slide Deck** (9-11 slides):
+
+  **Slide 1: Cover Slide**
+  - Project title
+  - Your name
+  - Date
+  - Milestone 3: Prescriptive Analytics
+
+  **Slide 2: Problem Definition & Context**
+  - Takeaway title stating the optimization goal (e.g., "Optimizing Production Mix Could Increase Monthly Profit by $45K")
+  - Visual: Problem overview diagram or current state summary
+  - Three bullets:
+    - **Stakeholder**: Who you're helping (same from Milestones 01-02)
+    - **Problem Type**: Which optimization problem (Aggregate Planning, Inventory, Capacity, or Location)
+    - **Why It Matters**: Business impact of optimization
+
+  **Slide 3: Optimization Model Overview**
+  - Takeaway title explaining the model approach (e.g., "Linear Programming Model Balances 3 Product Lines Across 4 Resource Constraints")
+  - Visual: Model structure diagram or screenshot of Excel model setup
+  - Three bullets:
+    - **Decision Variables**: What you're deciding (e.g., "Units of Product A, B, C to produce")
+    - **Objective Function**: What you're optimizing (e.g., "Maximize total profit = $50A + $40B + $60C")
+    - **Constraints**: Key limitations (e.g., "Machine hours ≤ 1000, Labor hours ≤ 800")
+
+  **Slide 4: Optimal Solution**
+  - Takeaway title revealing the recommendation (e.g., "Optimal Mix: Produce 150 Units A, 200 Units B, 100 Units C for Maximum $45K Profit")
+  - Visual: Screenshot of Solver solution showing optimal decision variable values
+  - Two-three bullets:
+    - **Optimal Decision**: Specific values for decision variables
+    - **Objective Value**: What you achieve (profit, cost, etc.)
+    - **Constraint Status**: Which constraints are binding (fully used) vs. slack
+
+  **Slide 5: Sensitivity Analysis Insights**
+  - Takeaway title revealing key insight (e.g., "Machine Hours Are the Bottleneck - Each Additional Hour Worth $45 in Profit")
+  - Visual: Sensitivity table or what-if analysis screenshot
+  - Two-three bullets:
+    - **Binding Constraints**: Which resources are limiting performance (shadow prices)
+    - **Parameter Sensitivity**: How solution changes with different inputs
+    - **Recommendation**: Where to focus improvement efforts (expand capacity, reduce costs, etc.)
+
+  **Slides 6-7: Scenario Analysis** (if applicable)
+  - Takeaway titles comparing scenarios (e.g., "Scenario Analysis: Increasing Machine Capacity by 20% Could Boost Profit by $9K")
+  - Visuals: Comparison tables or charts
+  - Bullets explaining different scenarios and their outcomes
+
+  **Slides 8-9: Monte Carlo Simulation Results** (if applicable)
+  - Takeaway title revealing risk insight (e.g., "80% Confidence Profit Will Exceed $38K Even With Demand Uncertainty")
+  - Visual: Histogram or probability distribution
+  - Two bullets:
+    - **Risk Analysis**: Range of possible outcomes, confidence intervals
+    - **Recommendation**: Risk mitigation strategies based on simulation
+
+  **Slide 10: Implementation Plan**
+  - Takeaway title with action focus (e.g., "Implementation Roadmap: Phased Rollout Over 3 Months With Weekly Monitoring")
+  - Visual: Timeline or process diagram
+  - Three bullets:
+    - **Actions**: Specific steps to implement optimal solution
+    - **Timeline**: When to implement changes
+    - **Monitoring**: How to track results and adjust
+
+  **Slide 11: Summary & Business Impact**
+  - Takeaway title summarizing value (e.g., "Optimization Model Delivers $45K Monthly Profit Gain With Minimal Investment")
+  - Visual: Summary metrics or before/after comparison
+  - Three bullets:
+    - **Key Results**: Main outcomes from optimization
+    - **Business Value**: Financial or operational impact
+    - **Next Steps**: Future enhancements or related opportunities
+
+#### Submission Files
+
+Upload to Brightspace by **Thursday, December 4, 2025, 11:59 PM**:
+
+1. **`milestone-03-fname-lname.xlsx`** (Excel Optimization Workbook - see requirements above)
+2. **`milestone-03-slides-fname-lname.pdf`** (9-11 slides as specified above)
 
 ---
 
@@ -2194,9 +2379,9 @@ Good luck! Use office hours. Start early. Make it something you're proud to show
 
 **Milestone 2:**
 
-- [ ] **milestone-02-fname-lname.xlsx** (Excel Analysis Workbook with forecasting + regression)
+- [ ] **milestone-02-time-series-fname-lname.xlsx** (Time Series Forecasting Analysis)
+- [ ] **milestone-02-regression-fname-lname.xlsx** (Multiple Linear Regression Analysis)
 - [ ] **milestone-02-slides-fname-lname.pdf**
-- [ ] Data files if using new dataset (include Data_Cleaning_Log if new)
 
 **Milestone 3:**
 
