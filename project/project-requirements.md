@@ -515,13 +515,16 @@ Create a **Data_Cleaning_Log** worksheet in your Excel workbook with these colum
 **For Time Series Forecasting:**
 
 - Sequential time-stamped data with NO GAPS (daily, weekly, or monthly)
-- At least 12-24 months of historical data
+- **Historical Data**: At least 12-24 months of past data (this is your INPUT for building the model)
+- **Forecast Output**: You will predict ONE next period (e.g., next month, next quarter)
 - Clear trends or seasonal patterns
 - Target variable to forecast (demand, delivery time, defect rate, etc.)
 
 **Example Fields:**
 
 - Date (sequential), target_metric (what you're forecasting), optional: external factors (marketing spend, weather, holidays)
+
+**Important Clarification**: The "12-24 months" refers to how much historical data you need to train your forecasting model. You will use this historical data to generate a forecast for just ONE future period (e.g., if your data ends in December 2024, you forecast January 2025 only).
 
 **For Regression Analysis:**
 
@@ -963,7 +966,7 @@ You will complete TWO distinct predictive analyses using the same dataset:
 1. **Time Series Forecasting Analysis** - Forecast a metric over time (Problem A)
    - Test minimum 3 different forecasting models
    - Select 1 best model based on accuracy measures
-   - Generate forecast for next period
+   - Generate forecast for the ONE next period (e.g., if data ends Dec 2024, forecast Jan 2025 only)
 
 2. **Multiple Linear Regression Analysis** - Predict an outcome based on drivers (Problem B - different from A)
    - Test minimum 2 different multiple regression models (each with at least 2 independent variables)
@@ -983,7 +986,7 @@ You will complete TWO distinct predictive analyses using the same dataset:
 - Calculate forecast accuracy for each model (MAD, MSE, and/or MAPE)
 - Create comparison table showing all models with accuracy measures
 - Select best method and justify choice
-- Generate forecast for next period using best method
+- Generate forecast for ONE next period using best method (not 12 periods - just the immediate next period)
 
 **Multiple Linear Regression:**
 - Conduct correlation analysis to identify promising predictor variables
@@ -1023,7 +1026,7 @@ You will complete TWO distinct predictive analyses using the same dataset:
     - Decomposition analysis (trend, seasonal, cyclic, random patterns)
     - Minimum 3 models tested with formulas visible
     - Accuracy comparison table (MAD, MSE, MAPE)
-    - Selected forecast with next period prediction
+    - Selected forecast with ONE next period prediction (singular - not 12 periods)
   - **Multiple Linear Regression Workbook** (`milestone-02-regression-fname-lname.xlsx`):
     - Correlation matrix with conditional formatting
     - Scatter plots for top 3 independent variables (most correlated with dependent variable)
@@ -1078,7 +1081,7 @@ You will complete TWO distinct predictive analyses using the same dataset:
 
   **Slide 5: Forecast Results**
   - Takeaway title with the forecast insight (e.g., "Demand Will Increase 18% Over Next Quarter, Requiring 25% Capacity Expansion")
-  - Visual: Line chart showing historical actuals + forecast period
+  - Visual: Line chart showing historical actuals + ONE forecast period (e.g., 12 months historical + 1 month forecast)
   - Two bullets:
     - **Recommendation**: What action should stakeholder take?
     - **Prediction**: What outcome if they follow recommendation?
@@ -1188,7 +1191,7 @@ Required worksheets:
      - MAPE (Mean Absolute Percentage Error)
    - Model comparison table showing all models with accuracy measures
    - Selected best model highlighted with justification
-   - Forecast for next period using best model
+   - Forecast for ONE next period using best model (e.g., if your data ends in December 2024, you forecast only January 2025)
    - Professional formatting with clear section headers
 
 **Workbook 2: Multiple Linear Regression Analysis**
@@ -1619,7 +1622,7 @@ Use this checklist to verify you have all required components before submitting:
   - ☐ Error measures calculated for each model (MAD, MSE, MAPE)
   - ☐ Model comparison table with all models and accuracy measures
   - ☐ Best model highlighted with justification
-  - ☐ Forecast for next period using best model
+  - ☐ Forecast for ONE next period using best model (singular period, not 12 periods)
   - ☐ Professional formatting with section headers
 
 **REGRESSION EXCEL WORKBOOK (`milestone-02-regression-fname-lname.xlsx`):**
@@ -1659,7 +1662,7 @@ Use this checklist to verify you have all required components before submitting:
   - **Models Tested**: Minimum 3 models tested correctly with appropriate methods based on patterns identified; formulas visible and correct
   - **Accuracy Measures**: MAD, MSE, and MAPE calculated correctly for each model; comparison table shows all models with clear formatting
   - **Model Selection**: Best model selected with strong justification based on accuracy measures and pattern fit; reasoning is clear and evidence-based
-  - **Forecast Generated**: Forecast for next period clearly shown using best model; forecast is reasonable given historical patterns
+  - **Forecast Generated**: Forecast for ONE next period clearly shown using best model; forecast is reasonable given historical patterns
   - All work professionally organized with clear labels, section headers, and annotations explaining calculations
 
 - **19 - Good**:
@@ -1667,7 +1670,7 @@ Use this checklist to verify you have all required components before submitting:
   - **Models Tested**: 3 models tested correctly; formulas mostly visible; appropriate methods used
   - **Accuracy Measures**: MAD, MSE, MAPE calculated for each model; comparison table present with good formatting
   - **Model Selection**: Best model selected with reasonable justification based on accuracy
-  - **Forecast Generated**: Forecast shown using best model; forecast is reasonable
+  - **Forecast Generated**: Forecast for ONE next period shown using best model; forecast is reasonable
   - Work is well-organized with labels and some annotations
 
 - **13 - Adequate**:
