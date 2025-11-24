@@ -128,52 +128,118 @@
 ## Milestone 3: Prescriptive Analytics
 
 **Due**: Thursday, December 4, 2025
-**Analytics Types**: Linear Programming (Optimization) + Monte Carlo Simulation
+**Analytics Types**: TWO Prescriptive Problems Required
 
 ### What Students Need
 
 **Dataset Requirements**:
-- Can use SAME dataset as previous milestones OR a different dataset
-- Must complete BOTH analyses (or justify why only one applies):
-  - **Optimization**: Parameters for Excel Solver
-  - **Simulation**: Historical variability data
+- Students must complete **TWO separate prescriptive analytics problems**
+- **Problem A**: Linear Programming (Required) - Excel Solver
+- **Problem B**: Choose ONE method from:
+  - Inventory Management (Economic Order Quantity)
+  - Aggregate Planning
+  - Location Strategy (Factor Rating Method)
+  - Capacity & Constraint Management
 
 **Technical Analysis Required**:
 
-1. **Linear Programming with Excel Solver**:
-   - Decision variables (3-10)
-   - Objective function (maximize/minimize what?)
-   - Constraints (4-8 limitations)
-   - Solver solution
-   - Sensitivity analysis
+1. **Problem A - Linear Programming** (Required):
+   - Decision variables (clearly labeled)
+   - Objective function (maximize or minimize)
+   - Objective coefficients (contribution of each decision variable)
+   - Constraints (limitations on the problem)
+   - Excel Solver solution (Simplex LP method)
+   - Sensitivity analysis interpretation:
+     - Shadow prices
+     - Binding vs. non-binding constraints
+     - Allowable increases/decreases
 
-2. **Monte Carlo Simulation**:
-   - Uncertain variable(s)
-   - Probability distribution (normal, uniform, or triangular)
-   - 1,000-10,000 simulation runs
-   - Distribution of outcomes
-   - Risk assessment and confidence intervals
+2. **Problem B - Choose ONE Method**:
+   - **Inventory Management**: EOQ calculation, reorder points, total cost analysis
+   - **Aggregate Planning**: Capacity planning, workforce/production adjustments, cost optimization
+   - **Location Strategy**: Factor rating method, weighted scores, site comparison
+   - **Capacity & Constraint Management**: Bottleneck identification, throughput analysis, constraint optimization
 
 **Deliverables**:
-- Excel workbook with optimization and simulation models
-- Data cleaning log (if using new dataset)
-- COMPLETE slide deck (all 3 milestones)
+- Excel workbook with both Problem A and Problem B analyses
+- Data cleaning log (if using new dataset - NOT required if data is clean)
+- COMPLETE slide deck (all 3 milestones - exactly 10 slides for Milestone 3)
 
 ### Data Generation Guidance
 
-**For Optimization**:
-- Decision variables table (product/resource options with costs/profits)
-- Constraints table (budget, capacity, minimum/maximum limits)
-- Resource usage matrix
-- Ensure feasible solution exists
-- Make optimal solution interesting (not trivial)
+**IMPORTANT**: Milestone 3 requires **parameter data**, not transactional data like previous milestones.
 
-**For Simulation**:
-- Historical data showing variability (250-500 records)
-- Clear probability distribution pattern
-- Distribution parameters (mean, std dev, min, max)
-- Uncertain variables that impact decisions
-- Realistic uncertainty ranges
+**For Problem A - Linear Programming**:
+
+Generate data in **BOTH formats** to give students flexibility:
+
+**Option 1: Pre-Formatted Excel Tables** (Ready for Solver)
+- Decision variables table with clear labels
+- Objective coefficients for each decision variable
+- Constraints table with:
+  - Resource usage coefficients (how much each decision variable consumes)
+  - Constraint limits (budget, capacity, minimum/maximum requirements)
+  - Constraint types (≤, ≥, or =)
+- All sections clearly labeled and organized
+- Ready to reference in Excel Solver setup
+
+**Option 2: Raw Parameter Data** (Students organize themselves)
+- List of decision variable options with relevant parameters
+- Cost/profit/contribution data for objective function
+- Resource consumption rates
+- Constraint limit values
+- Students structure the model themselves
+
+**Key LP Data Characteristics**:
+- 3-7 decision variables (manageable complexity)
+- 4-8 constraints (realistic problem scope)
+- Ensure feasible solution exists (test before providing)
+- Create interesting optimal solution (not obvious, requires Solver)
+- Include at least 2-3 binding constraints for sensitivity analysis
+- Provide realistic business context (production, resource allocation, etc.)
+
+**For Problem B - Student-Selected Method**:
+
+**Approach**: Generate data for the **specific method the student requests** after asking which Problem B method they want to analyze.
+
+**Inventory Management Data**:
+- Annual demand (units/year)
+- Ordering cost per order ($)
+- Holding cost per unit per year ($)
+- Lead time (days)
+- Unit cost
+- Optional: Quantity discount breakpoints
+
+**Aggregate Planning Data**:
+- Demand forecast by period (6-12 periods)
+- Regular time capacity and cost
+- Overtime capacity and cost
+- Subcontracting cost
+- Inventory holding cost
+- Backorder/stockout cost
+- Hiring/firing costs
+- Current workforce level
+
+**Location Strategy Data**:
+- 3-5 location alternatives
+- 5-8 factors (cost, labor availability, proximity to markets, infrastructure, etc.)
+- Factor weights (importance ratings)
+- Location scores for each factor (0-100 scale)
+- Optional: Qualitative descriptions of each location
+
+**Capacity & Constraint Management Data**:
+- Process step capacities (units/hour or units/day)
+- Processing times for each step
+- Demand requirement
+- Resource availability
+- Setup times (if applicable)
+- Optional: Cost data for constraint analysis
+
+**Data Format Options**:
+- Provide both **pre-formatted tables** AND **raw parameter lists**
+- Pre-formatted: Ready to use in Excel calculations
+- Raw: Students organize and structure themselves
+- Include clear labels and units for all parameters
 
 ---
 
@@ -262,10 +328,16 @@
 - Separate problems: Problem A (time series forecast) and Problem B (regression prediction)
 
 **For Milestone 3**:
-- Ask: Optimization, simulation, or both?
-- For optimization: Decision variables, constraints, objective
-- For simulation: Uncertain variables, distribution type, parameters
-- Can be different dataset if needed
+- Students need TWO prescriptive problems: Problem A (LP) + Problem B (student choice)
+- **Problem A - Linear Programming**: Always required, provide BOTH pre-formatted and raw parameter options
+  - Ask about: Decision variables, objective (max/min), constraints, business context
+  - Ensure feasible solution exists with interesting optimal solution
+  - Include 2-3 binding constraints for sensitivity analysis
+- **Problem B - Student Choice**: Ask which method they want (Inventory/Aggregate/Location/Capacity)
+  - Generate data specific to their chosen method
+  - Provide both pre-formatted tables and raw parameter lists
+  - Include all parameters needed for complete analysis
+- Parameter data focus (not transactional data like Milestones 1-2)
 
 ### Quality Checks Before Generation
 
@@ -287,5 +359,10 @@
 - [ ] Regression: 4-6 independent variables, supports testing 3+ models
 
 **Milestone 3 Specific**:
-- [ ] Optimization OR simulation requirements clear
-- [ ] Parameters/constraints/distributions appropriate
+- [ ] TWO problems being generated: Problem A (LP required) + Problem B (student choice)
+- [ ] Problem A: Both pre-formatted AND raw parameter options provided
+- [ ] Problem A: LP model is feasible with interesting optimal solution
+- [ ] Problem A: 2-3 binding constraints included for sensitivity analysis
+- [ ] Problem B: Student has specified which method (Inventory/Aggregate/Location/Capacity)
+- [ ] Problem B: Complete parameters for chosen method with both format options
+- [ ] All parameters clearly labeled with units and business context
