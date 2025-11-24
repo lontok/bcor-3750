@@ -8,8 +8,11 @@
 - [Part 3: Milestone Requirements](#part-3-milestone-requirements)
   - [Milestone 1: Descriptive & Diagnostic Analytics](#milestone-1-descriptive--diagnostic-analytics)
   - [Milestone 2: Predictive Analytics](#milestone-2-predictive-analytics)
-  - [Milestone 3: Prescriptive Analytics](#milestone-3-prescriptive-analytics)
+  - [Milestone 3: Prescriptive Analytics (Two Problems Required)](#milestone-3-prescriptive-analytics-two-problems-required)
 - [Part 4: Grading Rubrics](#part-4-grading-rubrics)
+  - [Milestone 1: Descriptive & Diagnostic Analytics Rubric](#milestone-1-descriptive--diagnostic-analytics-rubric-100-points)
+  - [Milestone 2: Predictive Analytics Rubric](#milestone-2-predictive-analytics-rubric-100-points)
+  - [Milestone 3: Prescriptive Analytics Rubric](#milestone-3-prescriptive-analytics-rubric-100-points)
 - [Part 5: Presentation & Communication Guidelines](#part-5-presentation--communication-guidelines)
 - [Part 6: Interview Preparation](#part-6-interview-preparation)
 - [Part 7: Common Pitfalls & How to Avoid Them](#part-7-common-pitfalls--how-to-avoid-them)
@@ -1281,9 +1284,9 @@ Students must solve one optimization problem using **Excel Solver (Simplex LP)**
 
 - Objective function (maximize, minimize, value of)
 - Clearly labeled decision variables
+- Objective function (maximize or minimize)
 - Objective coefficients set as needed
 - Constraints
-- SUMPRODUCT formulas for calculations where necessary
 - Solver output showing optimal values
 - Interpretation of:
   - Solver output
@@ -1412,7 +1415,7 @@ Excel workbook with the following worksheets:
 
 **4. Communicate**
 
-**Slide Deck** (9-11 slides):
+**Slide Deck** (10 slides):
 
 **Slide 1: Cover Slide**
 - Project title
@@ -1495,7 +1498,7 @@ Excel workbook with the following worksheets:
 Upload to Brightspace by **Thursday, December 4, 2025, 11:59 PM**:
 
 1. **`milestone-03-fname-lname.xlsx`** (Excel workbook with Model_A_Linear_Programming, Solver_Output_A, Sensitivity_Analysis_A, and Problem_B_Worksheet)
-2. **`milestone-03-slides-fname-lname.pdf`** (9-10 slides as specified above)
+2. **`milestone-03-slides-fname-lname.pdf`** (10 slides as specified above)
 
 ---
 
@@ -1896,16 +1899,15 @@ Use this checklist to verify you have all required components before submitting:
 **EXCEL WORKBOOK (`milestone-03-fname-lname.xlsx`):**
 - ☐ Model_A_Linear_Programming worksheet with:
   - ☐ Decision variables clearly labeled
-  - ☐ Objective function calculation using SUMPRODUCT
+  - ☐ Objective function calculation
   - ☐ Constraints formulated with cell references
   - ☐ Parameters and input data organized
   - ☐ All formulas visible
-- ☐ Solver_Output_A worksheet with:
   - ☐ Solver parameters documented
-  - ☐ Optimal solution displayed
+  - ☐ Optimal solution displayed (after running Solver)
   - ☐ Decision variable values highlighted
   - ☐ Objective function value shown
-  - ☐ Constraint satisfaction verified (binding vs. slack)
+  - ☐ Constraint satisfaction verified (binding vs. slack indicated)
 - ☐ Sensitivity_Analysis_A worksheet with:
   - ☐ Sensitivity Report from Solver included
   - ☐ Shadow prices interpretation
@@ -1920,7 +1922,7 @@ Use this checklist to verify you have all required components before submitting:
 - ☐ Data_Dictionary with all fields documented (if new dataset used)
 
 **SLIDE DECK (`milestone-03-slides-fname-lname.pdf`):**
-- ☐ Total of 9-11 slides (separate deck, NOT attached to previous milestones)
+- ☐ Total of 10 slides (separate deck, NOT attached to previous milestones)
 - ☐ Slide 1: Cover slide (title, name, date, milestone)
 - ☐ Slide 2: Problem Definition & Stakeholder Context (stakeholder, Problem A, Problem B)
 - ☐ Slide 3: Problem A - LP Model Overview (objective function, decision variables, objective coefficients, constraints)
@@ -1931,7 +1933,6 @@ Use this checklist to verify you have all required components before submitting:
 - ☐ Slide 8: Problem B - Recommendation (specific action and impact)
 - ☐ Slide 9: Implementation Plan (timeframe, actions, monitoring)
 - ☐ Slide 10: Business Impact Summary (Problem A + Problem B results)
-- ☐ Slide 11 (Optional): Supporting Data Appendix
 - ☐ Every slide has a takeaway title that states the INSIGHT (not descriptive labels)
 - ☐ Every slide (except cover) has exactly ONE visual
 - ☐ Every insight slide has two or three bullets as specified
@@ -1944,7 +1945,7 @@ Use this checklist to verify you have all required components before submitting:
 **Problem A - Linear Programming Model & Solver Execution (25 points)**
 
 - **25 - Excellent**:
-  - **Model Setup**: Decision variables clearly labeled and organized; objective function uses SUMPRODUCT correctly; all constraints properly formulated with cell references; parameters logically organized
+  - **Model Setup**: Decision variables clearly labeled and organized; objective function calculated correctly; all constraints properly formulated with cell references; parameters logically organized
   - **Solver Configuration**: Solver set to Simplex LP method; objective cell, variable cells, and constraints correctly specified; solution converges to optimal
   - **Solution Quality**: Optimal solution is reasonable and makes business sense; all decision variable values displayed; objective function value clearly shown; constraint satisfaction verified (binding vs. slack indicated)
   - **Formula Visibility**: All formulas visible and properly labeled; professional formatting throughout; model is easy to follow and audit
@@ -2056,7 +2057,7 @@ Use this checklist to verify you have all required components before submitting:
 **Slide Design & Visual Quality (10 points)**
 
 - **10 - Excellent**:
-  - All 9-11 slides present with professional design
+  - All 10 slides present with professional design
   - Every slide (except cover) has exactly ONE focused visual (specific chart/table/screenshot)
   - Visuals are clear, appropriately sized, and easy to read
   - Screenshots show specific model components or results, not full worksheets
