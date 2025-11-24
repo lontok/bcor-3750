@@ -359,7 +359,7 @@ Your data must be relevant to your project through AT LEAST ONE of these connect
 
 - **Descriptive + Diagnostic**: MUST use the same dataset (you're analyzing what happened and why)
 - **Predictive**: Can use the same dataset as Descriptive/Diagnostic OR a different dataset if needed
-- **Prescriptive**: Can use the same dataset OR a different dataset if the original doesn't support optimization/simulation
+- **Prescriptive**: Can use the same dataset OR a different dataset if the original doesn't support optimization
 
 **Why allow different datasets?**
 Sometimes your descriptive/diagnostic dataset doesn't have the right structure for time series forecasting, regression, or optimization. It's better to use appropriate data than to force the wrong data into an analysis technique.
@@ -553,17 +553,6 @@ Create a **Data_Cleaning_Log** worksheet in your Excel workbook with these colum
 - Decision variables table (products with profit/cost per unit)
 - Constraints table (budget, capacity, minimum/maximum limits)
 - Resource usage matrix (how much of each resource each decision uses)
-
-**For Monte Carlo Simulation:**
-
-- Historical data showing variability (250-500 records)
-- Uncertain variables (demand, lead time, defect rate, etc.)
-- Probability distributions (mean, standard deviation, min, max)
-
-**Example Structure:**
-
-- Historical variability data (showing past values of uncertain variables)
-- Distribution parameters table (mean, std dev, min, max for each uncertain variable)
 
 ---
 
@@ -1256,7 +1245,7 @@ Upload to Brightspace by **Tuesday, November 11, 2025, 11:59 PM**:
 
 ---
 
-### Milestone 3: Prescriptive Analytics
+### Milestone 3: Prescriptive Analytics (Two Problems Required)
 
 **Due: Thursday, December 4, 2025 by 11:59 PM**
 **Weight: 15 points**
@@ -1269,189 +1258,244 @@ Upload to Brightspace by **Tuesday, November 11, 2025, 11:59 PM**:
 
 - **Same job and stakeholder** from Milestones 01 and 02
 - **Flexible decision area** (can be same OR different from previous milestones)
-- **New problem** focused on prescriptive analytics (optimization and decision-making)
-- **Optimization focus**: Select ONE optimization problem type from the four options below
+- **Two separate prescriptive problems** to support stakeholder decision-making
 
-#### Four Optimization Problem Types (Choose ONE):
+---
 
-You will complete ONE prescriptive analytics problem focused on optimization. Choose the problem type that best fits your stakeholder's needs:
+### **Overview: Students must complete TWO prescriptive analytics problems**
 
-**1. Aggregate Planning**
+Students provide **two separate prescriptive analytics solutions** to support their stakeholder:
+
+- **Problem A**: Linear Programming (Required) - Must use Excel Solver
+- **Problem B**: Choose ONE additional prescriptive method (NOT Linear Programming)
+
+Both problems must connect to your stakeholder's needs and appear in your slide deck and Excel workbook.
+
+---
+
+## **Problem A — Linear Programming (Required)**
+
+Students must solve one optimization problem using **Excel Solver (Simplex LP)**.
+
+### **Model Requirements:**
+
+- Objective function (maximize, minimize, value of)
+- Clearly labeled decision variables
+- Objective coefficients set as needed
+- Constraints
+- SUMPRODUCT formulas for calculations where necessary
+- Solver output showing optimal values
+- Interpretation of:
+  - Solver output
+  - Sensitivity Report
+
+### **Valid LP Examples (covered in class):**
+
+- **Product Mix**: Maximize profit subject to resource constraints
+- **Transportation**: Minimize shipping costs from suppliers to customers
+- **Labor Scheduling**: Minimize labor costs while meeting service requirements
+- **Blending**: Optimize ingredient mix to meet specifications at minimum cost
+
+**IMPORTANT: You MUST use Excel Solver for Linear Programming analysis. Do not use Python, R, or other software.**
+
+---
+
+## **Problem B — Choose ONE Additional Prescriptive Method**
+
+Students must create a second prescriptive solution from one of these options:
+
+### **Option 1 — Inventory Management**
+
+- Economic Order Quantity (EOQ)
+- Reorder point
+- Safety stock calculations
+- Annual total cost (ordering + holding costs)
+- **Example applications**: Retail inventory optimization, warehouse management, supply chain efficiency
+
+### **Option 2 — Aggregate Planning**
+
+- Level, Chase, or Mixed strategy
 - Workforce planning and production scheduling over multiple periods
-- Minimize total costs (regular time, overtime, hiring, firing, inventory holding, backorder)
+- Cost calculations: regular time, overtime, hiring, layoffs, inventory holding, backorders
 - Balance supply and demand across planning horizon
-- Constraints: workforce levels, production capacity, demand requirements
-- Example applications: Manufacturing production planning, seasonal workforce planning, resource allocation over time
+- **Example applications**: Manufacturing production planning, seasonal workforce planning, resource allocation over time
 
-**2. Inventory Management**
-- Economic Order Quantity (EOQ) or reorder point optimization
-- Minimize total inventory costs (ordering costs + holding costs)
-- Determine optimal order quantities and reorder timing
-- Constraints: demand rates, lead times, storage capacity, budget
-- Example applications: Retail inventory optimization, warehouse management, supply chain efficiency
+### **Option 3 — Location Strategy**
 
-**3. Capacity & Constraint Management**
-- Product mix optimization with limited resources
-- Maximize profit (or minimize cost) given resource constraints
-- Determine optimal production or service mix
-- Constraints: machine hours, labor hours, materials, storage space
-- Example applications: Manufacturing product mix, service allocation, resource utilization
+- Factor Rating method with weighted scoring
+- Normalization of quantitative factors
+- Qualitative and quantitative factor evaluation
+- Facility location or site selection recommendation
+- **Example applications**: Distribution center placement, retail location selection, service facility siting
 
-**4. Location Strategy**
-- Facility location or network optimization
-- Minimize total distribution costs or maximize coverage
-- Determine optimal facility locations and allocation patterns
-- Constraints: facility capacities, customer demands, geographic coverage
-- Example applications: Distribution center placement, retail location selection, service network design
+### **Option 4 — Capacity & Constraint Management**
 
-**IMPORTANT: You MUST use Excel Solver for optimization analysis. Do not use Python, R, or other software.**
+- Capacity, utilization, and efficiency calculations
+- Bottleneck identification
+- Throughput rate analysis
+- Break-even analysis
+- **Example applications**: Process improvement, service capacity planning, resource utilization optimization
 
-#### Required Components for All Problem Types:
+**Althought it is possible to solve this problem with Linear Programming, you must use the techniques covered in class.**
+
+---
+
+#### Required Components for Both Problems:
 
 **Problem Definition:**
-- Clear statement of what you're optimizing (objective function)
-- Decision variables (what you're deciding)
-- Constraints (limitations and requirements)
+- Clear statement of what you're optimizing or deciding
+- Decision variables or key inputs
 - Connection to stakeholder needs
+- Business context and importance
 
-**Excel Solver Model:**
-- Decision variables clearly defined and labeled
-- Objective function (what you're maximizing or minimizing)
-- Constraints properly formulated
-- Solver parameters configured correctly
-- Solution shows optimal values for decision variables
+**Excel Analysis:**
+- Problem A: Complete Solver model with sensitivity analysis
+- Problem B: Calculations using appropriate formulas (EOQ, aggregate planning, factor rating, or capacity analysis)
+- Professional formatting and organization
 
-**Sensitivity Analysis:**
-- What-if analysis showing how solution changes with different parameters
-- Shadow prices or reduced costs interpretation (when applicable)
-- Business implications of binding vs. non-binding constraints
-- Recommendations based on sensitivity insights
+**Business Insights:**
+- Interpretation of results
+- Actionable recommendations
+- Implementation considerations
 
-**Monte Carlo Simulation (Optional Enhancement):**
-- If problem involves uncertainty, add Monte Carlo simulation
-- Model uncertain parameters (demand, costs, etc.) with probability distributions
-- Run simulation to analyze range of possible outcomes
-- Risk analysis and confidence intervals
+---
 
 #### Deliverables (DC ACT Framework)
 
 **1. Define**
 
 - Connection to Milestones 01-02: Same job and stakeholder
-- **Problem Statement**: What optimization problem are you solving and why does it matter to stakeholder?
-- **Problem Type**: Which of the four problem types are you addressing?
-- **Decision Variables**: What decisions need to be made?
-- **Objective**: What are you optimizing (maximizing profit, minimizing cost, etc.)?
-- **Constraints**: What limitations or requirements must be satisfied?
+- **Problem A Statement**: What Linear Programming problem are you solving and why does it matter?
+- **Problem B Statement**: Which prescriptive method did you choose and why is it relevant?
+- **Decision Variables/Inputs**: What needs to be decided or calculated?
+- **Objectives**: What are you optimizing or analyzing?
 
 **2. Collect**
 
-- Dataset or parameters needed for optimization model
+- Dataset or parameters needed for both problems
 - Data dictionary documenting all inputs and parameters
-- **No Data_Cleaning_Log required** - Focus on model setup and optimization
+- **No Data_Cleaning_Log required** - Focus on model setup and analysis
 
 **3. Analyze**
 
-- Excel workbook with:
-  - **Model_Setup** worksheet:
-    - Decision variables section
-    - Objective function calculation
-    - Constraints formulated
-    - Parameters and input data organized
-    - All formulas clearly labeled
-  - **Solver_Solution** worksheet:
-    - Solver parameters documented
-    - Optimal solution displayed
-    - Decision variable values highlighted
-    - Objective function value shown
-    - Constraint satisfaction verified
-  - **Sensitivity_Analysis** worksheet:
-    - What-if analysis for key parameters
-    - Sensitivity table or data table
-    - Shadow prices or reduced costs (when applicable)
-    - Scenario comparison (best case, worst case, expected)
-  - **Monte_Carlo_Simulation** worksheet (if applicable):
-    - Uncertain parameter distributions defined
-    - Simulation results (mean, std dev, percentiles)
-    - Histogram or probability distribution chart
-    - Risk analysis and confidence intervals
+Excel workbook with the following worksheets:
+
+- **Model_A_Linear_Programming**:
+  - Decision variables section clearly labeled
+  - Objective function calculation
+  - Constraints formulated with cell references
+  - Parameters and input data organized
+
+- **Solver_Output_A**:
+  - Solver parameters documented
+  - Optimal solution displayed
+  - Decision variable values highlighted
+  - Objective function value shown
+  - Constraint satisfaction verified
+
+- **Sensitivity_Analysis_A**:
+  - Sensitivity Report from Solver
+  - Shadow prices interpretation
+  - Allowable increases/decreases for objective coefficients
+  - Allowable increases/decreases for constraint RHS values
+  - Business implications of binding constraints
+
+- **Problem_B_Worksheet** (name based on your choice):
+  - **Inventory_Management** OR
+  - **Aggregate_Planning** OR
+  - **Location_Strategy** OR
+  - **Capacity_Analysis**
+  - All calculations clearly organized
+  - Formulas visible and labeled
+  - Input parameters and results displayed
+  - Professional formatting
 
 **4. Communicate**
 
-- **Slide Deck** (9-11 slides):
+**Slide Deck** (9-11 slides):
 
-  **Slide 1: Cover Slide**
-  - Project title
-  - Your name
-  - Date
-  - Milestone 3: Prescriptive Analytics
+**Slide 1: Cover Slide**
+- Project title
+- Your name
+- Date
+- Milestone 3: Prescriptive Analytics
 
-  **Slide 2: Problem Definition & Context**
-  - Takeaway title stating the optimization goal (e.g., "Optimizing Production Mix Could Increase Monthly Profit by $45K")
-  - Visual: Problem overview diagram or current state summary
-  - Three bullets:
-    - **Stakeholder**: Who you're helping (same from Milestones 01-02)
-    - **Problem Type**: Which optimization problem (Aggregate Planning, Inventory, Capacity, or Location)
-    - **Why It Matters**: Business impact of optimization
+**Slide 2: Problem Definition & Stakeholder Context**
+- Takeaway title connecting both problems to business value (e.g., "Two Optimization Approaches Could Increase Profit by $45K and Reduce Inventory Costs by 18%")
+- Visual: Overview diagram showing both problems
+- Three bullets:
+  - **Stakeholder**: Who you're helping (same from Milestones 01-02)
+  - **Problem A**: Linear Programming problem type (Product Mix, Transportation, Labor Scheduling, or Blending) and what you're optimizing (e.g., "Product Mix LP to maximize monthly profit given machine and labor constraints")
+  - **Problem B**: Additional prescriptive method and why it's relevant
 
-  **Slide 3: Optimization Model Overview**
-  - Takeaway title explaining the model approach (e.g., "Linear Programming Model Balances 3 Product Lines Across 4 Resource Constraints")
-  - Visual: Model structure diagram or screenshot of Excel model setup
-  - Three bullets:
-    - **Decision Variables**: What you're deciding (e.g., "Units of Product A, B, C to produce")
-    - **Objective Function**: What you're optimizing (e.g., "Maximize total profit = $50A + $40B + $60C")
-    - **Constraints**: Key limitations (e.g., "Machine hours ≤ 1000, Labor hours ≤ 800")
+**Slide 3: Problem A - Linear Programming Model Overview**
+- Takeaway title explaining the LP model (e.g., "Linear Programming Model Balances 3 Product Lines Across 4 Resource Constraints")
+- Visual: Model structure diagram or screenshot of Excel model setup
+- Four bullets:
+  - **Objective Function**: What you're optimizing (e.g., "Maximize total profit" or "Minimize total shipping cost")
+  - **Decision Variables**: What you're deciding (e.g., "Units of Product A, B, C to produce")
+  - **Objective Coefficients**: Contribution of each decision variable to the objective (e.g., "Profit per unit: $50A, $40B, $60C")
+  - **Constraints**: Key limitations (e.g., "Machine hours ≤ 1000, Labor hours ≤ 800")
 
-  **Slide 4: Optimal Solution**
-  - Takeaway title revealing the recommendation (e.g., "Optimal Mix: Produce 150 Units A, 200 Units B, 100 Units C for Maximum $45K Profit")
-  - Visual: Screenshot of Solver solution showing optimal decision variable values
-  - Two-three bullets:
-    - **Optimal Decision**: Specific values for decision variables
-    - **Objective Value**: What you achieve (profit, cost, etc.)
-    - **Constraint Status**: Which constraints are binding (fully used) vs. slack
+**Slide 4: Problem A - Solver Output**
+- Takeaway title revealing the optimal solution (e.g., "Optimal Mix: Produce 150 Units A, 200 Units B, 100 Units C for Maximum $45K Profit")
+- Visual: Screenshot of Solver solution with optimal values
+- Two bullets:
+  - **Recommendation**: Specific optimal decision variable values
+  - **Impact**: Objective value achieved
 
-  **Slide 5: Sensitivity Analysis Insights**
-  - Takeaway title revealing key insight (e.g., "Machine Hours Are the Bottleneck - Each Additional Hour Worth $45 in Profit")
-  - Visual: Sensitivity table or what-if analysis screenshot
-  - Two-three bullets:
-    - **Binding Constraints**: Which resources are limiting performance (shadow prices)
-    - **Parameter Sensitivity**: How solution changes with different inputs
-    - **Recommendation**: Where to focus improvement efforts (expand capacity, reduce costs, etc.)
+**Slide 5: Problem A - Sensitivity Analysis Insights**
+- Takeaway title revealing key insight (e.g., "Machine Hours Are the Bottleneck - Each Additional Hour Worth $45 in Profit")
+- Visual: Sensitivity Report excerpt or shadow price table
+- Two bullets:
+  - **Binding Constraints**: Which resources limit performance (shadow prices)
+  - **Recommendation**: Where to focus improvement efforts
 
-  **Slides 6-7: Scenario Analysis** (if applicable)
-  - Takeaway titles comparing scenarios (e.g., "Scenario Analysis: Increasing Machine Capacity by 20% Could Boost Profit by $9K")
-  - Visuals: Comparison tables or charts
-  - Bullets explaining different scenarios and their outcomes
+**Slide 6: Problem B - Method Overview**
+- Takeaway title explaining Problem B approach (e.g., "EOQ Analysis Identifies Optimal Order Quantity of 800 Units")
+- Visual: Problem setup or calculation diagram
+- Two bullets:
+  - **Approach**: Method used (Inventory/Aggregate/Location/Capacity)
+  - **Key Inputs**: Critical parameters or factors
 
-  **Slides 8-9: Monte Carlo Simulation Results** (if applicable)
-  - Takeaway title revealing risk insight (e.g., "80% Confidence Profit Will Exceed $38K Even With Demand Uncertainty")
-  - Visual: Histogram or probability distribution
-  - Two bullets:
-    - **Risk Analysis**: Range of possible outcomes, confidence intervals
-    - **Recommendation**: Risk mitigation strategies based on simulation
+**Slide 7: Problem B - Analysis Results**
+- Takeaway title with specific findings (e.g., "Aggregate Planning Recommends Level Strategy to Minimize Total Costs at $425K")
+- Visual: Results table or comparison chart
+- Two bullets:
+  - **Key Calculation/Score**: Main numerical result
+  - **Interpretation**: What this means for the business
 
-  **Slide 10: Implementation Plan**
-  - Takeaway title with action focus (e.g., "Implementation Roadmap: Phased Rollout Over 3 Months With Weekly Monitoring")
-  - Visual: Timeline or process diagram
-  - Three bullets:
-    - **Actions**: Specific steps to implement optimal solution
-    - **Timeline**: When to implement changes
-    - **Monitoring**: How to track results and adjust
+**Slide 8: Problem B - Recommendation**
+- Takeaway title with actionable recommendation (e.g., "Recommended: Order 800 Units Every 6 Weeks to Minimize Total Inventory Costs")
+- Visual: Implementation approach or comparison showing improvement
+- Two bullets:
+  - **Recommendation**: Specific action to take
+  - **Impact**: Expected business benefit
 
-  **Slide 11: Summary & Business Impact**
-  - Takeaway title summarizing value (e.g., "Optimization Model Delivers $45K Monthly Profit Gain With Minimal Investment")
-  - Visual: Summary metrics or before/after comparison
-  - Three bullets:
-    - **Key Results**: Main outcomes from optimization
-    - **Business Value**: Financial or operational impact
-    - **Next Steps**: Future enhancements or related opportunities
+**Slide 9: Implementation Plan**
+- Takeaway title with action focus (e.g., "Implementation Roadmap: Phased Rollout Over 3 Months")
+- Visual: Timeline or process diagram
+- **Note**: Decide whether this is a short-term or long-term implementation approach and state it clearly
+  - **Short-term**: Quick wins, immediate actions (e.g., 1-3 months, pilot programs, minimal investment)
+  - **Long-term**: Strategic changes, sustained effort (e.g., 6-12 months, full rollout, significant investment)
+- Three bullets:
+  - **Timeframe & Approach**: Short-term or long-term, and why this timeframe is appropriate
+  - **Actions**: Specific steps for both problems
+  - **Monitoring**: How to track results and measure success
+
+**Slide 10: Business Impact Summary**
+- Takeaway title summarizing total value (e.g., "Combined Solutions Deliver $45K Profit Gain and 18% Cost Reduction")
+- Visual: Summary metrics or before/after comparison
+- Three bullets:
+  - **Problem A Results**: Key outcomes from LP optimization
+  - **Problem B Results**: Key outcomes from additional method
 
 #### Submission Files
 
 Upload to Brightspace by **Thursday, December 4, 2025, 11:59 PM**:
 
-1. **`milestone-03-fname-lname.xlsx`** (Excel Optimization Workbook - see requirements above)
-2. **`milestone-03-slides-fname-lname.pdf`** (9-11 slides as specified above)
+1. **`milestone-03-fname-lname.xlsx`** (Excel workbook with Model_A_Linear_Programming, Solver_Output_A, Sensitivity_Analysis_A, and Problem_B_Worksheet)
+2. **`milestone-03-slides-fname-lname.pdf`** (9-10 slides as specified above)
 
 ---
 
@@ -1843,6 +1887,279 @@ Use this checklist to verify you have all required components before submitting:
 
 ---
 
+### Milestone 3: Prescriptive Analytics Rubric (100 points)
+
+#### Pre-Submission Checklist
+
+Use this checklist to verify you have all required components before submitting:
+
+**EXCEL WORKBOOK (`milestone-03-fname-lname.xlsx`):**
+- ☐ Model_A_Linear_Programming worksheet with:
+  - ☐ Decision variables clearly labeled
+  - ☐ Objective function calculation using SUMPRODUCT
+  - ☐ Constraints formulated with cell references
+  - ☐ Parameters and input data organized
+  - ☐ All formulas visible
+- ☐ Solver_Output_A worksheet with:
+  - ☐ Solver parameters documented
+  - ☐ Optimal solution displayed
+  - ☐ Decision variable values highlighted
+  - ☐ Objective function value shown
+  - ☐ Constraint satisfaction verified (binding vs. slack)
+- ☐ Sensitivity_Analysis_A worksheet with:
+  - ☐ Sensitivity Report from Solver included
+  - ☐ Shadow prices interpretation
+  - ☐ Allowable increases/decreases for objective coefficients
+  - ☐ Allowable increases/decreases for constraint RHS values
+  - ☐ Business implications of binding constraints explained
+- ☐ Problem_B_Worksheet (named appropriately) with:
+  - ☐ All calculations clearly organized
+  - ☐ Formulas visible and labeled
+  - ☐ Input parameters and results displayed
+  - ☐ Professional formatting
+- ☐ Data_Dictionary with all fields documented (if new dataset used)
+
+**SLIDE DECK (`milestone-03-slides-fname-lname.pdf`):**
+- ☐ Total of 9-11 slides (separate deck, NOT attached to previous milestones)
+- ☐ Slide 1: Cover slide (title, name, date, milestone)
+- ☐ Slide 2: Problem Definition & Stakeholder Context (stakeholder, Problem A, Problem B)
+- ☐ Slide 3: Problem A - LP Model Overview (objective function, decision variables, objective coefficients, constraints)
+- ☐ Slide 4: Problem A - Solver Output (optimal solution)
+- ☐ Slide 5: Problem A - Sensitivity Analysis (binding constraints, shadow prices)
+- ☐ Slide 6: Problem B - Method Overview (approach and inputs)
+- ☐ Slide 7: Problem B - Analysis Results (key calculations)
+- ☐ Slide 8: Problem B - Recommendation (specific action and impact)
+- ☐ Slide 9: Implementation Plan (timeframe, actions, monitoring)
+- ☐ Slide 10: Business Impact Summary (Problem A + Problem B results)
+- ☐ Slide 11 (Optional): Supporting Data Appendix
+- ☐ Every slide has a takeaway title that states the INSIGHT (not descriptive labels)
+- ☐ Every slide (except cover) has exactly ONE visual
+- ☐ Every insight slide has two or three bullets as specified
+- ☐ Professional design and formatting throughout
+
+---
+
+#### Technical Execution (70 points)
+
+**Problem A - Linear Programming Model & Solver Execution (25 points)**
+
+- **25 - Excellent**:
+  - **Model Setup**: Decision variables clearly labeled and organized; objective function uses SUMPRODUCT correctly; all constraints properly formulated with cell references; parameters logically organized
+  - **Solver Configuration**: Solver set to Simplex LP method; objective cell, variable cells, and constraints correctly specified; solution converges to optimal
+  - **Solution Quality**: Optimal solution is reasonable and makes business sense; all decision variable values displayed; objective function value clearly shown; constraint satisfaction verified (binding vs. slack indicated)
+  - **Formula Visibility**: All formulas visible and properly labeled; professional formatting throughout; model is easy to follow and audit
+  - Model demonstrates strong understanding of linear programming concepts
+
+- **19 - Good**:
+  - **Model Setup**: Decision variables labeled; objective function mostly correct (may have minor issues); most constraints properly formulated
+  - **Solver Configuration**: Solver mostly configured correctly; solution converges
+  - **Solution Quality**: Solution is reasonable; decision variables and objective value displayed; constraint satisfaction mostly verified
+  - **Formula Visibility**: Most formulas visible; good labeling; generally well-formatted
+  - Model demonstrates adequate understanding of linear programming
+
+- **13 - Adequate**:
+  - **Model Setup**: Decision variables present but labeling could be clearer; objective function has some issues but generally correct; some constraints may be incomplete
+  - **Solver Configuration**: Solver configured but may have minor errors; solution obtained
+  - **Solution Quality**: Solution present but may not be fully verified; some elements missing
+  - **Formula Visibility**: Some formulas visible; basic labeling; acceptable formatting
+  - Model demonstrates basic understanding of linear programming
+
+- **6 - Poor**:
+  - **Model Setup**: Decision variables unclear; objective function has significant errors; constraints incomplete or incorrect
+  - **Solver Configuration**: Solver not properly configured; solution may not be optimal or feasible
+  - **Solution Quality**: Solution unclear or incorrect; missing key elements
+  - **Formula Visibility**: Most formulas hidden; poor labeling; unclear structure
+  - Model demonstrates limited understanding of linear programming
+
+- **0 - Missing**: Linear programming model missing or severely incomplete
+
+**Problem A - Sensitivity Analysis (20 points)**
+
+- **20 - Excellent**:
+  - **Sensitivity Report**: Complete Sensitivity Report from Solver included and properly formatted
+  - **Shadow Prices**: All shadow prices correctly identified and interpreted; explains which constraints are binding and their economic value
+  - **Allowable Ranges**: Allowable increases/decreases documented for both objective coefficients and constraint RHS values
+  - **Business Implications**: Clear explanation of what sensitivity analysis reveals about the problem; identifies which constraints limit performance; provides actionable insights about where to focus improvement efforts
+  - **Professional Presentation**: Well-organized, clearly labeled, easy to understand
+  - Demonstrates strong understanding of sensitivity analysis and its business value
+
+- **15 - Good**:
+  - **Sensitivity Report**: Sensitivity Report included
+  - **Shadow Prices**: Most shadow prices identified and interpreted; binding constraints explained
+  - **Allowable Ranges**: Most allowable ranges documented
+  - **Business Implications**: Good explanation of key insights; identifies main constraints
+  - **Professional Presentation**: Well-organized and labeled
+  - Demonstrates good understanding of sensitivity analysis
+
+- **10 - Adequate**:
+  - **Sensitivity Report**: Sensitivity Report present but may be poorly formatted
+  - **Shadow Prices**: Some shadow prices identified; basic interpretation
+  - **Allowable Ranges**: Some allowable ranges documented
+  - **Business Implications**: Basic explanation of insights; limited business context
+  - **Professional Presentation**: Acceptable organization
+  - Demonstrates basic understanding of sensitivity analysis
+
+- **5 - Poor**:
+  - **Sensitivity Report**: Sensitivity Report missing or incomplete
+  - **Shadow Prices**: Few or no shadow prices interpreted
+  - **Allowable Ranges**: Allowable ranges mostly missing
+  - **Business Implications**: Minimal or incorrect interpretation
+  - **Professional Presentation**: Poor organization
+  - Demonstrates limited understanding of sensitivity analysis
+
+- **0 - Missing**: Sensitivity analysis missing or severely incomplete
+
+**Problem B - Prescriptive Method Execution (25 points)**
+
+- **25 - Excellent**:
+  - **Method Selection**: Appropriate prescriptive method chosen (Inventory, Aggregate Planning, Location, or Capacity) that clearly connects to stakeholder needs
+  - **Problem Setup**: All required inputs and parameters clearly defined and organized; problem is well-structured
+  - **Calculations**: All formulas and calculations are correct and clearly labeled; appropriate method applied (EOQ, Factor Rating, capacity calculations, etc.)
+  - **Results Quality**: Results are reasonable and make business sense; all key outputs displayed (EOQ and reorder point, weighted scores, capacity utilization, etc.)
+  - **Formula Visibility**: All formulas visible and easy to audit
+  - **Professional Formatting**: Worksheet is well-organized with clear sections and professional presentation
+  - Demonstrates strong understanding of the chosen prescriptive method
+
+- **19 - Good**:
+  - **Method Selection**: Appropriate method chosen with clear connection to stakeholder
+  - **Problem Setup**: Inputs and parameters defined; well-structured
+  - **Calculations**: Most calculations correct and labeled; method applied correctly
+  - **Results Quality**: Results are reasonable; key outputs displayed
+  - **Formula Visibility**: Most formulas visible
+  - **Professional Formatting**: Well-organized and formatted
+  - Demonstrates good understanding of the method
+
+- **13 - Adequate**:
+  - **Method Selection**: Method chosen but connection to stakeholder could be clearer
+  - **Problem Setup**: Basic setup present; some organization issues
+  - **Calculations**: Most calculations present but may have minor errors; basic labeling
+  - **Results Quality**: Results present but may have issues; some outputs missing
+  - **Formula Visibility**: Some formulas visible
+  - **Professional Formatting**: Acceptable organization
+  - Demonstrates basic understanding of the method
+
+- **6 - Poor**:
+  - **Method Selection**: Method choice unclear or poorly justified
+  - **Problem Setup**: Incomplete setup; poorly organized
+  - **Calculations**: Significant errors in calculations; poor labeling
+  - **Results Quality**: Results incorrect or missing key elements
+  - **Formula Visibility**: Most formulas hidden
+  - **Professional Formatting**: Poor organization
+  - Demonstrates limited understanding of the method
+
+- **0 - Missing**: Problem B analysis missing or severely incomplete
+
+---
+
+#### Presentation Clarity (30 points)
+
+**Slide Design & Visual Quality (10 points)**
+
+- **10 - Excellent**:
+  - All 9-11 slides present with professional design
+  - Every slide (except cover) has exactly ONE focused visual (specific chart/table/screenshot)
+  - Visuals are clear, appropriately sized, and easy to read
+  - Screenshots show specific model components or results, not full worksheets
+  - Consistent design, color scheme, and layout throughout
+  - Clear visual hierarchy (titles, visuals, bullets)
+
+- **8 - Good**:
+  - 9-10 slides present with good design
+  - Most slides have one focused visual
+  - Visuals are clear and readable
+  - Mostly consistent design
+  - Most screenshots are focused
+
+- **6 - Adequate**:
+  - 8-9 slides present
+  - Some slides have multiple or unclear visuals
+  - Visuals are readable but basic
+  - Some design inconsistencies
+  - Some full worksheet screenshots
+
+- **3 - Poor**:
+  - Fewer than 8 slides
+  - Multiple visuals per slide OR visuals unclear
+  - Difficult to read
+  - Inconsistent or unprofessional design
+  - Mostly full screenshots
+
+- **0 - Missing**: No slides or severely inadequate presentation
+
+**Takeaway Titles & Bullet Format (10 points)**
+
+- **10 - Excellent**:
+  - All slides (except cover) have compelling **TAKEAWAY titles** that state the insight, not describe the slide (e.g., "Optimal Product Mix Increases Profit by $45K Monthly" NOT "Problem A Results")
+  - Slide 2: Three bullets (Stakeholder, Problem A, Problem B) as specified
+  - Slide 3: Four bullets (Objective Function, Decision Variables, Objective Coefficients, Constraints) with examples
+  - Slides 4-8: Two bullets each (Recommendation + Impact/Interpretation)
+  - Slide 9: Three bullets (Timeframe & Approach, Actions, Monitoring)
+  - Slide 10: Three bullets (Problem A Results, Problem B Results, Next Steps)
+  - All bullets are specific, actionable, and business-relevant
+  - Format is consistent across all slides
+
+- **8 - Good**:
+  - Most slide titles state insights; a few may be descriptive
+  - Most slides follow required bullet format
+  - Bullets are mostly specific and relevant
+  - Format is mostly consistent
+
+- **6 - Adequate**:
+  - Some slide titles are descriptive rather than insight-focused
+  - Bullet format inconsistently applied
+  - Bullets are somewhat generic or vague
+  - Format varies across slides
+
+- **3 - Poor**:
+  - Most titles are descriptive labels rather than insights
+  - Bullet format rarely followed
+  - Bullets are generic or irrelevant
+  - Inconsistent format
+
+- **0 - Missing**: Severely inadequate titles and bullets
+
+**Professional Communication & Completeness (10 points)**
+
+- **10 - Excellent**:
+  - **Problem Statements**: Both Problem A and Problem B clearly stated and connected to stakeholder needs
+  - **Completeness**: All required components present in both Excel and slides; no missing elements
+  - **Labels & Annotations**: Clear labels throughout Excel; annotations explain calculations and interpret results
+  - **Organization**: Logical flow in slides; professional structure in Excel with clear sections
+  - **Formatting**: Consistent professional formatting; proper table formatting; no clutter
+  - **File Naming**: Correct file names used (`milestone-03-fname-lname.xlsx` and `milestone-03-slides-fname-lname.pdf`)
+  - **Writing Quality**: No typos or grammatical errors; clear and concise communication
+
+- **8 - Good**:
+  - Problem statements clear and connected to stakeholder
+  - All major components present; may have minor omissions
+  - Good labels and some annotations
+  - Clear organization and structure
+  - Good formatting with minor inconsistencies
+  - File naming correct
+  - Few typos; good communication
+
+- **6 - Adequate**:
+  - Problem statements present but could be clearer
+  - Some required components missing
+  - Basic labels; limited annotations
+  - Acceptable organization
+  - Adequate but inconsistent formatting
+  - File naming partially correct
+  - Some typos; adequate communication
+
+- **3 - Poor**:
+  - Problem statements unclear or missing
+  - Multiple missing components
+  - Minimal labels and annotations
+  - Poor organization
+  - Unprofessional or inconsistent formatting
+  - Incorrect file naming
+  - Multiple typos; unclear communication
+
+- **0 - Missing**: Severely incomplete or unprofessional work
+
+---
+
 ## Part 5: Presentation & Communication Guidelines
 
 ### Slide Deck Requirements
@@ -1869,7 +2186,6 @@ Takeaway titles communicate YOUR INSIGHT, not what the slide is about.
 - "Delivery Time Analysis"
 - "Sales by Region"
 - "Regression Results"
-- "Simulation Output"
 
 **✅ EXCELLENT Titles (Takeaway):**
 
@@ -1907,7 +2223,7 @@ Takeaway titles communicate YOUR INSIGHT, not what the slide is about.
 
 - **Charts**: Bar charts, line charts, scatter plots from Excel or Looker
 - **Tables**: Formatted tables highlighting key numbers
-- **Screenshots**: Dashboards from Looker, Solver solutions, simulation results
+- **Screenshots**: Dashboards from Looker, Solver solutions
 - **Diagrams**: Process flows, decision trees (if relevant)
 
 **Chart Best Practices:**
@@ -2045,7 +2361,6 @@ The interview assesses different dimensions than the milestone submissions:
 - "Walk me through your optimization model."
 - "What are the key constraints and why do they matter?"
 - "What does the sensitivity analysis tell you?"
-- "Explain the probability distribution from your simulation."
 - "What level of risk is acceptable and why?"
 
 **Synthesis:**
@@ -2260,9 +2575,6 @@ A: Common issues: (1) Constraints are impossible (too restrictive), (2) Formulas
 **Q: My R² is only 0.45. Is that bad?**
 A: Not necessarily! R² depends on your data and problem. Discuss what this means for your business application. "Low" R² might still provide valuable insights. What matters is interpretation, not hitting a specific number.
 
-**Q: How many simulation runs should I do?**
-A: Minimum 1,000. Recommended 5,000-10,000. More runs = more stable results. Stop when adding runs doesn't change your conclusions.
-
 ---
 
 ### Slides & Communication
@@ -2388,7 +2700,7 @@ Good luck! Use office hours. Start early. Make it something you're proud to show
 
 **Milestone 3:**
 
-- [ ] **milestone-03-fname-lname.xlsx** (Excel Analysis Workbook with optimization + simulation)
+- [ ] **milestone-03-fname-lname.xlsx** (Excel Analysis Workbook with two prescriptive problems)
 - [ ] **milestone-03-slides-fname-lname.pdf**
 - [ ] Data files if using new dataset (include Data_Cleaning_Log if new)
 
