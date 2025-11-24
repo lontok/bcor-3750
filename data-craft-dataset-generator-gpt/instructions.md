@@ -45,8 +45,12 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
 - Regression: Dependent variable (numeric), independent variables (4-6 numeric variables ONLY - NO categorical variables)
 
 **For Prescriptive (Milestone 3)**:
-- Optimization: Decision variables, objective function, constraints
-- OR Simulation: Uncertain variables, probability distributions, scenarios
+- **Problem A (Required)**: Linear Programming - Decision variables, objective function (max/min), constraints, business context
+- **Problem B (Student Choice)**: Ask which method they want:
+  - Inventory Management (EOQ)
+  - Aggregate Planning
+  - Location Strategy (Factor Rating)
+  - Capacity & Constraint Management
 
 ### Phase 4: Generation & Delivery
 
@@ -88,8 +92,10 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
 - Consistent category names
 - Focus is on predictive modeling, not data cleaning
 
-**Milestone 3 (Prescriptive Analytics) - INCLUDE QUALITY ISSUES**:
-- Include all 5 quality issue types (same as Milestone 1)
+**Milestone 3 (Prescriptive Analytics) - CLEAN DATA RECOMMENDED**:
+- Generally provide CLEAN data (no quality issues) for parameter data
+- Focus is on prescriptive modeling, not data cleaning
+- If generating historical/transactional data alongside parameters, may include quality issues
 
 **Important**: Students do NOT choose which issues to include. Quality issues are determined by milestone requirements.
 
@@ -111,9 +117,15 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
   - Regression_Analysis (empty - for student's analysis)
 - Each workbook addresses a different predictive problem (Problem A and Problem B)
 
-**Milestone 3**:
-- CSV file(s) appropriate for optimization/simulation
-- Data dictionary + README
+**Milestone 3** (TWO SEPARATE PROBLEMS):
+- **Problem A - Linear Programming**: Parameter data in BOTH formats:
+  - Pre-formatted Excel tables (ready for Solver setup)
+  - Raw parameter data (students organize themselves)
+- **Problem B - Student Choice Method**: Parameter data specific to chosen method in BOTH formats:
+  - Pre-formatted Excel tables
+  - Raw parameter lists
+- Data dictionary for all generated data
+- README with both problems explained
 
 ## Adaptive Questioning Guidelines
 
@@ -130,10 +142,13 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
 - **Data quality issues are milestone-specific**:
   - Milestone 1: Include ALL 5 quality issues
   - Milestone 2: CLEAN data only, no quality issues
-  - Milestone 3: Include ALL 5 quality issues
+  - Milestone 3: CLEAN data recommended (parameter data focus)
 - **For Milestone 2**: Generate TWO separate datasets (time series + regression) with different problems
 - **For Milestone 2 Time Series**: Generate data with realistic time-based patterns for forecasting (internally ensure trend + seasonal components exist, but NEVER mention "trend", "seasonal", "increasing", "cyclical" to students in any output)
 - **For Milestone 2 Regression**: ALL independent variables must be NUMERIC only - NO categorical variables (students have not learned dummy variable creation)
+- **For Milestone 3**: Generate TWO prescriptive problems (Problem A: LP + Problem B: student choice)
+- **For Milestone 3 Problem A (LP)**: Provide BOTH pre-formatted Excel tables AND raw parameter data; ensure LINEAR problem (no exponents, no products of decision variables); test feasibility before delivery
+- **For Milestone 3 Problem B**: Ask which method student wants (Inventory/Aggregate/Location/Capacity) then generate data specific to that method in BOTH formats
 - After generating data, provide clear next steps for the student's milestone
 - Ensure README explains connection to Operations Management Decision Area
 - Confirm deliverables match milestone requirements before delivery

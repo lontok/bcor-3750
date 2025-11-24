@@ -90,7 +90,7 @@ This dataset contains **CLEAN data ready for predictive modeling**. No data qual
 
 **For Milestone 3 (Prescriptive Analytics):**
 
-Same as Milestone 1 - includes intentional data quality issues for comprehensive learning.
+This dataset contains **CLEAN parameter data ready for prescriptive analysis**. Focus is on linear programming, inventory management, aggregate planning, location strategy, or capacity analysis - not data cleaning.
 
 ## Suggested Analysis Approach
 
@@ -145,20 +145,46 @@ Same as Milestone 1 - includes intentional data quality issues for comprehensive
 
 ### For Milestone 3: Prescriptive Analytics
 
-**Linear Programming:**
+**IMPORTANT**: Milestone 3 requires TWO separate prescriptive analyses:
+
+**Problem A - Linear Programming (Required):**
 - Decision variables: [variables]
-- Objective: Maximize/Minimize [metric]
-- Constraints: [list constraints]
-- Use Excel Solver to find optimal solution
+- Objective function: Maximize/Minimize [metric]
+- Objective coefficients: [contribution of each variable]
+- Constraints: [list constraints with types ≤, ≥, =]
+- Use Excel Solver (Simplex LP method) to find optimal solution
+- Interpret sensitivity analysis:
+  - Shadow prices (value of additional resources)
+  - Binding vs non-binding constraints
+  - Allowable increases/decreases
 - **Connection to [Decision Area]**: [What this optimizes]
 
-**OR Monte Carlo Simulation:**
-- Uncertain variable: [variable]
-- Distribution: [distribution type with parameters]
-- Run 1,000-10,000 simulations
-- Analyze probability distributions of outcomes
-- Determine risk and confidence intervals
-- **Connection to [Decision Area]**: [What uncertainty this models]
+**Problem B - Choose ONE Method:**
+
+**Option 1: Inventory Management (EOQ)**
+- Calculate Economic Order Quantity
+- Determine reorder point
+- Analyze total inventory costs (ordering + holding)
+- **Connection to [Decision Area]**: [How EOQ improves inventory decisions]
+
+**Option 2: Aggregate Planning**
+- Develop production plan over planning horizon
+- Balance capacity, costs, and demand
+- Consider regular time, overtime, subcontracting, inventory
+- **Connection to [Decision Area]**: [How aggregate plan improves operations]
+
+**Option 3: Location Strategy (Factor Rating)**
+- Evaluate location alternatives using weighted factors
+- Calculate weighted scores for each location
+- Recommend optimal location
+- **Connection to [Decision Area]**: [How location choice impacts operations]
+
+**Option 4: Capacity & Constraint Management**
+- Identify process bottleneck
+- Calculate system capacity and throughput
+- Analyze constraint impacts
+- Recommend constraint management strategies
+- **Connection to [Decision Area]**: [How constraint management improves operations]
 
 ## Business Questions to Answer
 
@@ -236,11 +262,15 @@ Before generating, confirm with user:
    - Data_Dictionary (field definitions)
    - Regression_Analysis (empty - for student's analysis work)
 
-**For Milestone 3:**
-1. Primary dataset (CSV)
-2. Data dictionary
-3. [If applicable]: Optimization parameters OR simulation variability data
-4. README with problem context and analysis guidance
+**For Milestone 3 (TWO SEPARATE PROBLEMS):**
+1. **Problem A - Linear Programming** parameter data in BOTH formats:
+   - Pre-formatted Excel tables (decision variables, objective coefficients, constraints, resource usage matrix)
+   - Raw parameter data (text/list format for students to organize)
+2. **Problem B - Student Choice Method** parameter data in BOTH formats:
+   - Pre-formatted Excel tables (specific to chosen method)
+   - Raw parameter lists (specific to chosen method)
+3. Data dictionary explaining all parameters
+4. README with both problems explained, decision area connection, and analysis guidance
 
 **Ask**: "Does this match your needs, or should I adjust anything?"
 
@@ -278,11 +308,21 @@ Your dataset is ready! Here's what I've included:
    - **Data_Dictionary**: Field definitions and descriptions
    - **Regression_Analysis**: Empty worksheet for student's regression analysis
 
-**For Milestone 3:**
-1. `[filename]_data.csv` - Primary dataset
-2. `data_dictionary.csv` - Field definitions
-3. `README.md` - Context and guidance
-4. [If applicable]: `[filename]_optimization_params.csv` or `[filename]_simulation_data.csv`
+**For Milestone 3 (TWO SEPARATE PROBLEMS):**
+
+**Problem A - Linear Programming:**
+1. `milestone-03-problem-a-lp-preformatted.xlsx` - Pre-formatted Excel tables ready for Solver
+2. `milestone-03-problem-a-lp-raw-parameters.txt` - Raw parameter data for students to organize
+3. Files include: Decision variables, objective coefficients, constraints, resource usage matrix
+
+**Problem B - [Student Choice Method]:**
+1. `milestone-03-problem-b-[method]-preformatted.xlsx` - Pre-formatted Excel tables
+2. `milestone-03-problem-b-[method]-raw-parameters.txt` - Raw parameter lists
+3. Method-specific files (e.g., EOQ parameters, Aggregate Planning data, Factor Rating scores, Capacity analysis data)
+
+**Supporting Files:**
+1. `data_dictionary.csv` - Definitions for all parameters
+2. `README.md` - Context, both problems explained, decision area connection, and analysis guidance
 
 💡 **Next Steps for Your Analysis:**
 
@@ -298,7 +338,10 @@ Your dataset is ready! Here's what I've included:
 2. **Descriptive Analytics**: Explore distributions, trends, and summary statistics (What happened?)
 3. **Diagnostic Analytics**: Investigate root causes using pivot tables and slicers (Why did it happen?)
 4. **Predictive Analytics**: Build forecasting models - moving average, exponential smoothing, regression (What will happen?)
-5. **Prescriptive Analytics**: Develop optimization models (Solver) and/or simulation (Monte Carlo) (What should we do?)
+5. **Prescriptive Analytics**: Develop TWO prescriptive models:
+   - Problem A: Linear Programming optimization (Excel Solver)
+   - Problem B: Choose from Inventory Management, Aggregate Planning, Location Strategy, or Capacity Management
+   (What should we do?)
 
 🎯 **Remember for Your Interview:**
 You'll need to explain:

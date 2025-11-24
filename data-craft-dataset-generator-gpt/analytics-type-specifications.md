@@ -160,85 +160,283 @@ Predict a dependent variable based on relationships with independent variables u
 
 ---
 
-## Prescriptive Analytics - Linear Programming (Milestone 3A)
+## Prescriptive Analytics - Problem A: Linear Programming (Milestone 3 - REQUIRED)
 
 ### Purpose
-Find optimal solution (maximize profit, minimize cost) given constraints.
+Find optimal solution (maximize profit, minimize cost) using Excel Solver with linear programming.
 
 ### Data Structure Requirements
 
-**Decision Variables** (3-10 recommended):
+**CRITICAL: Must be a LINEAR problem solvable with Simplex LP method**
+
+**Decision Variables** (3-7 recommended):
 - What the stakeholder is deciding (product quantities, resource allocations)
-- Each with cost/profit coefficient
+- Each with objective coefficient (contribution to objective function)
 
 **Constraints** (4-8 recommended):
 - Budget limits
 - Capacity constraints
-- Time restrictions
+- Resource availability
 - Minimum/maximum requirements
+- Must include 2-3 binding constraints for sensitivity analysis
+
+**Linearity Requirements**:
+- Linear objective function (no exponents like x², no products like x₁×x₂)
+- Linear constraints only (no nonlinear relationships)
+- All coefficients must be constants, not variables
 
 ### Key Questions to Ask
 
-1. **Optimization Problem Type**: "What type of optimization? [Suggest 2-3 based on decision area] or describe yours?"
-2. **Objective Function**: "What are you trying to maximize or minimize? (profit, cost, throughput, etc.)"
+1. **Business Context**: "What business problem are you solving? (production planning, resource allocation, product mix, etc.)"
+2. **Objective Function**: "What are you trying to maximize or minimize? (profit, cost, revenue, throughput, etc.)"
 3. **Decision Variables**: "What are you deciding? (How many units to produce? How to allocate resources?)"
-4. **Constraints**: "What are the limiting factors? (budget, capacity, time, minimum service levels)"
+4. **Constraints**: "What are the limiting factors? (budget, machine hours, labor hours, materials, minimum requirements)"
 
 ### Data Generation Guidelines
 
-**Create Three Files**:
+**Generate data in BOTH formats:**
+
+**Option 1: Pre-Formatted Excel Tables** (Ready for Solver)
+Create four organized tables:
 
 1. **Decision Variables Table**:
-   - Variable ID, name, unit profit/cost, resource consumption per unit
+   - Columns: Variable Name, Description, Unit
+   - Example: Product A, Product B, Product C
 
-2. **Constraints Table**:
-   - Constraint name, type (<=, >=, =), limit value, unit
+2. **Objective Coefficients Table**:
+   - Columns: Variable, Objective Coefficient, Unit
+   - Example: Product A = $50 profit/unit
 
-3. **Resource Usage Matrix**:
-   - How much of each resource each decision variable consumes
+3. **Constraints Table**:
+   - Columns: Constraint Name, Type (≤, ≥, =), Limit, Unit
+   - Example: Machine Hours, ≤, 2000, hours/month
 
-**Ensure**:
-- Feasible solution exists (constraints not impossible)
-- Optimal solution is interesting (not trivial)
-- Sensitivity analysis will be meaningful
+4. **Resource Usage Matrix**:
+   - Rows: Constraints, Columns: Decision Variables
+   - Cell values: Usage coefficients (how much of constraint each variable consumes)
+   - Example: Product A uses 2 machine hours/unit
+
+**Option 2: Raw Parameter Data** (Students organize themselves)
+Provide the same information as text/lists:
+- List of decision variable options with descriptions
+- Objective coefficients for each variable
+- List of constraints with limits
+- Resource consumption rates for each variable-constraint combination
+- Let students structure the LP model themselves
+
+**Quality Assurance**:
+- **Test feasibility**: Ensure a feasible solution exists
+- **Verify linearity**: All relationships must be linear (no x², no x₁×x₂)
+- **Create interesting problem**: Optimal solution should NOT be obvious
+- **Include binding constraints**: 2-3 constraints should be binding at optimum (for sensitivity analysis)
+- **Realistic business context**: Coefficients and constraints should make business sense
+- **Manageable complexity**: 3-7 decision variables, 4-8 constraints
 
 ---
 
-## Prescriptive Analytics - Monte Carlo Simulation (Milestone 3B)
+## Prescriptive Analytics - Problem B: Inventory Management (Milestone 3 - STUDENT CHOICE)
 
 ### Purpose
-Model uncertainty and assess risk through probabilistic simulation.
+Optimize inventory decisions using Economic Order Quantity (EOQ) model and reorder point calculations.
 
 ### Data Structure Requirements
 
-**Historical Variability Data**: 250-500 records showing past variation
-
-**Required Elements**:
-- Uncertain variable(s) with clear variability
-- Probability distribution parameters (mean, std dev, min, max)
-- Output metric that depends on uncertain inputs
+**EOQ Parameters**:
+- Annual demand (units/year)
+- Ordering cost per order ($)
+- Holding cost per unit per year ($ or % of unit cost)
+- Unit cost ($)
+- Lead time (days)
+- Optional: Quantity discount breakpoints
 
 ### Key Questions to Ask
 
-1. **Simulation Scenario**: "What uncertainty do you want to model? [Suggest 2-3 based on decision area]"
-2. **Uncertain Variables**: "What variables are uncertain? (demand, lead time, defect rate, costs)"
-3. **Probability Distribution**: "What distribution fits best?"
-   - Normal: Mean and standard deviation?
-   - Uniform: Minimum and maximum?
-   - Triangular: Min, most likely, max?
-4. **Simulation Size**: "How many scenarios to simulate? (typically 1,000-10,000)"
+1. **Inventory Item**: "What are you managing inventory for? (raw materials, finished goods, spare parts)"
+2. **Demand Pattern**: "What's the annual demand volume?"
+3. **Cost Structure**: "What are the ordering costs and holding costs?"
+4. **Service Requirements**: "What's the lead time for replenishment?"
 
 ### Data Generation Guidelines
 
-**Historical Data**:
-- Show realistic variability in uncertain variable
-- Data should clearly fit a distribution (normal, uniform, or triangular)
-- Include enough records to estimate parameters
+**Generate data in BOTH formats:**
 
-**Distribution Parameters**:
-- Calculate and provide: mean, standard deviation, min, max
-- Show data can be modeled with chosen distribution
-- Ensure simulation will produce meaningful risk assessment
+**Option 1: Pre-Formatted Excel Tables**
+- Inventory Parameters Table with all EOQ inputs organized and labeled
+- Optional: Demand variability data for safety stock calculation
+
+**Option 2: Raw Parameter Data**
+- Annual demand: realistic value (e.g., 5,000-50,000 units/year)
+- Ordering cost: $50-$500 per order
+- Holding cost: 20-30% of unit cost per year OR $1-$10 per unit per year
+- Unit cost: realistic for item type
+- Lead time: 5-30 days
+- Optional: Demand standard deviation for safety stock
+
+**Quality Assurance**:
+- EOQ should result in reasonable order frequency (not too many, not too few orders per year)
+- Total annual inventory cost should be realistic for business context
+- If including quantity discounts, ensure breakpoints create interesting analysis
+
+---
+
+## Prescriptive Analytics - Problem B: Aggregate Planning (Milestone 3 - STUDENT CHOICE)
+
+### Purpose
+Develop a production plan that matches supply with demand over a planning horizon while minimizing costs.
+
+### Data Structure Requirements
+
+**Planning Parameters** (6-12 periods):
+- Demand forecast by period
+- Regular time production capacity (units)
+- Regular time production cost ($/unit)
+- Overtime capacity (units)
+- Overtime cost ($/unit)
+- Subcontracting cost ($/unit)
+- Inventory holding cost ($/unit/period)
+- Backorder/stockout cost ($/unit)
+- Hiring cost ($/worker)
+- Firing/layoff cost ($/worker)
+- Current workforce level
+- Units per worker per period
+
+### Key Questions to Ask
+
+1. **Planning Horizon**: "How many periods (months) should the plan cover? (6-12 recommended)"
+2. **Demand Pattern**: "What's the demand pattern? (seasonal, growing, stable)"
+3. **Production Options**: "What production flexibility exists? (overtime, subcontracting, inventory)"
+4. **Workforce Changes**: "Can workforce size change? (hiring/firing allowed?)"
+
+### Data Generation Guidelines
+
+**Generate data in BOTH formats:**
+
+**Option 1: Pre-Formatted Excel Tables**
+- Demand Forecast Table (by period)
+- Capacity & Cost Parameters Table
+- Workforce Parameters Table
+- All organized and ready for aggregate planning calculations
+
+**Option 2: Raw Parameter Data**
+- Period-by-period demand values
+- Production capacity and cost parameters
+- Workforce change costs
+- Inventory and backorder costs
+- Let students structure their own aggregate plan
+
+**Quality Assurance**:
+- Demand should show realistic pattern (seasonal peaks, growth, or stability)
+- Costs should create trade-offs (regular vs overtime vs subcontracting)
+- Planning problem should have multiple viable strategies
+- Ensure feasible solutions exist (total capacity ≥ total demand over horizon)
+
+---
+
+## Prescriptive Analytics - Problem B: Location Strategy (Milestone 3 - STUDENT CHOICE)
+
+### Purpose
+Select optimal facility location using Factor Rating Method with weighted scoring.
+
+### Data Structure Requirements
+
+**Location Alternatives**: 3-5 site options
+
+**Location Factors**: 5-8 factors to evaluate
+- Cost-related (labor costs, facility costs, transportation)
+- Operational (proximity to markets, supplier access, infrastructure)
+- Strategic (skilled labor availability, quality of life, business climate)
+
+**Scoring System**:
+- Factor weights (importance ratings, must sum to 1.0 or 100)
+- Location scores for each factor (0-100 scale)
+
+### Key Questions to Ask
+
+1. **Location Purpose**: "What type of facility? (warehouse, manufacturing plant, distribution center, retail store)"
+2. **Location Options**: "How many location alternatives to compare? (3-5 recommended)"
+3. **Critical Factors**: "What factors matter most? (costs, proximity, labor, infrastructure)"
+4. **Stakeholder Priorities**: "How important is each factor relative to others?"
+
+### Data Generation Guidelines
+
+**Generate data in BOTH formats:**
+
+**Option 1: Pre-Formatted Excel Tables**
+- Location Alternatives Table (site names/cities)
+- Factors Table with weights
+- Scoring Matrix (locations × factors with scores)
+- Organized for weighted score calculations
+
+**Option 2: Raw Parameter Data**
+- List of location alternatives with brief descriptions
+- List of factors with assigned weights
+- Factor scores for each location
+- Let students organize Factor Rating analysis
+
+**Quality Assurance**:
+- Factor weights should sum to 1.0 (or 100)
+- Scores should be on consistent 0-100 scale
+- Create realistic trade-offs (no location dominates all factors)
+- Winning location should be clear but not overwhelming
+- Factors should align with Operations Management Decision Area
+
+---
+
+## Prescriptive Analytics - Problem B: Capacity & Constraint Management (Milestone 3 - STUDENT CHOICE)
+
+### Purpose
+Identify bottlenecks, calculate system capacity, and analyze constraint impacts using throughput analysis.
+
+### Data Structure Requirements
+
+**Process Steps**: 4-6 sequential or parallel process steps
+
+**Capacity Data**:
+- Processing time per unit at each step (minutes/unit or units/hour)
+- Available time per step (hours/day or hours/week)
+- Step capacity (units/hour or units/day)
+- Demand requirement (units needed)
+
+**Optional**:
+- Setup times between batches
+- Worker requirements per step
+- Cost data for constraint analysis
+- Quality/defect rates by step
+
+### Key Questions to Ask
+
+1. **Process Type**: "What process are you analyzing? (manufacturing line, service delivery, order fulfillment)"
+2. **Process Steps**: "How many steps in the process? (4-6 recommended)"
+3. **Constraint Concerns**: "What's the suspected bottleneck or capacity issue?"
+4. **Demand Pressure**: "What's the demand requirement vs current capacity?"
+
+### Data Generation Guidelines
+
+**Generate data in BOTH formats:**
+
+**Option 1: Pre-Formatted Excel Tables**
+- Process Steps Table with capacities and processing times
+- Demand Requirements Table
+- Resource Availability Table
+- Organized for bottleneck and throughput calculations
+
+**Option 2: Raw Parameter Data**
+- List of process steps with processing times
+- Available time for each step
+- Demand requirements
+- Let students organize capacity analysis
+
+**Quality Assurance**:
+- Create clear bottleneck (one step with lowest capacity)
+- System capacity should be less than demand (creates constraint management problem)
+- Make constraint analysis meaningful (bottleneck should significantly limit throughput)
+- Include realistic business context (manufacturing, service, or operational process)
+- Provide enough data for students to calculate:
+  - Capacity at each step
+  - System bottleneck
+  - System throughput
+  - Utilization rates
+  - Impact of constraint improvements
 
 ---
 
@@ -307,8 +505,17 @@ Model uncertainty and assess risk through probabilistic simulation.
 - Focus on predictive modeling, not data cleaning
 
 ### Milestone 3: Prescriptive
-- Can use same OR different dataset from previous milestones
-- Optimization: Need parameters, constraints, objective
-- Simulation: Need historical variability data
-- Focus on decision-making under constraints/uncertainty
-- **Data Quality**: Include intentional quality issues (unless requested otherwise)
+- **GENERATE TWO SEPARATE PRESCRIPTIVE PROBLEMS** (Problem A + Problem B)
+- **Problem A - Linear Programming (REQUIRED)**: Always generate LP parameters
+  - Provide BOTH pre-formatted Excel tables AND raw parameter data
+  - Must be LINEAR problem (Simplex LP compatible)
+  - Test feasibility before delivery
+  - Include 2-3 binding constraints for sensitivity analysis
+- **Problem B - Student Choice (REQUIRED)**: Ask which method, then generate:
+  - Inventory Management (EOQ)
+  - Aggregate Planning
+  - Location Strategy (Factor Rating)
+  - Capacity & Constraint Management
+  - Provide BOTH pre-formatted tables AND raw parameter lists
+- Focus on decision-making with parameter data (not transactional data)
+- **Data Quality**: CLEAN data recommended (parameter data focus)
