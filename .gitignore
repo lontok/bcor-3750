@@ -1,3 +1,5 @@
+prompts/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -213,3 +215,7 @@ planning/
 # CustomGPT configuration files (private)
 custom-gpt-configs/
 custom-gpt/
+
+# Class exercises and slides (private)
+class-exercises/
+slides/
