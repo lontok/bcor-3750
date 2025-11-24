@@ -193,6 +193,10 @@ Generate data in **BOTH formats** to give students flexibility:
 **Key LP Data Characteristics**:
 - 3-7 decision variables (manageable complexity)
 - 4-8 constraints (realistic problem scope)
+- **MUST be a LINEAR problem** solvable with Simplex LP method:
+  - Linear objective function (no exponents, no products of decision variables)
+  - Linear constraints only (no nonlinear relationships)
+  - All coefficients must be constants, not variables
 - Ensure feasible solution exists (test before providing)
 - Create interesting optimal solution (not obvious, requires Solver)
 - Include at least 2-3 binding constraints for sensitivity analysis
