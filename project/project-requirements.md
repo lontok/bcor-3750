@@ -1383,18 +1383,17 @@ Students must create a second prescriptive solution from one of these options:
 
 Excel workbook with the following worksheets:
 
-- **Model_A_Linear_Programming**:
+- **Model_A_Linear_Programming** (all LP work in this single worksheet):
   - Decision variables section clearly labeled
   - Objective function calculation
   - Constraints formulated with cell references
   - Parameters and input data organized
-
-- **Solver_Output_A**:
+  - All formulas visible
   - Solver parameters documented
-  - Optimal solution displayed
+  - Optimal solution displayed (after running Solver)
   - Decision variable values highlighted
   - Objective function value shown
-  - Constraint satisfaction verified
+  - Constraint satisfaction verified (binding vs. slack indicated)
 
 - **Sensitivity_Analysis_A**:
   - Sensitivity Report from Solver
@@ -1497,7 +1496,7 @@ Excel workbook with the following worksheets:
 
 Upload to Brightspace by **Thursday, December 4, 2025, 11:59 PM**:
 
-1. **`milestone-03-fname-lname.xlsx`** (Excel workbook with Model_A_Linear_Programming, Solver_Output_A, Sensitivity_Analysis_A, and Problem_B_Worksheet)
+1. **`milestone-03-fname-lname.xlsx`** (Excel workbook with Model_A_Linear_Programming, Sensitivity_Analysis_A, and Problem_B_Worksheet)
 2. **`milestone-03-slides-fname-lname.pdf`** (10 slides as specified above)
 
 ---
