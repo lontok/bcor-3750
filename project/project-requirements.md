@@ -1465,11 +1465,11 @@ Excel workbook with the following worksheets:
   - Allowable increases/decreases for constraint RHS values
   - Business implications of binding constraints
 
-- **Problem_B_Worksheet** (name based on your choice):
-  - **Inventory_Management** OR
-  - **Aggregate_Planning** OR
-  - **Location_Strategy** OR
-  - **Capacity_Analysis**
+- **Model_B_[MethodName]** (worksheet name depends on your Problem B choice):
+  - **Model_B_EOQ** (if you choose Inventory Management / Economic Order Quantity)
+  - **Model_B_Aggregate_Planning** (if you choose Aggregate Planning)
+  - **Model_B_Factor_Rating** (if you choose Location Strategy / Factor Rating)
+  - **Model_B_Capacity_Analysis** (if you choose Capacity & Constraint Management)
   - All calculations clearly organized
   - Formulas visible and labeled
   - Input parameters and results displayed
@@ -1559,7 +1559,14 @@ Excel workbook with the following worksheets:
 
 Upload to Brightspace by **Thursday, December 4, 2025, 11:59 PM**:
 
-1. **`milestone-03-fname-lname.xlsx`** (Excel workbook with Model_A_Linear_Programming, Sensitivity_Analysis_A, and Problem_B_Worksheet)
+1. **`milestone-03-fname-lname.xlsx`** (Excel workbook with 3 worksheets):
+   - **Model_A_Linear_Programming** (Problem A: Linear Programming analysis)
+   - **Sensitivity_Analysis_A** (Problem A: Sensitivity Report and interpretation)
+   - **Model_B_[MethodName]** (Problem B: Choose ONE based on your method):
+     - `Model_B_EOQ` (if Inventory Management / Economic Order Quantity)
+     - `Model_B_Aggregate_Planning` (if Aggregate Planning)
+     - `Model_B_Factor_Rating` (if Location Strategy / Factor Rating)
+     - `Model_B_Capacity_Analysis` (if Capacity & Constraint Management)
 2. **`milestone-03-slides-fname-lname.pdf`** (10 slides as specified above)
 
 ---
@@ -1976,7 +1983,8 @@ Use this checklist to verify you have all required components before submitting:
   - ☐ Allowable increases/decreases for objective coefficients
   - ☐ Allowable increases/decreases for constraint RHS values
   - ☐ Business implications of binding constraints explained
-- ☐ Problem_B_Worksheet (named appropriately) with:
+- ☐ Model_B_[MethodName] worksheet (choose ONE based on your Problem B method):
+  - ☐ `Model_B_EOQ` OR `Model_B_Aggregate_Planning` OR `Model_B_Factor_Rating` OR `Model_B_Capacity_Analysis`
   - ☐ All calculations clearly organized
   - ☐ Formulas visible and labeled
   - ☐ Input parameters and results displayed
