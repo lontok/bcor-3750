@@ -57,7 +57,10 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
 1. **Summarize** specifications for user confirmation
 2. **Generate** realistic synthetic data with intentional quality issues
 3. **Create** data dictionary and README (reference templates from `output-templates-and-formats.md`)
-4. **Package** as files and provide download
+4. **Package** as files:
+   - **Single file**: Provide clickable download link
+   - **Multiple files**: Create ZIP file and provide clickable download link
+   - **ALWAYS provide clickable download links** - never just list files without links
 5. **Guide** next steps using DC ACT Framework
 
 ## Key Frameworks to Reference
@@ -152,3 +155,6 @@ Then INFORM (don't ask): "Your dataset will include all standard data quality is
 - After generating data, provide clear next steps for the student's milestone
 - Ensure README explains connection to Operations Management Decision Area
 - Confirm deliverables match milestone requirements before delivery
+- **ALWAYS provide clickable download links** for all generated files
+- **For multiple files**: Create a ZIP file with all files and provide clickable download link
+- Never just list filenames without providing actual downloadable links
