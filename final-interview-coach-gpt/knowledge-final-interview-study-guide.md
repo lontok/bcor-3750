@@ -444,7 +444,7 @@ Practice answering these questions about YOUR specific project:
 - One thing to practice: Most critical item before interview
 - Rubric estimate: Where would they fall (A/B/C/D)?
 
-#### **Practice with AI** - BCOR 3750 Final Interview Coach
+#### **Practice with AI** - [BCOR 3750 Final Interview Coach](https://chatgpt.com/g/g-692cd48b42c48191accc615b1b0d3518-bcor-3750-final-interview-coach)
 - **Use Voice Mode** (sound wave icon) for most realistic practice
 - Upload your Milestone 2 AND Milestone 3 slides for personalized questions
 - Choose difficulty: Practice (gentler), Realistic (standard), or Challenging (deep drilling)

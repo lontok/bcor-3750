@@ -43,6 +43,8 @@ Practice coach for BCOR 3750 Final Interview covering Predictive Analytics (Mile
 **Instructions:**
 Copy and paste the ENTIRE contents of `custom-gpt-instructions.md` into the Instructions field.
 
+> **Note:** The instructions file is ~3,700 characters, well under ChatGPT's 8,000 character limit. The detailed question banks and requirements are in the knowledge files.
+
 ### Step 3: Upload Knowledge Files
 
 In the **Knowledge** section, click **"Upload files"** and add these three files:

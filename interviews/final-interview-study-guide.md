@@ -1,10 +1,15 @@
 ## **Final Interview Study Guide**
 
-**Overall Grade %:** 25 
-**Total Points:** 100 (Make every effort to attempt all questions for partial credit) 
-**Total Time:** 20 minutes + 5-minute debrief (for feedback) 
-**Location:** In person, Hilton 114 
-**Scheduling:** [https://calendly.com/greg-lontok/3750-final-interview](https://calendly.com/greg-lontok/3750-final-interview) 
+**Overall Grade %:** 25
+
+**Total Points:** 100 (Make every effort to attempt all questions for partial credit)
+
+**Total Time:** 20 minutes + 5-minute debrief (for feedback)
+
+**Location:** In person, Hilton 114
+
+**Scheduling:** [https://calendly.com/greg-lontok/3750-final-interview](https://calendly.com/greg-lontok/3750-final-interview)
+
 Schedule a 25-minute interview between Monday, December 8, and Thursday, December 11, 2025. 
 
 The final interview assesses your understanding of **Predictive Analytics (Milestone 2)** and **Prescriptive Analytics (Milestone 3)**. Your project serves as the primary case study. If you've completed Milestones 2 and 3, you already have everything you need.
@@ -439,7 +444,7 @@ Practice answering these questions about YOUR specific project:
 - One thing to practice: Most critical item before interview
 - Rubric estimate: Where would they fall (A/B/C/D)?
 
-#### **Practice with AI** - BCOR 3750 Final Interview Coach
+#### **Practice with AI** - [BCOR 3750 Final Interview Coach](https://chatgpt.com/g/g-692cd48b42c48191accc615b1b0d3518-bcor-3750-final-interview-coach)
 - **Use Voice Mode** (sound wave icon) for most realistic practice
 - Upload your Milestone 2 AND Milestone 3 slides for personalized questions
 - Choose difficulty: Practice (gentler), Realistic (standard), or Challenging (deep drilling)
